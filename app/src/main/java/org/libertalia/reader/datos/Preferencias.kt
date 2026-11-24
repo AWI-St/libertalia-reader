@@ -38,7 +38,25 @@ class Preferencias(contexto: Context) {
         get() = prefs.getInt(CLAVE_LIMITE_PESADO, 50)
         set(valor) = prefs.edit { putInt(CLAVE_LIMITE_PESADO, valor) }
 
+    /** «Buscar actualizaciones» en GitHub (lo único para lo que la app usa internet). Desactivado de entrada. */
+    var buscarActualizaciones: Boolean
+        get() = prefs.getBoolean(CLAVE_BUSCAR_ACTUALIZACIONES, false)
+        set(valor) = prefs.edit { putBoolean(CLAVE_BUSCAR_ACTUALIZACIONES, valor) }
+
+    /** Cuándo se preguntó a GitHub por última vez (para hacerlo como mucho una vez al día). */
+    var ultimaComprobacion: Long
+        get() = prefs.getLong(CLAVE_ULTIMA_COMPROBACION, 0L)
+        set(valor) = prefs.edit { putLong(CLAVE_ULTIMA_COMPROBACION, valor) }
+
+    /** La última versión nueva de la que ya se avisó sola (para no repetir el aviso cada día). */
+    var versionAvisada: String?
+        get() = prefs.getString(CLAVE_VERSION_AVISADA, null)
+        set(valor) = prefs.edit { putString(CLAVE_VERSION_AVISADA, valor) }
+
     private companion object {
+        const val CLAVE_BUSCAR_ACTUALIZACIONES = "buscar_actualizaciones"
+        const val CLAVE_ULTIMA_COMPROBACION = "ultima_comprobacion"
+        const val CLAVE_VERSION_AVISADA = "version_avisada"
         const val CLAVE_INCLUIR_PESADOS = "incluir_pesados"
         const val CLAVE_LIMITE_PESADO = "limite_pesado_mb"
         const val CLAVE_CARPETA = "uri_carpeta"

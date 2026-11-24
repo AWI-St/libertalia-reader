@@ -83,6 +83,9 @@ class MainActivity : AppCompatActivity() {
     /** Se ha tocado la notificación de «la copia automática ha fallado»: abrir su pantalla. */
     private var abrirCopiaAutomatica by mutableStateOf(false)
 
+    /** Versión nueva en GitHub de la que hay que avisar («Buscar actualizaciones»). */
+    private var versionNueva by mutableStateOf<org.libertalia.reader.actualizaciones.VersionNueva?>(null)
+
     /** Archivo recibido con «Abrir con» antes de haber elegido la carpeta. */
     private var archivoPendiente: Uri? = null
 
@@ -165,6 +168,14 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) abrirCopiaAutomatica = intent.getBooleanExtra(EXTRA_ABRIR_COPIA_AUTOMATICA, false)
         // Si la última copia automática falló, se avisa también dentro de la app.
         if (savedInstanceState == null && app.copiaAutomatica.info().falla) mensaje = getString(R.string.copia_fallo_aviso)
+        // «Buscar actualizaciones» (si está activado): como mucho una vez al día, y se avisa
+        // una sola vez de cada versión nueva.
+        if (savedInstanceState == null && org.libertalia.reader.actualizaciones.Actualizaciones.tocaComprobar(app.preferencias)) {
+            lifecycleScope.launch {
+                val nueva = org.libertalia.reader.actualizaciones.Actualizaciones.comprobar(this@MainActivity, app.preferencias).getOrNull()
+                if (nueva != null && nueva.version != app.preferencias.versionAvisada) versionNueva = nueva
+            }
+        }
 
         // Hay que tocar el original en el selector para poder quitarlo.
         lifecycleScope.launch {
@@ -232,6 +243,13 @@ class MainActivity : AppCompatActivity() {
                             val originales by biblioteca.originalesParaBorrar.collectAsStateWithLifecycle()
                             if (originales.isNotEmpty() && pesados.isEmpty() && comicSinCarpeta == null && comicEnLaNube == null) {
                                 DialogoBorrarOriginales(originales, alResponder = biblioteca::responderOriginales)
+                            }
+                            // Hay una versión nueva en GitHub.
+                            versionNueva?.let { nueva ->
+                                org.libertalia.reader.actualizaciones.DialogoActualizacion(nueva, alCerrar = {
+                                    app.preferencias.versionAvisada = nueva.version
+                                    versionNueva = null
+                                })
                             }
                             // Un archivo nuevo llegó con «Abrir con»: ¿añadir a la biblioteca o solo leer?
                             val preguntaAnadir by biblioteca.preguntaAnadir.collectAsStateWithLifecycle()

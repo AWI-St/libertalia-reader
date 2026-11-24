@@ -24,8 +24,8 @@ android {
         // Android 8.0 o posterior.
         minSdk = 26
         targetSdk = 37
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 2
+        versionName = "0.2.0"
     }
 
     // Firma definitiva de la app (la del APK que se instala en el móvil). Los datos están en

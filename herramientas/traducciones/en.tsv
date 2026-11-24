@@ -376,6 +376,18 @@ mover_elige	Tap the original file so the app can remove it
 mover_hecho	Done: the original has been removed and is now only in the Libertalia folder
 mover_no_borrado	The original was not removed (it was not the same file or Android did not allow it)
 mover_error_copiar	The comic could not be copied to the Libertalia folder
+ajustes_actualizaciones	Check for updates
+ajustes_actualizaciones_nota	Once a day, the app asks GitHub whether there is a new version. This is the only thing it uses the internet for; when off, it never connects.
+ajustes_buscar_ahora	Check now
+actualizacion_instalada	Installed version: %1$s
+actualizacion_buscando	Checking…
+actualizacion_al_dia	You have the latest version (%1$s)
+actualizacion_error	Could not check. Are you connected to the internet?
+actualizacion_hay_nueva	A new version is available: %1$s
+actualizacion_titulo	New version
+actualizacion_texto	A new version of Libertalia Reader is available: %1$s (you have %2$s). Tap “Download” to get the APK from GitHub; open it when it finishes to install it over the current one, without losing anything.
+actualizacion_descargar	Download
+actualizacion_ahora_no	Not now
 importar_borrar_copia_texto	This backup file is on your phone and is no longer needed: everything it had is now in your library.
 importar_borrar_copia	Delete the backup file
 importar_borrar_copia_titulo	Delete “%1$s”?
@@ -451,7 +463,7 @@ tiempo_minutos	%1$d min
 idioma_sistema	Phone language
 acerca_titulo	About Libertalia Reader
 acerca_version	Version %1$s
-acerca_filosofia	Free, no ads and no accounts. Everything is saved on your phone: the app does not use the internet or collect anyone’s data.
+acerca_filosofia	Free, with no ads and no accounts. Everything is stored on your phone and the app collects no one’s data. It only connects to the internet if you turn on “Check for updates”.
 acerca_licencias	Licences
 acerca_licencias_nota	Thanks to everyone who makes these libraries and typefaces. All of them allow being included in the app.
 acerca_unrar	Free of charge, but not free software: it may not be used to create a RAR compressor.

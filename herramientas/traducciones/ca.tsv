@@ -376,6 +376,18 @@ mover_elige	Toca el fitxer original perquè l’app el pugui treure
 mover_hecho	Fet: l’original s’ha tret i ara només és a la carpeta Libertalia
 mover_no_borrado	No s’ha tret l’original (no era el mateix fitxer o Android no ho ha permès)
 mover_error_copiar	No s’ha pogut copiar el còmic a la carpeta Libertalia
+ajustes_actualizaciones	Cercar actualitzacions
+ajustes_actualizaciones_nota	Un cop al dia, l’app pregunta a GitHub si hi ha una versió nova. És l’únic per a què fa servir internet; desactivada, no es connecta mai.
+ajustes_buscar_ahora	Cercar ara
+actualizacion_instalada	Versió instal·lada: %1$s
+actualizacion_buscando	Cercant…
+actualizacion_al_dia	Tens l’última versió (%1$s)
+actualizacion_error	No s’ha pogut comprovar. Tens connexió a internet?
+actualizacion_hay_nueva	Hi ha una versió nova: %1$s
+actualizacion_titulo	Versió nova
+actualizacion_texto	Hi ha una versió nova de Libertalia Reader: %1$s (tens la %2$s). En tocar «Baixar» es baixa l’APK des de GitHub; obre’l en acabar per instal·lar-lo a sobre, sense perdre res.
+actualizacion_descargar	Baixar
+actualizacion_ahora_no	Ara no
 importar_borrar_copia_texto	Aquest fitxer de còpia és al mòbil i ja no cal: tot el que tenia és ara a la teva biblioteca.
 importar_borrar_copia	Esborra el fitxer de còpia
 importar_borrar_copia_titulo	Vols esborrar «%1$s»?
@@ -451,7 +463,7 @@ tiempo_minutos	%1$d min
 idioma_sistema	El del mòbil
 acerca_titulo	Quant a Libertalia Reader
 acerca_version	Versió %1$s
-acerca_filosofia	Gratuïta, sense anuncis i sense comptes. Tot es desa al teu mòbil: l’aplicació no fa servir internet ni recull dades de ningú.
+acerca_filosofia	Gratis, sense anuncis i sense comptes. Tot es desa al teu mòbil i l’app no recull dades de ningú. Només es connecta a internet si actives «Cercar actualitzacions».
 acerca_licencias	Llicències
 acerca_licencias_nota	Gràcies a totes les persones que fan aquestes biblioteques i tipografies. Totes permeten incloure-les a l’aplicació.
 acerca_unrar	Gratuïta, però no lliure: no es pot fer servir per crear un compressor RAR.

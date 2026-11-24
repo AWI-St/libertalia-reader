@@ -429,6 +429,18 @@
     <string name="mover_hecho">Eginda: jatorrizkoa kendu da, eta Libertalia karpetan bakarrik dago orain</string>
     <string name="mover_no_borrado">Ez da jatorrizkoa kendu (ez zen fitxategi bera edo Androidek ez du utzi)</string>
     <string name="mover_error_copiar">Ezin izan da komikia Libertalia karpetara kopiatu</string>
+    <string name="ajustes_actualizaciones">Bilatu eguneratzeak</string>
+    <string name="ajustes_actualizaciones_nota">Egunean behin, aplikazioak GitHub-i galdetzen dio bertsio berririk dagoen. Horretarako bakarrik erabiltzen du internet; desaktibatuta, ez da inoiz konektatzen.</string>
+    <string name="ajustes_buscar_ahora">Bilatu orain</string>
+    <string name="actualizacion_instalada">Instalatutako bertsioa: %1$s</string>
+    <string name="actualizacion_buscando">Bilatzen…</string>
+    <string name="actualizacion_al_dia">Azken bertsioa duzu (%1$s)</string>
+    <string name="actualizacion_error">Ezin izan da egiaztatu. Interneteko konexiorik ba al duzu?</string>
+    <string name="actualizacion_hay_nueva">Bertsio berri bat dago: %1$s</string>
+    <string name="actualizacion_titulo">Bertsio berria</string>
+    <string name="actualizacion_texto">Libertalia Reader-en bertsio berri bat dago: %1$s (%2$s duzu). «Deskargatu» sakatuta, APKa GitHub-etik deskargatzen da; amaitzean ireki, gainean instalatzeko, ezer galdu gabe.</string>
+    <string name="actualizacion_descargar">Deskargatu</string>
+    <string name="actualizacion_ahora_no">Orain ez</string>
     <string name="importar_borrar_copia_texto">Kopia-fitxategi hau mugikorrean dago eta ez da behar jada: zuen guztia zure liburutegian dago orain.</string>
     <string name="importar_borrar_copia">Ezabatu kopia-fitxategia</string>
     <string name="importar_borrar_copia_titulo">«%1$s» ezabatu nahi duzu?</string>
@@ -506,7 +518,7 @@
     <string name="idioma_sistema">Mugikorrarena</string>
     <string name="acerca_titulo">Libertalia Readerri buruz</string>
     <string name="acerca_version">%1$s bertsioa</string>
-    <string name="acerca_filosofia">Doakoa, iragarkirik eta konturik gabe. Dena zure mugikorrean gordetzen da: aplikazioak ez du internet erabiltzen, eta ez du inoren daturik biltzen.</string>
+    <string name="acerca_filosofia">Doan, iragarkirik eta konturik gabe. Dena zure mugikorrean gordetzen da, eta aplikazioak ez du inoren daturik biltzen. «Bilatu eguneratzeak» aktibatzen baduzu bakarrik konektatzen da internetera.</string>
     <string name="acerca_licencias">Lizentziak</string>
     <string name="acerca_licencias_nota">Eskerrik asko liburutegi eta tipografia hauek egiten dituzten pertsona guztiei. Guztiek baimentzen dute aplikazioan sartzea.</string>
     <string name="acerca_unrar">Doakoa, baina ez librea: ezin da erabili RAR konpresore bat sortzeko.</string>

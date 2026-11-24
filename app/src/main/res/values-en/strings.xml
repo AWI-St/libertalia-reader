@@ -429,6 +429,18 @@
     <string name="mover_hecho">Done: the original has been removed and is now only in the Libertalia folder</string>
     <string name="mover_no_borrado">The original was not removed (it was not the same file or Android did not allow it)</string>
     <string name="mover_error_copiar">The comic could not be copied to the Libertalia folder</string>
+    <string name="ajustes_actualizaciones">Check for updates</string>
+    <string name="ajustes_actualizaciones_nota">Once a day, the app asks GitHub whether there is a new version. This is the only thing it uses the internet for; when off, it never connects.</string>
+    <string name="ajustes_buscar_ahora">Check now</string>
+    <string name="actualizacion_instalada">Installed version: %1$s</string>
+    <string name="actualizacion_buscando">Checking…</string>
+    <string name="actualizacion_al_dia">You have the latest version (%1$s)</string>
+    <string name="actualizacion_error">Could not check. Are you connected to the internet?</string>
+    <string name="actualizacion_hay_nueva">A new version is available: %1$s</string>
+    <string name="actualizacion_titulo">New version</string>
+    <string name="actualizacion_texto">A new version of Libertalia Reader is available: %1$s (you have %2$s). Tap “Download” to get the APK from GitHub; open it when it finishes to install it over the current one, without losing anything.</string>
+    <string name="actualizacion_descargar">Download</string>
+    <string name="actualizacion_ahora_no">Not now</string>
     <string name="importar_borrar_copia_texto">This backup file is on your phone and is no longer needed: everything it had is now in your library.</string>
     <string name="importar_borrar_copia">Delete the backup file</string>
     <string name="importar_borrar_copia_titulo">Delete “%1$s”?</string>
@@ -506,7 +518,7 @@
     <string name="idioma_sistema">Phone language</string>
     <string name="acerca_titulo">About Libertalia Reader</string>
     <string name="acerca_version">Version %1$s</string>
-    <string name="acerca_filosofia">Free, no ads and no accounts. Everything is saved on your phone: the app does not use the internet or collect anyone’s data.</string>
+    <string name="acerca_filosofia">Free, with no ads and no accounts. Everything is stored on your phone and the app collects no one’s data. It only connects to the internet if you turn on “Check for updates”.</string>
     <string name="acerca_licencias">Licences</string>
     <string name="acerca_licencias_nota">Thanks to everyone who makes these libraries and typefaces. All of them allow being included in the app.</string>
     <string name="acerca_unrar">Free of charge, but not free software: it may not be used to create a RAR compressor.</string>

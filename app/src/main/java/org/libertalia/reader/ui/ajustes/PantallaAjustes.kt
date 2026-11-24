@@ -49,6 +49,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import org.libertalia.reader.R
+import org.libertalia.reader.actualizaciones.Actualizaciones
+import org.libertalia.reader.actualizaciones.BusquedaActualizacion
+import org.libertalia.reader.actualizaciones.DialogoActualizacion
 import org.libertalia.reader.comic.ModoComic
 import org.libertalia.reader.copias.InfoCopiaAutomatica
 import org.libertalia.reader.lector.TipografiaLector
@@ -195,11 +198,34 @@ fun PantallaAjustes(
         }
 
         Bloque(stringResource(R.string.ajustes_bloque_app)) {
+            // Buscar actualizaciones en GitHub: lo único para lo que la app usa internet.
+            FilaInterruptor(
+                stringResource(R.string.ajustes_actualizaciones),
+                estado.buscarActualizaciones,
+                estado::cambiarBuscarActualizaciones,
+                detalle = stringResource(R.string.ajustes_actualizaciones_nota),
+            )
+            if (estado.buscarActualizaciones) {
+                HorizontalDivider(color = colorResource(R.color.borde))
+                val busqueda = estado.busqueda
+                FilaAjuste(
+                    null,
+                    stringResource(R.string.ajustes_buscar_ahora),
+                    detalle = textoBusqueda(busqueda),
+                    detalleError = busqueda == BusquedaActualizacion.Error,
+                    flecha = busqueda != BusquedaActualizacion.Buscando,
+                    alPulsar = estado::buscarAhora,
+                )
+            }
+            HorizontalDivider(color = colorResource(R.color.borde))
             FilaAjuste(null, stringResource(R.string.estadisticas_titulo), alPulsar = alEstadisticas)
             HorizontalDivider(color = colorResource(R.color.borde))
             FilaAjuste(null, stringResource(R.string.acerca_titulo), alPulsar = alAcercaDe)
         }
     }
+
+    // Hay una versión nueva en GitHub.
+    (estado.busqueda as? BusquedaActualizacion.Nueva)?.let { DialogoActualizacion(it.version, alCerrar = estado::avisoVisto) }
 
     // Cuadros para elegir.
     when (eleccion) {
@@ -452,8 +478,22 @@ private fun FilaValor(texto: String, valor: String, alPulsar: () -> Unit) {
     }
 }
 
+/** Lo que dice la fila «Buscar ahora»: la versión instalada o cómo ha ido la búsqueda. */
 @Composable
-private fun FilaInterruptor(texto: String, activado: Boolean, alCambiar: (Boolean) -> Unit) {
+private fun textoBusqueda(busqueda: BusquedaActualizacion?): String {
+    val actual = Actualizaciones.versionActual(androidx.compose.ui.platform.LocalContext.current)
+    return when (busqueda) {
+        null -> stringResource(R.string.actualizacion_instalada, actual)
+        BusquedaActualizacion.Buscando -> stringResource(R.string.actualizacion_buscando)
+        BusquedaActualizacion.AlDia -> stringResource(R.string.actualizacion_al_dia, actual)
+        BusquedaActualizacion.Error -> stringResource(R.string.actualizacion_error)
+        is BusquedaActualizacion.Nueva -> stringResource(R.string.actualizacion_hay_nueva, busqueda.version.version)
+        is BusquedaActualizacion.Avisada -> stringResource(R.string.actualizacion_hay_nueva, busqueda.version.version)
+    }
+}
+
+@Composable
+private fun FilaInterruptor(texto: String, activado: Boolean, alCambiar: (Boolean) -> Unit, detalle: String? = null) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
@@ -462,7 +502,12 @@ private fun FilaInterruptor(texto: String, activado: Boolean, alCambiar: (Boolea
             .heightIn(min = 56.dp)
             .padding(horizontal = 16.dp, vertical = 6.dp),
     ) {
-        Text(texto, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+        Column(Modifier.weight(1f)) {
+            Text(texto, style = MaterialTheme.typography.titleMedium)
+            if (detalle != null) {
+                Text(detalle, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+        }
         Spacer(Modifier.width(12.dp))
         Switch(
             checked = activado,

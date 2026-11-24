@@ -10,6 +10,8 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 import org.libertalia.reader.LibertaliaApp
+import org.libertalia.reader.actualizaciones.Actualizaciones
+import org.libertalia.reader.actualizaciones.BusquedaActualizacion
 import org.libertalia.reader.comic.ModoComic
 import org.libertalia.reader.datos.EstadoLectura
 import org.libertalia.reader.lector.TipografiaLector
@@ -81,6 +83,35 @@ class AjustesViewModel(aplicacion: Application) : AndroidViewModel(aplicacion) {
     fun cambiarIncluirPesados(valor: Boolean?) {
         prefs.incluirPesados = valor
         incluirPesados = valor
+    }
+
+    /** «Buscar actualizaciones» en GitHub (desactivado de entrada). */
+    var buscarActualizaciones by mutableStateOf(prefs.buscarActualizaciones)
+        private set
+
+    /** Resultado de «Buscar ahora». */
+    var busqueda by mutableStateOf<BusquedaActualizacion?>(null)
+        private set
+
+    fun cambiarBuscarActualizaciones(valor: Boolean) {
+        prefs.buscarActualizaciones = valor
+        buscarActualizaciones = valor
+        if (!valor) busqueda = null
+    }
+
+    fun buscarAhora() {
+        busqueda = BusquedaActualizacion.Buscando
+        viewModelScope.launch {
+            busqueda = Actualizaciones.comprobar(app, prefs).fold(
+                onSuccess = { nueva -> if (nueva == null) BusquedaActualizacion.AlDia else BusquedaActualizacion.Nueva(nueva) },
+                onFailure = { BusquedaActualizacion.Error },
+            )
+        }
+    }
+
+    /** Se ha respondido al aviso de versión nueva. */
+    fun avisoVisto() {
+        (busqueda as? BusquedaActualizacion.Nueva)?.let { busqueda = BusquedaActualizacion.Avisada(it.version) }
     }
 
     fun cambiarRecortarComics(valor: Boolean) {

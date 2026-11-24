@@ -429,6 +429,18 @@
     <string name="mover_hecho">Feito: o orixinal quitouse e agora só está no cartafol Libertalia</string>
     <string name="mover_no_borrado">Non se quitou o orixinal (non era o mesmo ficheiro ou Android non o permitiu)</string>
     <string name="mover_error_copiar">Non se puido copiar o cómic ao cartafol Libertalia</string>
+    <string name="ajustes_actualizaciones">Buscar actualizacións</string>
+    <string name="ajustes_actualizaciones_nota">Unha vez ao día, a app pregúntalle a GitHub se hai unha versión nova. É o único para o que usa internet; desactivada, non se conecta nunca.</string>
+    <string name="ajustes_buscar_ahora">Buscar agora</string>
+    <string name="actualizacion_instalada">Versión instalada: %1$s</string>
+    <string name="actualizacion_buscando">Buscando…</string>
+    <string name="actualizacion_al_dia">Tes a última versión (%1$s)</string>
+    <string name="actualizacion_error">Non se puido comprobar. Hai conexión a internet?</string>
+    <string name="actualizacion_hay_nueva">Hai unha versión nova: %1$s</string>
+    <string name="actualizacion_titulo">Versión nova</string>
+    <string name="actualizacion_texto">Hai unha versión nova de Libertalia Reader: %1$s (tes a %2$s). Ao tocar «Descargar» descárgase o APK desde GitHub; ábreo ao rematar para instalalo enriba, sen perder nada.</string>
+    <string name="actualizacion_descargar">Descargar</string>
+    <string name="actualizacion_ahora_no">Agora non</string>
     <string name="importar_borrar_copia_texto">Este ficheiro de copia está no móbil e xa non fai falta: todo o que tiña está agora na túa biblioteca.</string>
     <string name="importar_borrar_copia">Borrar o ficheiro de copia</string>
     <string name="importar_borrar_copia_titulo">Borrar «%1$s»?</string>
@@ -506,7 +518,7 @@
     <string name="idioma_sistema">O do móbil</string>
     <string name="acerca_titulo">Acerca de Libertalia Reader</string>
     <string name="acerca_version">Versión %1$s</string>
-    <string name="acerca_filosofia">De balde, sen anuncios e sen contas. Todo se garda no teu móbil: a app non usa internet nin recolle datos de ninguén.</string>
+    <string name="acerca_filosofia">De balde, sen anuncios e sen contas. Todo se garda no teu móbil e a app non recolle datos de ninguén. Só se conecta a internet se activas «Buscar actualizacións».</string>
     <string name="acerca_licencias">Licenzas</string>
     <string name="acerca_licencias_nota">Grazas a todas as persoas que fan estas bibliotecas e tipografías. Todas permiten incluílas na app.</string>
     <string name="acerca_unrar">De balde, pero non libre: non permite usala para crear un compresor RAR.</string>

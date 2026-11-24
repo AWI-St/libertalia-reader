@@ -376,6 +376,18 @@ mover_elige	Ukitu jatorrizko fitxategia, aplikazioak kendu ahal izateko
 mover_hecho	Eginda: jatorrizkoa kendu da, eta Libertalia karpetan bakarrik dago orain
 mover_no_borrado	Ez da jatorrizkoa kendu (ez zen fitxategi bera edo Androidek ez du utzi)
 mover_error_copiar	Ezin izan da komikia Libertalia karpetara kopiatu
+ajustes_actualizaciones	Bilatu eguneratzeak
+ajustes_actualizaciones_nota	Egunean behin, aplikazioak GitHub-i galdetzen dio bertsio berririk dagoen. Horretarako bakarrik erabiltzen du internet; desaktibatuta, ez da inoiz konektatzen.
+ajustes_buscar_ahora	Bilatu orain
+actualizacion_instalada	Instalatutako bertsioa: %1$s
+actualizacion_buscando	Bilatzen…
+actualizacion_al_dia	Azken bertsioa duzu (%1$s)
+actualizacion_error	Ezin izan da egiaztatu. Interneteko konexiorik ba al duzu?
+actualizacion_hay_nueva	Bertsio berri bat dago: %1$s
+actualizacion_titulo	Bertsio berria
+actualizacion_texto	Libertalia Reader-en bertsio berri bat dago: %1$s (%2$s duzu). «Deskargatu» sakatuta, APKa GitHub-etik deskargatzen da; amaitzean ireki, gainean instalatzeko, ezer galdu gabe.
+actualizacion_descargar	Deskargatu
+actualizacion_ahora_no	Orain ez
 importar_borrar_copia_texto	Kopia-fitxategi hau mugikorrean dago eta ez da behar jada: zuen guztia zure liburutegian dago orain.
 importar_borrar_copia	Ezabatu kopia-fitxategia
 importar_borrar_copia_titulo	«%1$s» ezabatu nahi duzu?
@@ -451,7 +463,7 @@ tiempo_minutos	%1$d min
 idioma_sistema	Mugikorrarena
 acerca_titulo	Libertalia Readerri buruz
 acerca_version	%1$s bertsioa
-acerca_filosofia	Doakoa, iragarkirik eta konturik gabe. Dena zure mugikorrean gordetzen da: aplikazioak ez du internet erabiltzen, eta ez du inoren daturik biltzen.
+acerca_filosofia	Doan, iragarkirik eta konturik gabe. Dena zure mugikorrean gordetzen da, eta aplikazioak ez du inoren daturik biltzen. «Bilatu eguneratzeak» aktibatzen baduzu bakarrik konektatzen da internetera.
 acerca_licencias	Lizentziak
 acerca_licencias_nota	Eskerrik asko liburutegi eta tipografia hauek egiten dituzten pertsona guztiei. Guztiek baimentzen dute aplikazioan sartzea.
 acerca_unrar	Doakoa, baina ez librea: ezin da erabili RAR konpresore bat sortzeko.

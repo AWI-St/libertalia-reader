@@ -17,6 +17,9 @@
 
     <!-- Solo para avisar si la copia automática falla (nunca cuando va bien). -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Solo para «Buscar actualizaciones» en GitHub (Ajustes; desactivado de entrada).
+         La app no se conecta a internet para nada más. -->
+    <uses-permission android:name="android.permission.INTERNET" />
     <!-- Lectura en voz alta con la pantalla apagada (servicio con notificación de controles). -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />

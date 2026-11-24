@@ -1,6 +1,6 @@
 # Libertalia Reader
 
-Lector de libros, cómics y manga para Android. Gratis, privado y propio: funciona entero en el móvil, sin cuentas, sin anuncios, sin servidores y sin conexión a internet (la app no tiene permiso de internet).
+Lector de libros, cómics y manga para Android. Gratis, privado y propio: funciona entero en el móvil, sin cuentas, sin anuncios, sin servidores y sin conexión a internet. La única excepción es opcional y viene desactivada: en Ajustes, «Buscar actualizaciones» pregunta una vez al día a GitHub si hay una versión nueva.
 
 ## Qué hace
 

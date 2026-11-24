@@ -429,6 +429,18 @@
     <string name="mover_hecho">Fet: l’original s’ha tret i ara només és a la carpeta Libertalia</string>
     <string name="mover_no_borrado">No s’ha tret l’original (no era el mateix fitxer o Android no ho ha permès)</string>
     <string name="mover_error_copiar">No s’ha pogut copiar el còmic a la carpeta Libertalia</string>
+    <string name="ajustes_actualizaciones">Cercar actualitzacions</string>
+    <string name="ajustes_actualizaciones_nota">Un cop al dia, l’app pregunta a GitHub si hi ha una versió nova. És l’únic per a què fa servir internet; desactivada, no es connecta mai.</string>
+    <string name="ajustes_buscar_ahora">Cercar ara</string>
+    <string name="actualizacion_instalada">Versió instal·lada: %1$s</string>
+    <string name="actualizacion_buscando">Cercant…</string>
+    <string name="actualizacion_al_dia">Tens l’última versió (%1$s)</string>
+    <string name="actualizacion_error">No s’ha pogut comprovar. Tens connexió a internet?</string>
+    <string name="actualizacion_hay_nueva">Hi ha una versió nova: %1$s</string>
+    <string name="actualizacion_titulo">Versió nova</string>
+    <string name="actualizacion_texto">Hi ha una versió nova de Libertalia Reader: %1$s (tens la %2$s). En tocar «Baixar» es baixa l’APK des de GitHub; obre’l en acabar per instal·lar-lo a sobre, sense perdre res.</string>
+    <string name="actualizacion_descargar">Baixar</string>
+    <string name="actualizacion_ahora_no">Ara no</string>
     <string name="importar_borrar_copia_texto">Aquest fitxer de còpia és al mòbil i ja no cal: tot el que tenia és ara a la teva biblioteca.</string>
     <string name="importar_borrar_copia">Esborra el fitxer de còpia</string>
     <string name="importar_borrar_copia_titulo">Vols esborrar «%1$s»?</string>
@@ -506,7 +518,7 @@
     <string name="idioma_sistema">El del mòbil</string>
     <string name="acerca_titulo">Quant a Libertalia Reader</string>
     <string name="acerca_version">Versió %1$s</string>
-    <string name="acerca_filosofia">Gratuïta, sense anuncis i sense comptes. Tot es desa al teu mòbil: l’aplicació no fa servir internet ni recull dades de ningú.</string>
+    <string name="acerca_filosofia">Gratis, sense anuncis i sense comptes. Tot es desa al teu mòbil i l’app no recull dades de ningú. Només es connecta a internet si actives «Cercar actualitzacions».</string>
     <string name="acerca_licencias">Llicències</string>
     <string name="acerca_licencias_nota">Gràcies a totes les persones que fan aquestes biblioteques i tipografies. Totes permeten incloure-les a l’aplicació.</string>
     <string name="acerca_unrar">Gratuïta, però no lliure: no es pot fer servir per crear un compressor RAR.</string>

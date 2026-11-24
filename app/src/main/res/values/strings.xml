@@ -488,6 +488,19 @@
     <string name="mover_hecho">Hecho: el original se ha quitado y queda solo en la carpeta Libertalia</string>
     <string name="mover_no_borrado">No se ha quitado el original (no era el mismo archivo o Android no lo ha permitido)</string>
     <string name="mover_error_copiar">No se ha podido copiar el cómic a la carpeta Libertalia</string>
+    <!-- Buscar actualizaciones en GitHub -->
+    <string name="ajustes_actualizaciones">Buscar actualizaciones</string>
+    <string name="ajustes_actualizaciones_nota">Una vez al día, la app pregunta a GitHub si hay una versión nueva. Es lo único para lo que usa internet; desactivado, no se conecta nunca.</string>
+    <string name="ajustes_buscar_ahora">Buscar ahora</string>
+    <string name="actualizacion_instalada">Versión instalada: %1$s</string>
+    <string name="actualizacion_buscando">Buscando…</string>
+    <string name="actualizacion_al_dia">Tienes la última versión (%1$s)</string>
+    <string name="actualizacion_error">No se ha podido comprobar. ¿Hay conexión a internet?</string>
+    <string name="actualizacion_hay_nueva">Hay una versión nueva: %1$s</string>
+    <string name="actualizacion_titulo">Versión nueva</string>
+    <string name="actualizacion_texto">Hay una versión nueva de Libertalia Reader: %1$s (tienes la %2$s). Al pulsar «Descargar» se descarga el APK desde GitHub; ábrelo al terminar para instalarlo encima, sin perder nada.</string>
+    <string name="actualizacion_descargar">Descargar</string>
+    <string name="actualizacion_ahora_no">Ahora no</string>
     <string name="importar_borrar_copia_texto">Este archivo de copia está en el móvil y ya no hace falta: todo lo que tenía está ahora en tu biblioteca.</string>
     <string name="importar_borrar_copia">Borrar el archivo de copia</string>
     <string name="importar_borrar_copia_titulo">¿Borrar «%1$s»?</string>
@@ -581,7 +594,7 @@
     <!-- Acerca de -->
     <string name="acerca_titulo">Acerca de Libertalia Reader</string>
     <string name="acerca_version">Versión %1$s</string>
-    <string name="acerca_filosofia">Gratis, sin anuncios y sin cuentas. Todo se guarda en tu móvil: la app no usa internet ni recoge datos de nadie.</string>
+    <string name="acerca_filosofia">Gratis, sin anuncios y sin cuentas. Todo se guarda en tu móvil y la app no recoge datos de nadie. Solo se conecta a internet si activas «Buscar actualizaciones».</string>
     <string name="acerca_licencias">Licencias</string>
     <string name="acerca_licencias_nota">Gracias a todas las personas que hacen estas librerías y tipografías. Todas permiten incluirlas en la app.</string>
     <string name="acerca_unrar">Gratuita, pero no libre: no permite usarla para crear un compresor RAR.</string>

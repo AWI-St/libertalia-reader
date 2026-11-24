@@ -429,6 +429,18 @@
     <string name="mover_hecho">C’est fait : l’original a été retiré et se trouve seulement dans le dossier Libertalia</string>
     <string name="mover_no_borrado">L’original n’a pas été retiré (ce n’était pas le même fichier ou Android ne l’a pas permis)</string>
     <string name="mover_error_copiar">Impossible de copier la BD dans le dossier Libertalia</string>
+    <string name="ajustes_actualizaciones">Rechercher des mises à jour</string>
+    <string name="ajustes_actualizaciones_nota">Une fois par jour, l’app demande à GitHub s’il existe une nouvelle version. C’est la seule chose pour laquelle elle utilise internet ; désactivée, elle ne se connecte jamais.</string>
+    <string name="ajustes_buscar_ahora">Rechercher maintenant</string>
+    <string name="actualizacion_instalada">Version installée : %1$s</string>
+    <string name="actualizacion_buscando">Recherche…</string>
+    <string name="actualizacion_al_dia">Vous avez la dernière version (%1$s)</string>
+    <string name="actualizacion_error">Impossible de vérifier. Êtes-vous connecté à internet ?</string>
+    <string name="actualizacion_hay_nueva">Une nouvelle version est disponible : %1$s</string>
+    <string name="actualizacion_titulo">Nouvelle version</string>
+    <string name="actualizacion_texto">Une nouvelle version de Libertalia Reader est disponible : %1$s (vous avez la %2$s). Touchez « Télécharger » pour récupérer l’APK sur GitHub ; ouvrez-le à la fin pour l’installer par-dessus, sans rien perdre.</string>
+    <string name="actualizacion_descargar">Télécharger</string>
+    <string name="actualizacion_ahora_no">Pas maintenant</string>
     <string name="importar_borrar_copia_texto">Ce fichier de sauvegarde est sur le téléphone et n’est plus utile : tout son contenu est maintenant dans votre bibliothèque.</string>
     <string name="importar_borrar_copia">Supprimer le fichier de sauvegarde</string>
     <string name="importar_borrar_copia_titulo">Supprimer « %1$s » ?</string>
@@ -506,7 +518,7 @@
     <string name="idioma_sistema">Celle du téléphone</string>
     <string name="acerca_titulo">À propos de Libertalia Reader</string>
     <string name="acerca_version">Version %1$s</string>
-    <string name="acerca_filosofia">Gratuite, sans pub et sans compte. Tout est enregistré sur votre téléphone : l’appli n’utilise pas internet et ne collecte les données de personne.</string>
+    <string name="acerca_filosofia">Gratuite, sans publicité et sans compte. Tout est enregistré sur votre téléphone et l’app ne collecte les données de personne. Elle ne se connecte à internet que si vous activez « Rechercher des mises à jour ».</string>
     <string name="acerca_licencias">Licences</string>
     <string name="acerca_licencias_nota">Merci à toutes les personnes qui créent ces bibliothèques et ces polices. Toutes permettent d’être incluses dans l’appli.</string>
     <string name="acerca_unrar">Gratuite, mais pas libre : elle ne peut pas servir à créer un compresseur RAR.</string>

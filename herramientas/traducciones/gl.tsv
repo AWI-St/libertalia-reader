@@ -376,6 +376,18 @@ mover_elige	Toca o ficheiro orixinal para que a app poida quitalo
 mover_hecho	Feito: o orixinal quitouse e agora só está no cartafol Libertalia
 mover_no_borrado	Non se quitou o orixinal (non era o mesmo ficheiro ou Android non o permitiu)
 mover_error_copiar	Non se puido copiar o cómic ao cartafol Libertalia
+ajustes_actualizaciones	Buscar actualizacións
+ajustes_actualizaciones_nota	Unha vez ao día, a app pregúntalle a GitHub se hai unha versión nova. É o único para o que usa internet; desactivada, non se conecta nunca.
+ajustes_buscar_ahora	Buscar agora
+actualizacion_instalada	Versión instalada: %1$s
+actualizacion_buscando	Buscando…
+actualizacion_al_dia	Tes a última versión (%1$s)
+actualizacion_error	Non se puido comprobar. Hai conexión a internet?
+actualizacion_hay_nueva	Hai unha versión nova: %1$s
+actualizacion_titulo	Versión nova
+actualizacion_texto	Hai unha versión nova de Libertalia Reader: %1$s (tes a %2$s). Ao tocar «Descargar» descárgase o APK desde GitHub; ábreo ao rematar para instalalo enriba, sen perder nada.
+actualizacion_descargar	Descargar
+actualizacion_ahora_no	Agora non
 importar_borrar_copia_texto	Este ficheiro de copia está no móbil e xa non fai falta: todo o que tiña está agora na túa biblioteca.
 importar_borrar_copia	Borrar o ficheiro de copia
 importar_borrar_copia_titulo	Borrar «%1$s»?
@@ -451,7 +463,7 @@ tiempo_minutos	%1$d min
 idioma_sistema	O do móbil
 acerca_titulo	Acerca de Libertalia Reader
 acerca_version	Versión %1$s
-acerca_filosofia	De balde, sen anuncios e sen contas. Todo se garda no teu móbil: a app non usa internet nin recolle datos de ninguén.
+acerca_filosofia	De balde, sen anuncios e sen contas. Todo se garda no teu móbil e a app non recolle datos de ninguén. Só se conecta a internet se activas «Buscar actualizacións».
 acerca_licencias	Licenzas
 acerca_licencias_nota	Grazas a todas as persoas que fan estas bibliotecas e tipografías. Todas permiten incluílas na app.
 acerca_unrar	De balde, pero non libre: non permite usala para crear un compresor RAR.
