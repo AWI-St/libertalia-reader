@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paleta de Libertalia Reader: papel cálido, nunca blanco brillante. -->
+<resources>
+    <!-- Interfaz -->
+    <color name="fondo_app">#F3EADB</color>
+    <color name="fondo_lectura">#F8F1E3</color>
+    <color name="fondo_tarjeta">#FBF6EC</color>
+    <color name="texto">#3B2F2A</color>
+    <color name="texto_secundario">#6E5A4B</color>
+    <color name="borde">#E4D6C1</color>
+    <color name="marron">#7A4A2A</color>
+    <!-- Fondo del icono de la app. -->
+    <color name="icono_fondo">#7A4A2A</color>
+    <color name="madera">#6B4429</color>
+    <color name="rojo">#C8322B</color>
+
+    <!-- Icono de estado en la portada -->
+    <color name="estado_terminado">#5B8A4E</color>
+    <color name="estado_leyendo">#E3B94F</color>
+    <!-- Frase que se está leyendo en voz alta (tostado suave, distinto de los subrayados). -->
+    <color name="voz_frase">#B97A3A</color>
+
+    <!-- Temas del lector de libros -->
+    <color name="lector_crema_fondo">#F8F1E3</color>
+    <color name="lector_crema_texto">#3B2F2A</color>
+    <color name="lector_sepia_fondo">#EAD9BC</color>
+    <color name="lector_sepia_texto">#3B2F2A</color>
+    <color name="lector_oscuro_fondo">#2A2522</color>
+    <color name="lector_oscuro_texto">#E6D9C6</color>
+
+    <!-- Barras y bordes del lector en cada tema -->
+    <color name="lector_sepia_barra">#E2CEAC</color>
+    <color name="lector_sepia_borde">#D3BD98</color>
+    <color name="lector_oscuro_barra">#221E1B</color>
+    <color name="lector_oscuro_borde">#3D3530</color>
+    <color name="lector_oscuro_texto_secundario">#B4A592</color>
+    <color name="lector_oscuro_principal">#C8925F</color>
+
+    <!-- Lector de cómics -->
+    <color name="fondo_comic">#1E1A18</color>
+
+    <!-- Colores de subrayado (pastel). Readium los pinta algo transparentes sobre el texto. -->
+    <color name="subrayado_amarillo">#FFCB2E</color>
+    <color name="subrayado_verde">#5DBB4A</color>
+    <color name="subrayado_azul">#4D9BE6</color>
+    <color name="subrayado_rosa">#F0679A</color>
+</resources>

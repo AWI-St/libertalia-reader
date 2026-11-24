@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base de las pantallas: fondo crema, sin barra de título de Android. -->
+    <style name="Theme.Libertalia" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/marron</item>
+        <item name="colorAccent">@color/marron</item>
+        <item name="android:windowBackground">@color/fondo_app</item>
+        <item name="android:textColor">@color/texto</item>
+    </style>
+
+    <!-- Tema del lector: mismo estilo con el fondo de lectura. -->
+    <style name="Theme.Libertalia.Lector">
+        <item name="android:windowBackground">@color/fondo_lectura</item>
+    </style>
+</resources>

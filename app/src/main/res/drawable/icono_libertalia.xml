@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- El icono de Libertalia Reader (libro abierto y timón), copiado de bocetos/icono-libertalia.svg. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M0,54a54,54 0,1 1,108 0a54,54 0,1 1,-108 0Z"
+        android:fillColor="#FF7A4A2A" />
+    <path
+        android:pathData="M31.5,46.5a22.5,22.5 0,1 1,45 0a22.5,22.5 0,1 1,-45 0Z"
+        android:strokeColor="#FFF3E3C3"
+        android:strokeWidth="5" />
+    <path
+        android:pathData="M54,46.5V13M54,46.5L30.5,23M54,46.5L77.5,23M54,46.5H20M54,46.5H88"
+        android:strokeColor="#FFF3E3C3"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M50.2,12.5a3.8,3.8 0,1 1,7.6 0a3.8,3.8 0,1 1,-7.6 0ZM25.7,22a3.8,3.8 0,1 1,7.6 0a3.8,3.8 0,1 1,-7.6 0ZM74.7,22a3.8,3.8 0,1 1,7.6 0a3.8,3.8 0,1 1,-7.6 0ZM15.7,46.5a3.8,3.8 0,1 1,7.6 0a3.8,3.8 0,1 1,-7.6 0ZM84.7,46.5a3.8,3.8 0,1 1,7.6 0a3.8,3.8 0,1 1,-7.6 0ZM48,46.5a6,6 0,1 1,12 0a6,6 0,1 1,-12 0Z"
+        android:fillColor="#FFF3E3C3" />
+    <path
+        android:pathData="M54,61.5C46,58 30,57 18,63.5V90C30,84 46,84 54,88Z"
+        android:fillColor="#FFF8F1E3"
+        android:strokeColor="#FF3B2F2A"
+        android:strokeWidth="2.2"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M54,61.5C62,58 78,57 90,63.5V90C78,84 62,84 54,88Z"
+        android:fillColor="#FFF0E4CF"
+        android:strokeColor="#FF3B2F2A"
+        android:strokeWidth="2.2"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M24,66.5Q36,63.5 48,66M24,72.5Q36,69.5 48,72M60,66Q72,63.5 84,66.5M60,72Q72,69.5 84,72.5"
+        android:strokeColor="#FFCDBBA0"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round" />
+</vector>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Versión de un solo color del icono, para los iconos temáticos de Android 13 (el sistema la
+  pinta con los colores del fondo de pantalla). Las dos páginas del libro van rellenas y
+  separadas por un hueco en el lomo, porque aquí no hay contornos de otro color.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:translateY="2.5">
+        <!-- Timón (solo la parte que asoma por encima del libro) -->
+        <path
+            android:pathData="M31.5,46.5a22.5,22.5 0,1 1,45 0a22.5,22.5 0,1 1,-45 0Z"
+            android:strokeColor="#FF000000"
+            android:strokeWidth="6.5" />
+        <path
+            android:pathData="M54,46.5V13M54,46.5L30.5,23M54,46.5L77.5,23M54,46.5H20M54,46.5H88"
+            android:strokeColor="#FF000000"
+            android:strokeWidth="4.2"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M49.5,12.5a4.5,4.5 0,1 1,9 0a4.5,4.5 0,1 1,-9 0ZM25,22a4.5,4.5 0,1 1,9 0a4.5,4.5 0,1 1,-9 0ZM74,22a4.5,4.5 0,1 1,9 0a4.5,4.5 0,1 1,-9 0ZM15,46.5a4.5,4.5 0,1 1,9 0a4.5,4.5 0,1 1,-9 0ZM84,46.5a4.5,4.5 0,1 1,9 0a4.5,4.5 0,1 1,-9 0ZM47,46.5a7,7 0,1 1,14 0a7,7 0,1 1,-14 0Z"
+            android:fillColor="#FF000000" />
+        <!-- Libro: dos páginas rellenas con el lomo abierto en medio -->
+        <path
+            android:pathData="M52,59.8C43.5,56.2 28.5,55.5 15.5,62.2V93.5C28,87 43.5,86.6 52,90.4Z"
+            android:fillColor="#FF000000" />
+        <path
+            android:pathData="M56,59.8C64.5,56.2 79.5,55.5 92.5,62.2V93.5C80,87 64.5,86.6 56,90.4Z"
+            android:fillColor="#FF000000" />
+    </group>
+</vector>

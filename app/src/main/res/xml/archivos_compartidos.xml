@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lo único que la app puede compartir con otras apps: las copias preparadas para compartir. -->
+<paths>
+    <cache-path
+        name="copias"
+        path="compartir/" />
+</paths>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 108 108">
+  <title>Libertalia Reader</title>
+  <!-- Fondo marrón -->
+  <circle cx="54" cy="54" r="54" fill="#7A4A2A"/>
+  <!-- Timón asomando detrás del libro, como un sol al amanecer -->
+  <g stroke="#F3E3C3" stroke-linecap="round" fill="none">
+    <circle cx="54" cy="46.5" r="22.5" stroke-width="5"/>
+    <path d="M54 46.5 V13 M54 46.5 L30.5 23 M54 46.5 L77.5 23 M54 46.5 H20 M54 46.5 H88" stroke-width="3"/>
+  </g>
+  <g fill="#F3E3C3">
+    <circle cx="54" cy="12.5" r="3.8"/>
+    <circle cx="29.5" cy="22" r="3.8"/>
+    <circle cx="78.5" cy="22" r="3.8"/>
+    <circle cx="19.5" cy="46.5" r="3.8"/>
+    <circle cx="88.5" cy="46.5" r="3.8"/>
+    <circle cx="54" cy="46.5" r="6"/>
+  </g>
+  <!-- Libro abierto delante -->
+  <g stroke="#3B2F2A" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M54 61.5 C46 58 30 57 18 63.5 V90 C30 84 46 84 54 88 Z" fill="#F8F1E3"/>
+    <path d="M54 61.5 C62 58 78 57 90 63.5 V90 C78 84 62 84 54 88 Z" fill="#F0E4CF"/>
+  </g>
+  <!-- Líneas de texto (en tamaños pequeños se quitan) -->
+  <g stroke="#CDBBA0" stroke-width="1.6" stroke-linecap="round" fill="none">
+    <path d="M24 66.5 Q36 63.5 48 66"/>
+    <path d="M24 72.5 Q36 69.5 48 72"/>
+    <path d="M60 66 Q72 63.5 84 66.5"/>
+    <path d="M60 72 Q72 69.5 84 72.5"/>
+  </g>
+</svg>

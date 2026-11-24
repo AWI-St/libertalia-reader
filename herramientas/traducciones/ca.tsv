@@ -1,0 +1,522 @@
+carpeta_titulo	On desar els teus llibres
+carpeta_explicacion	Libertalia Reader desa els teus llibres en una carpeta visible del mòbil, Documents › Libertalia. Així no es perden encara que desinstal·lis l’aplicació.
+carpeta_instrucciones	A la pantalla següent, comprova que ets a la carpeta Libertalia i toca «Utilitza aquesta carpeta» i després «Permet».
+carpeta_boton	Tria la carpeta
+biblioteca_titulo	Biblioteca
+cd_anadir_libros	Afegeix llibres
+vacia_titulo	La teva prestatgeria és buida
+vacia_mensaje	Afegeix llibres, còmics o manga. Sense anuncis, sense comptes, tot al teu mòbil. El que subratllis es convertirà en targetes per rellegir quan vulguis.
+boton_anadir_desde_movil	Afegeix des del mòbil
+libro_sin_archivo	Sense fitxer
+filtro_todos	Tots
+estado_leyendo	Llegint
+estado_pendientes	Pendents
+estado_terminados	Acabats
+numero_libros#one	%d llibre
+numero_libros#other	%d llibres
+numero_comics#one	%d còmic
+numero_comics#other	%d còmics
+estante_vacio	Encara no hi ha llibres aquí.
+seguir_leyendo	Continua llegint
+capitulo_y_progreso	%1$s · %2$s
+libro_formato_tamano	%1$s · %2$s
+importando	S’estan afegint llibres…
+importacion_anadidos#one	S’ha afegit %d llibre
+importacion_anadidos#other	S’han afegit %d llibres
+importacion_recuperados#one	S’ha recuperat %d llibre amb la seva pàgina i les seves notes
+importacion_recuperados#other	S’han recuperat %d llibres amb la seva pàgina i les seves notes
+importacion_completados#one	%d llibre ha recuperat el seu fitxer
+importacion_completados#other	%d llibres han recuperat el seu fitxer
+importacion_ya_existian#one	%d ja era a la biblioteca
+importacion_ya_existian#other	%d ja eren a la biblioteca
+importacion_no_compatibles#one	%d fitxer no és un llibre ni un còmic que l’aplicació sàpiga obrir
+importacion_no_compatibles#other	%d fitxers no són llibres ni còmics que l’aplicació sàpiga obrir
+importacion_rar5#one	%d CBR està en format RAR 5, que l’aplicació no pot obrir. Si el tornes a desar com a CBZ o RAR 4, sí
+importacion_rar5#other	%d CBR estan en format RAR 5, que l’aplicació no pot obrir. Si els tornes a desar com a CBZ o RAR 4, sí
+importacion_errores#one	%d no s’ha pogut afegir
+importacion_errores#other	%d no s’han pogut afegir
+menu_editar	Edita el títol, l’autor i la coberta
+menu_cambiar_estado	Canvia l’estat
+menu_anadir_estanteria	Afegeix a una prestatgeria
+menu_eliminar	Elimina el llibre
+menu_subtitulo	%1$s · %2$s
+estado_libro_leyendo	Llegint
+estado_libro_pendiente	Pendent
+estado_libro_terminado	Acabat
+editar_titulo	Edita el llibre
+campo_titulo	Títol
+campo_autor	Autor
+cambiar_portada	Canvia la coberta
+renombrar_archivo	Canvia també el nom del fitxer amb aquest títol
+renombrar_archivo_nota	El contingut del llibre no canvia.
+boton_guardar	Desa
+boton_cancelar	Cancel·la
+estanterias_vacio	Encara no tens prestatgeries. Crea’n una per ordenar els teus llibres com vulguis.
+nueva_estanteria	Prestatgeria nova
+boton_crear	Crea
+boton_listo	Fet
+organizar_estanterias	Organitza les prestatgeries
+campo_nombre	Nom
+cd_subir	Puja
+cd_bajar	Baixa
+cd_renombrar	Canvia el nom
+cd_eliminar_estanteria	Elimina la prestatgeria
+renombrar_estanteria	Canvia el nom de la prestatgeria
+eliminar_estanteria_titulo	Vols eliminar la prestatgeria?
+eliminar_estanteria_mensaje	«%1$s» desapareixerà, però els seus llibres continuaran a la biblioteca.
+eliminar_titulo	Vols eliminar aquest llibre?
+eliminar_mensaje	«%1$s» es traurà de la biblioteca. Si algun dia el tornes a afegir, recuperarà la seva pàgina, les seves notes i les seves targetes.
+eliminar_archivo	Esborra també el fitxer de la carpeta Libertalia
+boton_eliminar	Elimina
+aviso_libro_eliminado	Llibre eliminat
+aviso_error_renombrar	No s’ha pogut canviar el nom del fitxer
+aviso_error_borrar_archivo	No s’ha pogut esborrar el fitxer de la carpeta
+aviso_error_portada	No s’ha pogut fer servir aquesta imatge com a coberta
+abriendo_libro	S’està obrint el llibre…
+error_abrir_libro	No s’ha pogut obrir el llibre. %1$s
+error_libro_sin_archivo	Aquest llibre no té el seu fitxer. Afegeix-lo des del mòbil per poder-lo llegir.
+cd_volver	Enrere
+lector_indice	Índex
+cd_progreso_libro	Posició al llibre
+lector_pagina	Pàg. %1$d de %2$d
+cd_plegar_barra	Amaga la barra inferior
+cd_desplegar_barra	Mostra la barra inferior
+indice_vacio	Aquest llibre no té índex.
+cd_buscar	Cerca al llibre
+buscar_pista	Cerca al llibre
+buscar_buscando	S’està cercant…
+buscar_sin_resultados	No s’ha trobat «%1$s».
+buscar_resultados#one	%d resultat
+buscar_resultados#other	%d resultats
+lector_ajustes	Configuració
+ajustes_tema	Tema
+tema_crema	Crema
+tema_sepia	Sèpia
+tema_oscuro	Fosc
+ajustes_tamano	Mida
+cd_letra_menor	Lletra més petita
+cd_letra_mayor	Lletra més gran
+cd_tamano_letra	Mida de la lletra
+ajustes_tipografia	Tipografia
+tipografia_literata	Literata
+tipografia_lora	Lora
+tipografia_sans	Sans
+tipografia_dislexia	Dislèxia
+ajustes_margenes	Marges
+ajustes_interlineado	Interlineat
+cd_nivel_poco	Poc
+cd_nivel_normal	Normal
+cd_nivel_mucho	Molt
+ajustes_brillo	Brillantor
+ajustes_brillo_auto	Auto
+cd_brillo	Brillantor de la pantalla
+cd_brillo_auto	Fes servir la brillantor del mòbil
+ajustes_volumen	Passa pàgina amb el volum
+ajustes_pantalla_encendida	Mantén la pantalla encesa
+ajustes_filtro_pdf	Filtre càlid als PDF
+comic_carpeta_titulo	On és aquest còmic?
+comic_carpeta_texto	«%1$s» no es copia a la teva biblioteca per no ocupar espai dues vegades: s’obre des d’on és. Perquè l’aplicació el pugui obrir sempre, toca’l una vegada a la llista que s’obrirà. Si l’has mogut o esborrat, busca’l on sigui ara.
+comic_carpeta_elegir	Tria el còmic
+comic_carpeta_ahora_no	Ara no
+comic_archivo_ok	Fet: el còmic continuarà a la teva biblioteca.
+comic_archivo_otro	Aquest no és el mateix còmic. El pots tornar a obrir des de l’altra aplicació o afegir-lo amb el botó +.
+comic_sin_acceso	No es pot obrir aquest còmic: ja no és on era o l’aplicació no té permís. Torna’l a afegir amb el botó +.
+comic_abriendo	S’està obrint «%1$s»…
+comic_abriendo_sin_titulo	S’està obrint el còmic…
+comic_abriendo_nube	Si és a Google Drive o un altre núvol, la primera vegada pot trigar una mica: el núvol l’està baixant. Les vegades següents s’obrirà de seguida.
+comic_error_abrir	No s’ha pogut obrir aquest còmic. Potser el fitxer està malmès o ja no és on era.
+comic_titulo_tomo	%1$s · Volum %2$d
+comic_subtitulo	%1$s · %2$s
+comic_tipo_manga	Manga
+comic_tipo_comic	Còmic
+sentido_ltr_corto	D’esquerra a dreta
+sentido_rtl_corto	De dreta a esquerra
+comic_pagina_de	Pàg. %1$d de %2$d
+comic_modo_pagina	Pàgina
+comic_modo_doble	Doble
+comic_modo_scroll	Continu
+comic_paginas_de	Pàg. %1$d–%2$d de %3$d
+cd_recorte_activado	Retalla els marges blancs: activat. Toca per desactivar-ho
+cd_recorte_desactivado	Retalla els marges blancs: desactivat. Toca per activar-ho
+cd_poner_marcador	Marca aquesta pàgina
+cd_quitar_marcador	Treu el marcador d’aquesta pàgina
+cd_lista_marcadores	Pàgines marcades
+cd_quitar_marcador_de	Treu el marcador de la pàgina %1$d
+comic_marcadores_titulo	Pàgines marcades
+comic_marcadores_vacio	Encara no has marcat cap pàgina. Toca la cinta de dalt per marcar la que estàs veient.
+comic_marcadores_cerrar	Tanca
+cd_pagina_comic	Pàgina %1$d
+cd_progreso_comic	Pàgina del còmic
+cd_cambiar_sentido	Canvia el sentit de lectura
+nube_titulo	Aquest còmic és al núvol
+nube_texto	«%1$s» és a Google Drive o un altre núvol. Si el llegeixes des d’allà, es pot tornar a baixar i gastar dades cada vegada, i sense connexió no s’obrirà. Et recomanem desar-lo al mòbil, a la teva carpeta de Libertalia (al núvol també hi continuarà). El núvol és millor per a les còpies de seguretat.
+nube_guardar	Desa al mòbil
+nube_seguir	Continua al núvol
+menu_guardar_en_movil	Desa al mòbil
+nube_guardando	S’està desant el còmic al mòbil… Pots continuar fent servir l’aplicació.
+nube_guardado	Fet: el còmic ja és al mòbil i es llegirà des d’allà.
+nube_error	No s’ha pogut desar el còmic al mòbil. Comprova la connexió i l’espai lliure.
+menu_sentido_lectura	Sentit de lectura
+sentido_izquierda_derecha	D’esquerra a dreta (còmic)
+sentido_derecha_izquierda	De dreta a esquerra (manga)
+menu_tratar_como_comic	Tracta’l com a còmic
+menu_tratar_como_libro	Tracta’l com a llibre
+campo_tomo	Número de volum
+estante_comics	Còmics i manga
+etiqueta_comic	CÒMIC
+etiqueta_manga	MANGA
+etiqueta_comic_tomo	%1$s · %2$d
+ajustes_notas	Separa les notes a peu de pàgina
+ajustes_notas_explicacion	Només en aquest llibre. Si en aquest PDF es confonen notes i text, desactiva-ho per llegir-lo tal com és.
+ajustes_nota_pdf	Als PDF només canvien el tema i el filtre. La mida, la tipografia, els marges i l’interlineat són per als EPUB.
+seleccion_marcapaginas	Punt de llibre
+seleccion_diccionario	Diccionari
+diccionario_elegir	Cerca al diccionari
+diccionario_ninguno	No hi ha cap diccionari al mòbil. En pots instal·lar un (per exemple, des de la botiga d’aplicacions) i tornar-ho a provar.
+color_amarillo	Groc
+color_verde	Verd
+color_azul	Blau
+color_rosa	Rosa
+aviso_subrayado	En subratllar es crea una targeta amb la frase completa
+subrayado_nota_actual	Nota: %1$s
+subrayado_anadir_nota	Afegeix una nota
+subrayado_editar_nota	Edita la nota
+subrayado_borrar_nota	Esborra la nota
+subrayado_quitar	Treu el subratllat
+nota_titulo_nueva	Nota nova
+nota_titulo_editar	Edita la nota
+nota_campo	La teva nota
+cd_destacar_pagina	Destaca aquesta pàgina
+cd_pagina_destacada	Pàgina destacada: mostra o canvia la descripció
+destacada_titulo_nueva	Pàgina destacada
+destacada_titulo	Pàgina destacada
+destacada_explicacion	Li pots donar una descripció breu, que es veurà com a títol a les seves targetes per saber què és.
+destacada_campo	Descripció (opcional)
+destacada_quitar	Treu la destacada
+lector_destacadas	Destacades
+widget_racha_nombre	Ratxa de lectura
+widget_racha_descripcion	El pirata de la teva ratxa: quants dies seguits fa que llegeixes.
+widget_seguir_nombre	Continua llegint
+widget_seguir_descripcion	El llibre o còmic que estàs llegint, per tornar-hi amb un toc.
+widget_sin_libro	Obre un llibre o un còmic i apareixerà aquí.
+racha_titulo	Ratxa de lectura
+racha_dias#one	%d dia
+racha_dias#other	%d dies
+racha_contento	Avui ja has llegit!
+racha_tranquilo	Llegeix 5 minuts avui per continuar
+racha_empezar	Llegeix 5 minuts per començar la teva ratxa
+racha_asustado	La teva ratxa està en perill!
+racha_triste	La teva ratxa s’ha trencat. Comença’n una altra!
+lector_tarjetas	Targetes
+menu_ver_tarjetas	Mostra les targetes
+aviso_subrayado_ver	Mostra
+numero_tarjetas#one	%d targeta
+numero_tarjetas#other	%d targetes
+tarjetas_subtitulo	%1$s · en l’ordre del llibre
+tarjetas_todas	Totes
+tarjetas_filtro_color	Només les de color %1$s
+tarjetas_pagina	Pàg. %1$d
+tarjetas_vacio	Aquest llibre encara no té targetes. Mentre llegeixes, mantén premuda una paraula o frase i tria un color: es crearà una targeta amb la frase completa.
+tarjetas_vacio_filtro	No hi ha targetes amb aquest filtre.
+tarjetas_vacio_busqueda	Cap targeta d’aquest llibre conté aquest text.
+tarjetas_etiquetas	Etiquetes
+tarjetas_filtro_etiquetas	Filtra per etiqueta
+cd_buscar_en_tarjetas	Cerca a les targetes d’aquest llibre
+buscar_en_tarjetas_pista	Cerca en aquestes targetes
+titulo_tarjetas	Targetes
+modo_tarjetas	Targetes
+modo_libros	Llibres
+modo_tarjetas_aviso	Toca un llibre per veure’n les targetes
+cd_buscar_tarjetas	Cerca a les targetes de tots els llibres
+buscar_tarjetas_pista	Cerca a totes les targetes
+buscar_tarjetas_explicacion	Escriu almenys dues lletres. Es cerca al text subratllat, a la frase, a les teves notes i a les etiquetes de tots els llibres.
+buscar_tarjetas_nada	Cap targeta conté aquest text.
+buscar_tarjetas_encontradas#one	%d targeta trobada
+buscar_tarjetas_encontradas#other	%d targetes trobades
+tarjeta_numero	Targeta %1$d de %2$d
+cd_compartir_tarjeta	Comparteix la cita
+cd_borrar_tarjeta	Esborra la targeta
+tarjeta_editar_texto	Edita el text
+tarjeta_editar_explicacion	Pots corregir el text (per exemple, errades del PDF). El llibre no canvia.
+tarjeta_campo_subrayado	Text subratllat
+tarjeta_campo_frase	Frase completa
+tarjeta_mi_nota	La meva nota
+tarjeta_nota_vacia	Escriu aquí la teva nota (es desa sola)
+tarjeta_etiquetas	Etiquetes
+tarjeta_anadir_etiqueta	+ Afegeix
+cd_quitar_etiqueta	Treu l’etiqueta %1$s
+cd_ver_etiqueta	Mostra totes les targetes amb l’etiqueta %1$s
+etiqueta_titulo	Etiqueta «%1$s»
+etiqueta_de_todos	de tots els llibres
+etiqueta_vacia	Ja no hi ha targetes amb aquesta etiqueta.
+buscar_etiqueta_pista	Cerca una etiqueta
+buscar_etiqueta_nada	No hi ha cap etiqueta amb aquest nom.
+tarjeta_nueva_etiqueta	Etiqueta nova
+tarjeta_campo_etiqueta	Etiqueta (per exemple, «productivitat»)
+etiqueta_pista	productivitat
+etiqueta_mas_usadas	Les que més fas servir
+etiqueta_parecidas	Ja existeixen
+etiqueta_sugerida	#%1$s · %2$d
+subrayado_anadir_etiqueta	Afegeix una etiqueta
+tarjeta_creada	Creada el %1$s
+tarjeta_creada_hoy	Creada avui
+tarjeta_editada	editada el %1$s
+tarjeta_editada_hoy	editada avui
+tarjeta_fechas	%1$s · %2$s
+tarjeta_ir_al_libro	Vés al llibre
+cd_tarjeta_anterior	Targeta anterior
+cd_tarjeta_siguiente	Targeta següent
+tarjeta_borrar_titulo	Vols esborrar aquesta targeta?
+tarjeta_borrar_texto	S’esborraran la targeta, la seva nota i el subratllat del llibre.
+tarjeta_borrar_si	Esborra
+tarjeta_compartir_texto	«%1$s»\n— %2$s
+destacadas_titulo	Pàgines destacades
+destacadas_vacio	Encara no has destacat cap pàgina. Toca l’estrella de dalt per destacar la que estàs llegint.
+destacadas_sin_descripcion	Sense descripció
+destacadas_pagina	Pàg. %1$d
+destacadas_editar	Canvia la descripció o treu-la
+seleccion_copiar	Copia
+marcapaginas_puesto	Punt de llibre posat aquí. Hi pots tornar amb el botó Punt de llibre de la barra inferior.
+marcapaginas_confirmar_titulo	Vols tornar al punt de llibre?
+marcapaginas_confirmar_texto	Aniràs a la frase on vas posar el punt de llibre i la lectura continuarà des d’allà.
+marcapaginas_confirmar_ir	Vés al punt de llibre
+lector_marcapaginas	Punt de llibre
+cd_modo_texto	Mostra com a text
+cd_modo_pdf	Mostra el PDF original
+modo_texto_preparando	S’està preparant el mode text
+modo_texto_progreso	Pàgina %1$d de %2$d
+modo_texto_aviso	Només es fa la primera vegada. En el mode text es perden les imatges i la maquetació, i hi pot haver algun error, sobretot a les notes a peu de pàgina.
+modo_texto_sin_texto	Aquest PDF no té text que es pugui extreure: les seves pàgines són imatges escanejades.
+modo_texto_error	No s’ha pogut preparar el mode text d’aquest PDF.
+modo_texto_bloque	Pàgines %1$d–%2$d
+boton_entendido	Entesos
+menu_exportar	Exporta
+exportar_titulo	Exporta
+exportar_subtitulo	Llibres amb les seves targetes, notes i posició
+exportar_incluir_archivos	Inclou els fitxers dels llibres
+exportar_incluir_archivos_si	Per canviar de mòbil: ho desa tot
+exportar_incluir_archivos_no	Només posicions, marcadors, notes i targetes: molt més lleuger
+exportar_seleccionar_todos	Selecciona-ho tot
+exportar_x_de_y	%1$d de %2$d
+exportar_detalle_comic	Còmic · %1$s
+exportar_elementos#one	%d element
+exportar_elementos#other	%d elements
+exportar_aviso_correo	Pesa massa per enviar-lo per correu. Desa’l al mòbil o a Drive, o comparteix-lo per WhatsApp o Telegram.
+exportar_guardar_en	Desa a…
+exportar_compartir	Comparteix
+exportar_pista_botones	Desa a: mòbil, Drive o un altre núvol · Comparteix: WhatsApp, Telegram, correu…
+exportar_preparando	S’està preparant la còpia… %1$d %%
+exportar_guardada	Còpia desada
+exportar_error	No s’ha pogut fer la còpia. Torna-ho a provar o tria un altre lloc.
+exportar_sin_archivo_titulo	Còpia desada, però incompleta
+exportar_sin_archivo#one	Hi ha les seves dades i targetes, però no el fitxer d’aquest element, perquè no s’ha pogut llegir (potser es va moure o esborrar). Torna’l a afegir i fes una altra còpia:
+exportar_sin_archivo#other	Hi ha les seves dades i targetes, però no els fitxers d’aquests %d elements, perquè no s’han pogut llegir (potser es van moure o esborrar). Torna’ls a afegir i fes una altra còpia:
+exportar_compartir_titulo	Comparteix la còpia
+md_tarjetas	Targetes
+md_destacadas	Destacades
+md_destacada_sin_descripcion	Pàgina destacada
+md_nota	Nota:
+md_etiquetas	Etiquetes:
+md_exportado	Exportat de Libertalia Reader el %1$s
+importar_titulo	Importa una còpia
+importar_fecha	Còpia del %1$s
+importar_leyendo	S’està llegint la còpia… %1$d %%
+importar_aplicando	S’està important… %1$d %%
+importar_que_trae	Què porta la còpia
+importar_nuevos#one	%d llibre o còmic nou
+importar_nuevos#other	%d llibres i còmics nous
+importar_anadidos#one	%d llibre o còmic afegit
+importar_anadidos#other	%d llibres i còmics afegits
+importar_ya_estaban#one	%d ja era a la teva biblioteca: se n’uneixen les dades
+importar_ya_estaban#other	%d ja eren a la teva biblioteca: se n’uneixen les dades
+importar_tarjetas_nuevas#one	%d targeta nova
+importar_tarjetas_nuevas#other	%d targetes noves
+importar_destacadas_nuevas#one	%d pàgina destacada nova
+importar_destacadas_nuevas#other	%d pàgines destacades noves
+importar_actualizadas#one	%d targeta o destacada amb canvis més recents
+importar_actualizadas#other	%d targetes o destacades amb canvis més recents
+importar_sin_archivo#one	%d arriba sense el seu fitxer: en tindràs les dades i les targetes, i es completarà quan l’afegeixis.
+importar_sin_archivo#other	%d arriben sense el seu fitxer: en tindràs les dades i les targetes, i es completaran quan els afegeixis.
+importar_libro_tarjetas#one	%d targeta o destacada nova
+importar_libro_tarjetas#other	%d targetes o destacades noves
+importar_libro_sin_archivo	sense fitxer
+importar_etiqueta_nuevo	Nou
+importar_etiqueta_ya_esta	Ja hi és
+importar_etiqueta_vuelve	Torna
+importar_sin_cambios	Tot el que porta aquesta còpia ja és a la teva biblioteca.
+importar_nada_se_borra	No s’esborra res: el que porta la còpia s’uneix amb el que ja tens. Si alguna cosa és als dos llocs, es queda el canvi més recent.
+importar_boton	Importa
+importar_hecho	Còpia importada
+importar_ir_biblioteca	Vés a la biblioteca
+importar_error_titulo	No es pot importar
+importar_error_no_es_copia	Aquest fitxer no és una còpia de Libertalia Reader, o està malmès.
+importar_error_version	Aquesta còpia es va fer amb una versió més nova de Libertalia Reader. Actualitza l’aplicació per importar-la.
+importar_error_ilegible	No s’ha pogut llegir la còpia. Comprova que hi ha espai lliure al mòbil i torna-ho a provar.
+ajustes_importar	Importa una còpia
+vacia_importar	Importa una còpia
+originales_titulo#one	Vols esborrar l’original?
+originales_titulo#other	Vols esborrar els originals?
+originales_texto#one	«%2$s» ja està desat a la carpeta Libertalia. Si esborres el fitxer que vas afegir, no ocuparà espai dues vegades.
+originales_texto#other	%1$d llibres ja estan desats a la carpeta Libertalia. Si esborres els fitxers que vas afegir (per exemple, «%2$s»), no ocuparan espai dues vegades.
+originales_recordar	Recorda la meva elecció per a les properes vegades
+originales_borrar	Esborra
+originales_conservar	Conserva
+originales_borrados	S’ha esborrat el fitxer original: el llibre continua a la teva biblioteca
+originales_no_borrados	Android no ha deixat esborrar algun original. El pots esborrar des del gestor de fitxers.
+abrir_con_titulo	Afegir a la biblioteca?
+abrir_con_texto	«%1$s» no és a la teva biblioteca. El pots afegir o només llegir-lo: si només el llegeixes, no es desa res (ni la pàgina, ni subratllats, ni temps de lectura).
+abrir_con_anadir	Afegir
+abrir_con_solo_leer	Només llegir
+abrir_con_error	No s’ha pogut obrir el fitxer
+mover_titulo	Treure l’original?
+mover_texto_libro	El llibre ja està desat a la carpeta Libertalia. Vols treure «%1$s» de la seva carpeta per no tenir-lo dues vegades?
+mover_texto_comic	Vols moure «%1$s» a la carpeta Libertalia? Es traurà de la carpeta on és ara: així no ocupa espai dues vegades.
+mover_si	Sí
+mover_elige	Toca el fitxer original perquè l’app el pugui treure
+mover_hecho	Fet: l’original s’ha tret i ara només és a la carpeta Libertalia
+mover_no_borrado	No s’ha tret l’original (no era el mateix fitxer o Android no ho ha permès)
+mover_error_copiar	No s’ha pogut copiar el còmic a la carpeta Libertalia
+importar_borrar_copia_texto	Aquest fitxer de còpia és al mòbil i ja no cal: tot el que tenia és ara a la teva biblioteca.
+importar_borrar_copia	Esborra el fitxer de còpia
+importar_borrar_copia_titulo	Vols esborrar «%1$s»?
+importar_borrar_copia_confirmar	Només s’esborra el fitxer de còpia; la teva biblioteca no canvia. No es pot desfer.
+importar_copia_borrada	Fitxer de còpia esborrat
+importar_copia_no_borrada	Android no ha deixat esborrar el fitxer. El pots esborrar des del gestor de fitxers.
+copia_titulo	Còpia automàtica
+copia_explicacion	Una sola còpia de tota la teva biblioteca que se sobreescriu cada pocs dies, sense que te n’hagis de recordar. Libertalia no inicia sessió enlloc: si la deses a Drive o un altre núvol, és l’aplicació d’aquest núvol la que la puja.
+copia_donde	On es desa
+copia_sin_destino	Encara no has triat on desar-la.
+copia_destino_perdido	Ja no es troba el fitxer de la còpia.
+copia_elegir	Tria on desar-la
+copia_cambiar	Canvia el lloc
+copia_donde_nota	Pots triar una carpeta del mòbil, Google Drive o un altre núvol instal·lat. Sempre és el mateix fitxer: no s’acumulen còpies.
+copia_frecuencia	Cada quant
+copia_cada_dias#one	Cada dia
+copia_cada_dias#other	Cada %d dies
+copia_cada_mes	Cada mes
+copia_nunca	Mai
+copia_frecuencia_nota	Es fa sola, amb prou bateria i mai mentre llegeixes. Si no has canviat res, no es torna a fer.
+copia_estado	La còpia
+copia_peso	Mida aproximada: %1$s
+copia_ultima	Darrera còpia correcta: %1$s
+copia_ultima_corta	Darrera: %1$s
+copia_ninguna	Encara no s’ha fet cap còpia.
+copia_archivos_nota	Porta sempre totes les teves dades i targetes, i els fitxers dels llibres que tenen activat «Inclou el fitxer a la còpia automàtica» (al seu menú).
+copia_hacer_ahora	Fes una còpia ara
+copia_haciendo	S’està fent la còpia… %1$d %%
+copia_sin_configurar	Sense configurar: tria on desar-la
+copia_canal	Còpia automàtica
+copia_fallo_titulo	No s’ha pogut fer la còpia automàtica
+copia_fallo_permiso	Libertalia ja no té permís per escriure al fitxer de la còpia. Torna a triar on desar-la.
+copia_fallo_no_existe	El fitxer de la còpia ja no existeix (potser es va esborrar o moure). Torna a triar on desar-la.
+copia_fallo_error	Alguna cosa ha fallat en escriure-la (sense espai, sense connexió amb l’aplicació del núvol…). Es tornarà a provar; també pots tocar «Fes una còpia ara».
+copia_fallo_aviso	La darrera còpia automàtica no s’ha pogut fer. Revisa-la a Configuració.
+pesado_titulo_tomo	%1$s · Volum %2$d
+pesado_pregunta	Aquest fitxer pesa molt. Vols incloure’l a la còpia automàtica?
+pesado_explicacion	Si no l’hi inclous, la còpia desarà igualment la pàgina on ets i els teus marcadors, però no el fitxer.
+pesado_incluir	Inclou-lo a la còpia
+pesado_solo_datos	Només la pàgina i els marcadors
+menu_incluir_en_copia	Inclou el fitxer a la còpia automàtica
+ajustes_titulo	Configuració
+cd_ajustes	Configuració
+ajustes_aviso_privacidad	Tot es desa només en aquest mòbil. Per no perdre res en canviar de telèfon, exporta una còpia.
+ajustes_copias	Còpies i canvi de mòbil
+ajustes_exportar	Exporta
+ajustes_libros_este_anio	llibres acabats aquest any
+ajustes_esta_semana	llegit aquesta setmana
+ajustes_bloque_ajustes	Configuració
+ajustes_idioma	Idioma
+ajustes_idioma_nota	Només canvia l’idioma d’aquesta aplicació, no el del mòbil.
+ajustes_carpeta	Carpeta de l’aplicació
+ajustes_carpeta_nota	Aquí es desen els llibres. Es tria en començar a fer servir l’aplicació.
+ajustes_limite_pesado	Avís de fitxers grans
+ajustes_limite_pesado_nota	En afegir un fitxer més gran, l’aplicació pregunta si l’ha d’incloure a la còpia automàtica.
+ajustes_mb	%1$d MB
+ajustes_originales	En afegir un llibre de fora, l’original
+ajustes_pesados	Fitxers grans a la còpia
+ajustes_borrar	Esborra’l
+ajustes_conservar	Conserva’l
+ajustes_incluir	Inclou-los
+ajustes_solo_datos	Només la pàgina i els marcadors
+ajustes_preguntar	Pregunta cada vegada
+ajustes_liberar_espacio	Allibera espai
+ajustes_liberar_espacio_nota	Cerca fitxers repetits o que no són de cap llibre a la carpeta de l’aplicació.
+ajustes_bloque_comics	Lector de còmics
+ajustes_modo_comic	Mode per defecte
+ajustes_modo_automatico	Automàtic (doble en horitzontal)
+ajustes_recortar	Retalla els marges blancs
+ajustes_bloque_app	L’aplicació
+tiempo_horas	%1$d h %2$02d min
+tiempo_minutos	%1$d min
+idioma_sistema	El del mòbil
+acerca_titulo	Quant a Libertalia Reader
+acerca_version	Versió %1$s
+acerca_filosofia	Gratuïta, sense anuncis i sense comptes. Tot es desa al teu mòbil: l’aplicació no fa servir internet ni recull dades de ningú.
+acerca_licencias	Llicències
+acerca_licencias_nota	Gràcies a totes les persones que fan aquestes biblioteques i tipografies. Totes permeten incloure-les a l’aplicació.
+acerca_unrar	Gratuïta, però no lliure: no es pot fer servir per crear un compressor RAR.
+limpieza_explicacion	Fitxers de la carpeta de l’aplicació que no fa servir cap llibre de la teva biblioteca. Els repetits ja vénen marcats. Els llibres de la teva biblioteca no es toquen mai.
+limpieza_buscando	S’està revisant la carpeta… %1$d %%
+limpieza_borrando	S’està esborrant…
+limpieza_hecho	Fet: s’han alliberat %1$s.
+limpieza_nada	No hi ha res a esborrar: la carpeta està en ordre.
+limpieza_copia_de	Repetit de «%1$s»
+limpieza_ningun_libro	No és de cap llibre
+limpieza_fallos#one	No s’ha pogut esborrar %1$d fitxer.
+limpieza_fallos#other	No s’han pogut esborrar %1$d fitxers.
+limpieza_borrar#one	Esborra %1$d fitxer · %2$s
+limpieza_borrar#other	Esborra %1$d fitxers · %2$s
+limpieza_confirmar_titulo#one	Vols esborrar %1$d fitxer?
+limpieza_confirmar_titulo#other	Vols esborrar %1$d fitxers?
+limpieza_confirmar_texto	S’esborraran per sempre de la carpeta de l’aplicació. No es pot desfer.
+exportar_tarjetas_titulo	Exporta les targetes
+exportar_tarjetas_markdown	Markdown (per llegir)
+exportar_tarjetas_csv	CSV (full de càlcul)
+exportar_tarjetas_anki	Anki (per estudiar)
+exportar_tarjetas_sufijo	targetes
+exportar_tarjetas_sufijo_anki	targetes per a Anki
+csv_texto	Text subratllat
+csv_frase	Frase
+csv_nota	Nota
+csv_etiquetas	Etiquetes
+csv_color	Color
+csv_capitulo	Capítol
+csv_pagina	Pàgina
+csv_creada	Creada
+lector_escuchar	Escolta
+cd_voz_reproducir	Continua llegint en veu alta
+cd_voz_pausar	Pausa
+cd_voz_anterior	Frase anterior
+cd_voz_siguiente	Frase següent
+cd_voz_velocidad	Velocitat de lectura
+cd_voz_parar	Deixa d’escoltar
+voz_velocidad	%1$s×
+voz_falta_titulo	Falta la veu
+voz_falta_texto	El mòbil no té cap veu per llegir en %1$s. La pots baixar gratis a la configuració de veu d’Android.
+voz_abrir_ajustes	Configuració de veu
+voz_falta_alternativa	Si el llibre en realitat està en %1$s, el pots llegir amb aquesta veu.
+voz_leer_en	Llegeix en %1$s
+codigo_idioma	ca
+nombre_castellano	castellà
+voz_error	No s’ha pogut llegir aquest llibre en veu alta. Comprova que el mòbil té un motor de veu instal·lat.
+estadisticas_titulo	Estadístiques
+estadisticas_tiempo	Temps de lectura
+estadisticas_semana	Setmana
+estadisticas_mes	Mes
+estadisticas_anio	Any
+estadisticas_total	Total: %1$s
+estadisticas_media	Mitjana: %1$s al dia
+estadisticas_libros_comics	Llibres: %1$s · Còmics: %2$s
+estadisticas_velocidad	Velocitat de lectura
+estadisticas_ppm#one	%1$d paraula per minut
+estadisticas_ppm#other	%1$d paraules per minut
+estadisticas_velocidad_nota	Mitjana als llibres, comptant només les pàgines que passes una a una (ni els salts ni el que escoltes).
+estadisticas_velocidad_vacia	Encara no hi ha dades. Es mesura sola quan llegeixes llibres passant les pàgines una a una.
+estadisticas_terminados	Acabats
+estadisticas_terminados_vacio	Encara no has acabat cap llibre ni cap còmic.
+estadisticas_n_libros#one	%1$d llibre
+estadisticas_n_libros#other	%1$d llibres
+estadisticas_n_comics#one	%1$d còmic
+estadisticas_n_comics#other	%1$d còmics
+cd_ver_titulos	Mostra els títols
+cd_ocultar_titulos	Amaga els títols

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Icono de la app (primer plano del icono adaptativo), a partir de bocetos/icono-libertalia.svg:
+  el timón asomando detrás del libro abierto. Reducido para caber en la zona segura (el círculo
+  central de 66 dp que ningún móvil recorta), con líneas algo más gruesas y sin las líneas de texto.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:translateY="2.5">
+        <!-- Timón -->
+        <path
+            android:pathData="M31.5,46.5a22.5,22.5 0,1 1,45 0a22.5,22.5 0,1 1,-45 0Z"
+            android:strokeColor="#FFF3E3C3"
+            android:strokeWidth="6.5" />
+        <path
+            android:pathData="M54,46.5V13M54,46.5L30.5,23M54,46.5L77.5,23M54,46.5H20M54,46.5H88"
+            android:strokeColor="#FFF3E3C3"
+            android:strokeWidth="4.2"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M49.5,12.5a4.5,4.5 0,1 1,9 0a4.5,4.5 0,1 1,-9 0ZM25,22a4.5,4.5 0,1 1,9 0a4.5,4.5 0,1 1,-9 0ZM74,22a4.5,4.5 0,1 1,9 0a4.5,4.5 0,1 1,-9 0ZM15,46.5a4.5,4.5 0,1 1,9 0a4.5,4.5 0,1 1,-9 0ZM84,46.5a4.5,4.5 0,1 1,9 0a4.5,4.5 0,1 1,-9 0ZM47,46.5a7,7 0,1 1,14 0a7,7 0,1 1,-14 0Z"
+            android:fillColor="#FFF3E3C3" />
+        <!-- Libro abierto delante -->
+        <path
+            android:pathData="M54,61.5C46,58 30,57 18,63.5V90C30,84 46,84 54,88Z"
+            android:fillColor="#FFF8F1E3"
+            android:strokeColor="#FF3B2F2A"
+            android:strokeWidth="3.2"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M54,61.5C62,58 78,57 90,63.5V90C78,84 62,84 54,88Z"
+            android:fillColor="#FFF0E4CF"
+            android:strokeColor="#FF3B2F2A"
+            android:strokeWidth="3.2"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

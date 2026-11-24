@@ -1,0 +1,522 @@
+carpeta_titulo	Onde gardar os teus libros
+carpeta_explicacion	Libertalia Reader garda os teus libros nun cartafol visible do móbil, Documentos › Libertalia. Así non se perden aínda que desinstales a app.
+carpeta_instrucciones	Na seguinte pantalla, comproba que estás no cartafol Libertalia e preme «Usar este cartafol» e despois «Permitir».
+carpeta_boton	Escoller o cartafol
+biblioteca_titulo	Biblioteca
+cd_anadir_libros	Engadir libros
+vacia_titulo	O teu andel está baleiro
+vacia_mensaje	Engade libros, banda deseñada ou manga. Sen anuncios, sen contas, todo no teu móbil. O que subliñes converterase en tarxetas para reler cando queiras.
+boton_anadir_desde_movil	Engadir desde o móbil
+libro_sin_archivo	Sen ficheiro
+filtro_todos	Todos
+estado_leyendo	Lendo
+estado_pendientes	Pendentes
+estado_terminados	Rematados
+numero_libros#one	%d libro
+numero_libros#other	%d libros
+numero_comics#one	%d cómic
+numero_comics#other	%d cómics
+estante_vacio	Aínda non hai libros aquí.
+seguir_leyendo	Seguir lendo
+capitulo_y_progreso	%1$s · %2$s
+libro_formato_tamano	%1$s · %2$s
+importando	Engadindo libros…
+importacion_anadidos#one	Engadiuse %d libro
+importacion_anadidos#other	Engadíronse %d libros
+importacion_recuperados#one	Recuperouse %d libro coa súa páxina e as súas notas
+importacion_recuperados#other	Recuperáronse %d libros coa súa páxina e as súas notas
+importacion_completados#one	%d libro recuperou o seu ficheiro
+importacion_completados#other	%d libros recuperaron o seu ficheiro
+importacion_ya_existian#one	%d xa estaba na biblioteca
+importacion_ya_existian#other	%d xa estaban na biblioteca
+importacion_no_compatibles#one	%d ficheiro non é un libro nin un cómic que a app saiba abrir
+importacion_no_compatibles#other	%d ficheiros non son libros nin cómics que a app saiba abrir
+importacion_rar5#one	%d CBR está en formato RAR 5, que a app non pode abrir. Se o volves gardar como CBZ ou RAR 4, si
+importacion_rar5#other	%d CBR están en formato RAR 5, que a app non pode abrir. Se os volves gardar como CBZ ou RAR 4, si
+importacion_errores#one	%d non se puido engadir
+importacion_errores#other	%d non se puideron engadir
+menu_editar	Editar título, autor e portada
+menu_cambiar_estado	Cambiar estado
+menu_anadir_estanteria	Engadir a un andel
+menu_eliminar	Eliminar libro
+menu_subtitulo	%1$s · %2$s
+estado_libro_leyendo	Lendo
+estado_libro_pendiente	Pendente
+estado_libro_terminado	Rematado
+editar_titulo	Editar libro
+campo_titulo	Título
+campo_autor	Autor
+cambiar_portada	Cambiar portada
+renombrar_archivo	Renomear tamén o ficheiro con este título
+renombrar_archivo_nota	O contido do libro non cambia.
+boton_guardar	Gardar
+boton_cancelar	Cancelar
+estanterias_vacio	Aínda non tes andeis. Crea un para ordenar os teus libros como queiras.
+nueva_estanteria	Novo andel
+boton_crear	Crear
+boton_listo	Feito
+organizar_estanterias	Organizar os andeis
+campo_nombre	Nome
+cd_subir	Subir
+cd_bajar	Baixar
+cd_renombrar	Cambiar o nome
+cd_eliminar_estanteria	Eliminar o andel
+renombrar_estanteria	Cambiar o nome do andel
+eliminar_estanteria_titulo	Queres eliminar o andel?
+eliminar_estanteria_mensaje	«%1$s» desaparecerá, pero os seus libros seguirán na biblioteca.
+eliminar_titulo	Queres eliminar este libro?
+eliminar_mensaje	«%1$s» quitarase da biblioteca. Se algún día o volves engadir, recuperará a súa páxina, as súas notas e as súas tarxetas.
+eliminar_archivo	Borrar tamén o ficheiro do cartafol Libertalia
+boton_eliminar	Eliminar
+aviso_libro_eliminado	Libro eliminado
+aviso_error_renombrar	Non se puido renomear o ficheiro
+aviso_error_borrar_archivo	Non se puido borrar o ficheiro do cartafol
+aviso_error_portada	Non se puido usar esa imaxe como portada
+abriendo_libro	Abrindo o libro…
+error_abrir_libro	Non se puido abrir o libro. %1$s
+error_libro_sin_archivo	Este libro non ten o seu ficheiro. Engádeo desde o móbil para poder lelo.
+cd_volver	Volver
+lector_indice	Índice
+cd_progreso_libro	Posición no libro
+lector_pagina	Páx. %1$d de %2$d
+cd_plegar_barra	Ocultar a barra inferior
+cd_desplegar_barra	Amosar a barra inferior
+indice_vacio	Este libro non ten índice.
+cd_buscar	Buscar no libro
+buscar_pista	Buscar no libro
+buscar_buscando	Buscando…
+buscar_sin_resultados	Non se atopou «%1$s».
+buscar_resultados#one	%d resultado
+buscar_resultados#other	%d resultados
+lector_ajustes	Axustes
+ajustes_tema	Tema
+tema_crema	Crema
+tema_sepia	Sepia
+tema_oscuro	Escuro
+ajustes_tamano	Tamaño
+cd_letra_menor	Letra máis pequena
+cd_letra_mayor	Letra máis grande
+cd_tamano_letra	Tamaño da letra
+ajustes_tipografia	Tipografía
+tipografia_literata	Literata
+tipografia_lora	Lora
+tipografia_sans	Sans
+tipografia_dislexia	Dislexia
+ajustes_margenes	Marxes
+ajustes_interlineado	Entreliñado
+cd_nivel_poco	Pouco
+cd_nivel_normal	Normal
+cd_nivel_mucho	Moito
+ajustes_brillo	Brillo
+ajustes_brillo_auto	Auto
+cd_brillo	Brillo da pantalla
+cd_brillo_auto	Usar o brillo do móbil
+ajustes_volumen	Pasar páxina co volume
+ajustes_pantalla_encendida	Manter a pantalla acesa
+ajustes_filtro_pdf	Filtro cálido nos PDF
+comic_carpeta_titulo	Onde está este cómic?
+comic_carpeta_texto	«%1$s» non se copia á túa biblioteca para non ocupar espazo dúas veces: ábrese desde onde está. Para que a app o poida abrir sempre, tócao unha vez na lista que se abrirá. Se o moviches ou borraches, búscao onde estea agora.
+comic_carpeta_elegir	Escoller o cómic
+comic_carpeta_ahora_no	Agora non
+comic_archivo_ok	Feito: o cómic seguirá na túa biblioteca.
+comic_archivo_otro	Ese non é o mesmo cómic. Podes volver abrilo desde a outra app ou engadilo co botón +.
+comic_sin_acceso	Non se pode abrir este cómic: xa non está onde estaba ou a app non ten permiso. Volve engadilo co botón +.
+comic_abriendo	Abrindo «%1$s»…
+comic_abriendo_sin_titulo	Abrindo o cómic…
+comic_abriendo_nube	Se está en Google Drive ou noutra nube, a primeira vez pode tardar un pouco: a nube estao descargando. As seguintes veces abrirase decontado.
+comic_error_abrir	Non se puido abrir este cómic. Pode que o ficheiro estea danado ou que xa non estea onde estaba.
+comic_titulo_tomo	%1$s · Tomo %2$d
+comic_subtitulo	%1$s · %2$s
+comic_tipo_manga	Manga
+comic_tipo_comic	Cómic
+sentido_ltr_corto	Esquerda a dereita
+sentido_rtl_corto	Dereita a esquerda
+comic_pagina_de	Páx. %1$d de %2$d
+comic_modo_pagina	Páxina
+comic_modo_doble	Dobre
+comic_modo_scroll	Continuo
+comic_paginas_de	Páx. %1$d–%2$d de %3$d
+cd_recorte_activado	Recortar as marxes brancas: activado. Toca para desactivalo
+cd_recorte_desactivado	Recortar as marxes brancas: desactivado. Toca para activalo
+cd_poner_marcador	Marcar esta páxina
+cd_quitar_marcador	Quitar o marcador desta páxina
+cd_lista_marcadores	Páxinas marcadas
+cd_quitar_marcador_de	Quitar o marcador da páxina %1$d
+comic_marcadores_titulo	Páxinas marcadas
+comic_marcadores_vacio	Aínda non marcaches ningunha páxina. Toca a cinta de arriba para marcar a que estás vendo.
+comic_marcadores_cerrar	Pechar
+cd_pagina_comic	Páxina %1$d
+cd_progreso_comic	Páxina do cómic
+cd_cambiar_sentido	Cambiar o sentido de lectura
+nube_titulo	Este cómic está na nube
+nube_texto	«%1$s» está en Google Drive ou noutra nube. Se o les desde alí, pode volver descargarse e gastar datos cada vez, e sen conexión non se abrirá. Recomendámosche gardalo no móbil, no teu cartafol de Libertalia (na nube seguirá estando). A nube é mellor para as copias de seguridade.
+nube_guardar	Gardar no móbil
+nube_seguir	Seguir na nube
+menu_guardar_en_movil	Gardar no móbil
+nube_guardando	Gardando o cómic no móbil… Podes seguir usando a app.
+nube_guardado	Feito: o cómic xa está no móbil e lerase desde alí.
+nube_error	Non se puido gardar o cómic no móbil. Comproba a conexión e o espazo libre.
+menu_sentido_lectura	Sentido de lectura
+sentido_izquierda_derecha	De esquerda a dereita (cómic)
+sentido_derecha_izquierda	De dereita a esquerda (manga)
+menu_tratar_como_comic	Tratar como cómic
+menu_tratar_como_libro	Tratar como libro
+campo_tomo	Número de tomo
+estante_comics	Cómics e manga
+etiqueta_comic	CÓMIC
+etiqueta_manga	MANGA
+etiqueta_comic_tomo	%1$s · %2$d
+ajustes_notas	Separar as notas ao pé
+ajustes_notas_explicacion	Só neste libro. Se neste PDF se confunden notas e texto, desactívao para lelo tal cal.
+ajustes_nota_pdf	Nos PDF só cambian o tema e o filtro. O tamaño, a tipografía, as marxes e o entreliñado son para os EPUB.
+seleccion_marcapaginas	Marcapáxinas
+seleccion_diccionario	Dicionario
+diccionario_elegir	Buscar no dicionario
+diccionario_ninguno	Non hai ningún dicionario no móbil. Podes instalar un (por exemplo, desde a tenda de apps) e volver probar.
+color_amarillo	Amarelo
+color_verde	Verde
+color_azul	Azul
+color_rosa	Rosa
+aviso_subrayado	Ao subliñar créase unha tarxeta coa frase completa
+subrayado_nota_actual	Nota: %1$s
+subrayado_anadir_nota	Engadir nota
+subrayado_editar_nota	Editar nota
+subrayado_borrar_nota	Borrar nota
+subrayado_quitar	Quitar subliñado
+nota_titulo_nueva	Nova nota
+nota_titulo_editar	Editar nota
+nota_campo	A túa nota
+cd_destacar_pagina	Destacar esta páxina
+cd_pagina_destacada	Páxina destacada: ver ou cambiar a súa descrición
+destacada_titulo_nueva	Páxina destacada
+destacada_titulo	Páxina destacada
+destacada_explicacion	Podes darlle unha descrición breve, que se verá como título nas súas tarxetas para saber que é.
+destacada_campo	Descrición (opcional)
+destacada_quitar	Quitar destacada
+lector_destacadas	Destacadas
+widget_racha_nombre	Racha de lectura
+widget_racha_descripcion	O pirata da túa racha: cantos días seguidos levas lendo.
+widget_seguir_nombre	Seguir lendo
+widget_seguir_descripcion	O libro ou cómic que estás lendo, para volver a el cun toque.
+widget_sin_libro	Abre un libro ou un cómic e aparecerá aquí.
+racha_titulo	Racha de lectura
+racha_dias#one	%d día
+racha_dias#other	%d días
+racha_contento	Hoxe xa liches!
+racha_tranquilo	Le 5 minutos hoxe para seguir
+racha_empezar	Le 5 minutos para comezar a túa racha
+racha_asustado	A túa racha está en perigo!
+racha_triste	A túa racha rompeu. Comeza outra!
+lector_tarjetas	Tarxetas
+menu_ver_tarjetas	Ver tarxetas
+aviso_subrayado_ver	Ver
+numero_tarjetas#one	%d tarxeta
+numero_tarjetas#other	%d tarxetas
+tarjetas_subtitulo	%1$s · na orde do libro
+tarjetas_todas	Todas
+tarjetas_filtro_color	Só as de cor %1$s
+tarjetas_pagina	Páx. %1$d
+tarjetas_vacio	Este libro aínda non ten tarxetas. Mentres les, mantén premida unha palabra ou frase e escolle unha cor: crearase unha tarxeta coa frase completa.
+tarjetas_vacio_filtro	Non hai tarxetas con este filtro.
+tarjetas_vacio_busqueda	Ningunha tarxeta deste libro contén ese texto.
+tarjetas_etiquetas	Etiquetas
+tarjetas_filtro_etiquetas	Filtrar por etiqueta
+cd_buscar_en_tarjetas	Buscar nas tarxetas deste libro
+buscar_en_tarjetas_pista	Buscar nestas tarxetas
+titulo_tarjetas	Tarxetas
+modo_tarjetas	Tarxetas
+modo_libros	Libros
+modo_tarjetas_aviso	Toca un libro para ver as súas tarxetas
+cd_buscar_tarjetas	Buscar nas tarxetas de todos os libros
+buscar_tarjetas_pista	Buscar en todas as tarxetas
+buscar_tarjetas_explicacion	Escribe polo menos dúas letras. Búscase no texto subliñado, na frase, nas túas notas e nas etiquetas de todos os libros.
+buscar_tarjetas_nada	Ningunha tarxeta contén ese texto.
+buscar_tarjetas_encontradas#one	%d tarxeta atopada
+buscar_tarjetas_encontradas#other	%d tarxetas atopadas
+tarjeta_numero	Tarxeta %1$d de %2$d
+cd_compartir_tarjeta	Compartir a cita
+cd_borrar_tarjeta	Borrar a tarxeta
+tarjeta_editar_texto	Editar texto
+tarjeta_editar_explicacion	Podes corrixir o texto (por exemplo, grallas do PDF). O libro non cambia.
+tarjeta_campo_subrayado	Texto subliñado
+tarjeta_campo_frase	Frase completa
+tarjeta_mi_nota	A miña nota
+tarjeta_nota_vacia	Escribe aquí a túa nota (gárdase soa)
+tarjeta_etiquetas	Etiquetas
+tarjeta_anadir_etiqueta	+ Engadir
+cd_quitar_etiqueta	Quitar a etiqueta %1$s
+cd_ver_etiqueta	Ver todas as tarxetas coa etiqueta %1$s
+etiqueta_titulo	Etiqueta «%1$s»
+etiqueta_de_todos	de todos os libros
+etiqueta_vacia	Xa non hai tarxetas con esta etiqueta.
+buscar_etiqueta_pista	Buscar unha etiqueta
+buscar_etiqueta_nada	Non hai ningunha etiqueta con ese nome.
+tarjeta_nueva_etiqueta	Nova etiqueta
+tarjeta_campo_etiqueta	Etiqueta (por exemplo, «produtividade»)
+etiqueta_pista	produtividade
+etiqueta_mas_usadas	As que máis usas
+etiqueta_parecidas	Xa existen
+etiqueta_sugerida	#%1$s · %2$d
+subrayado_anadir_etiqueta	Engadir etiqueta
+tarjeta_creada	Creada o %1$s
+tarjeta_creada_hoy	Creada hoxe
+tarjeta_editada	editada o %1$s
+tarjeta_editada_hoy	editada hoxe
+tarjeta_fechas	%1$s · %2$s
+tarjeta_ir_al_libro	Ir ao libro
+cd_tarjeta_anterior	Tarxeta anterior
+cd_tarjeta_siguiente	Tarxeta seguinte
+tarjeta_borrar_titulo	Queres borrar esta tarxeta?
+tarjeta_borrar_texto	Borraranse a tarxeta, a súa nota e o subliñado do libro.
+tarjeta_borrar_si	Borrar
+tarjeta_compartir_texto	«%1$s»\n— %2$s
+destacadas_titulo	Páxinas destacadas
+destacadas_vacio	Aínda non destacaches ningunha páxina. Toca a estrela de arriba para destacar a que estás lendo.
+destacadas_sin_descripcion	Sen descrición
+destacadas_pagina	Páx. %1$d
+destacadas_editar	Cambiar a descrición ou quitala
+seleccion_copiar	Copiar
+marcapaginas_puesto	Marcapáxinas posto aquí. Podes volver a el co botón Marcapáxinas da barra inferior.
+marcapaginas_confirmar_titulo	Volver ao marcapáxinas?
+marcapaginas_confirmar_texto	Irás á frase onde puxeches o marcapáxinas e a lectura seguirá desde alí.
+marcapaginas_confirmar_ir	Ir ao marcapáxinas
+lector_marcapaginas	Marcapáxinas
+cd_modo_texto	Ver como texto
+cd_modo_pdf	Ver o PDF orixinal
+modo_texto_preparando	Preparando o modo texto
+modo_texto_progreso	Páxina %1$d de %2$d
+modo_texto_aviso	Só se fai a primeira vez. No modo texto pérdense as imaxes e a maquetación, e pode haber algún erro, sobre todo nas notas ao pé.
+modo_texto_sin_texto	Este PDF non ten texto que se poida sacar: as súas páxinas son imaxes escaneadas.
+modo_texto_error	Non se puido preparar o modo texto deste PDF.
+modo_texto_bloque	Páxinas %1$d–%2$d
+boton_entendido	Entendido
+menu_exportar	Exportar
+exportar_titulo	Exportar
+exportar_subtitulo	Libros coas súas tarxetas, notas e posición
+exportar_incluir_archivos	Incluír os ficheiros dos libros
+exportar_incluir_archivos_si	Para cambiar de móbil: gárdao todo
+exportar_incluir_archivos_no	Só posicións, marcadores, notas e tarxetas: moito máis lixeiro
+exportar_seleccionar_todos	Seleccionar todos
+exportar_x_de_y	%1$d de %2$d
+exportar_detalle_comic	Cómic · %1$s
+exportar_elementos#one	%d elemento
+exportar_elementos#other	%d elementos
+exportar_aviso_correo	Pesa demasiado para envialo por correo. Gárdao no móbil ou en Drive, ou compárteo por WhatsApp ou Telegram.
+exportar_guardar_en	Gardar en…
+exportar_compartir	Compartir
+exportar_pista_botones	Gardar en: móbil, Drive ou outra nube · Compartir: WhatsApp, Telegram, correo…
+exportar_preparando	Preparando a copia… %1$d %%
+exportar_guardada	Copia gardada
+exportar_error	Non se puido facer a copia. Proba outra vez ou escolle outro sitio.
+exportar_sin_archivo_titulo	Copia gardada, pero incompleta
+exportar_sin_archivo#one	Están os seus datos e tarxetas, pero non o ficheiro deste elemento, porque non se puido ler (quizais se moveu ou se borrou). Volve engadilo e fai outra copia:
+exportar_sin_archivo#other	Están os seus datos e tarxetas, pero non os ficheiros destes %d elementos, porque non se puideron ler (quizais se moveron ou se borraron). Volve engadilos e fai outra copia:
+exportar_compartir_titulo	Compartir a copia
+md_tarjetas	Tarxetas
+md_destacadas	Destacadas
+md_destacada_sin_descripcion	Páxina destacada
+md_nota	Nota:
+md_etiquetas	Etiquetas:
+md_exportado	Exportado de Libertalia Reader o %1$s
+importar_titulo	Importar unha copia
+importar_fecha	Copia do %1$s
+importar_leyendo	Lendo a copia… %1$d %%
+importar_aplicando	Importando… %1$d %%
+importar_que_trae	Que trae a copia
+importar_nuevos#one	%d libro ou cómic novo
+importar_nuevos#other	%d libros e cómics novos
+importar_anadidos#one	%d libro ou cómic engadido
+importar_anadidos#other	%d libros e cómics engadidos
+importar_ya_estaban#one	%d xa estaba na túa biblioteca: únense os seus datos
+importar_ya_estaban#other	%d xa estaban na túa biblioteca: únense os seus datos
+importar_tarjetas_nuevas#one	%d tarxeta nova
+importar_tarjetas_nuevas#other	%d tarxetas novas
+importar_destacadas_nuevas#one	%d páxina destacada nova
+importar_destacadas_nuevas#other	%d páxinas destacadas novas
+importar_actualizadas#one	%d tarxeta ou destacada con cambios máis recentes
+importar_actualizadas#other	%d tarxetas ou destacadas con cambios máis recentes
+importar_sin_archivo#one	%d chega sen o seu ficheiro: terás os seus datos e tarxetas, e completarase cando o engadas.
+importar_sin_archivo#other	%d chegan sen o seu ficheiro: terás os seus datos e tarxetas, e completaranse cando os engadas.
+importar_libro_tarjetas#one	%d tarxeta ou destacada nova
+importar_libro_tarjetas#other	%d tarxetas ou destacadas novas
+importar_libro_sin_archivo	sen ficheiro
+importar_etiqueta_nuevo	Novo
+importar_etiqueta_ya_esta	Xa está
+importar_etiqueta_vuelve	Volve
+importar_sin_cambios	Todo o desta copia xa está na túa biblioteca.
+importar_nada_se_borra	Non se borra nada: o da copia únese co que xa tes. Se algo está nos dous sitios, quédase o cambio máis recente.
+importar_boton	Importar
+importar_hecho	Copia importada
+importar_ir_biblioteca	Ir á biblioteca
+importar_error_titulo	Non se pode importar
+importar_error_no_es_copia	Este ficheiro non é unha copia de Libertalia Reader, ou está danado.
+importar_error_version	Esta copia fíxose cunha versión máis nova de Libertalia Reader. Actualiza a app para importala.
+importar_error_ilegible	Non se puido ler a copia. Comproba que hai espazo libre no móbil e volve intentalo.
+ajustes_importar	Importar unha copia
+vacia_importar	Importar unha copia
+originales_titulo#one	Borrar o orixinal?
+originales_titulo#other	Borrar os orixinais?
+originales_texto#one	«%2$s» xa está gardado no cartafol Libertalia. Se borras o ficheiro que engadiches, non ocupará espazo dúas veces.
+originales_texto#other	%1$d libros xa están gardados no cartafol Libertalia. Se borras os ficheiros que engadiches (por exemplo, «%2$s»), non ocuparán espazo dúas veces.
+originales_recordar	Lembrar a miña elección para as próximas veces
+originales_borrar	Borrar
+originales_conservar	Conservar
+originales_borrados	Borrouse o ficheiro orixinal: o libro segue na túa biblioteca
+originales_no_borrados	Android non deixou borrar algún orixinal. Podes borralo desde o xestor de ficheiros.
+abrir_con_titulo	Engadir á biblioteca?
+abrir_con_texto	«%1$s» non está na túa biblioteca. Podes engadilo ou só lelo: se só o les, non se garda nada (nin a páxina, nin subliñados, nin tempo de lectura).
+abrir_con_anadir	Engadir
+abrir_con_solo_leer	Só ler
+abrir_con_error	Non se puido abrir o ficheiro
+mover_titulo	Quitar o orixinal?
+mover_texto_libro	O libro xa está gardado no cartafol Libertalia. Queres quitar «%1$s» do seu cartafol para non telo dúas veces?
+mover_texto_comic	Queres mover «%1$s» ao cartafol Libertalia? Quitarase do cartafol onde está agora: así non ocupa espazo dúas veces.
+mover_si	Si
+mover_elige	Toca o ficheiro orixinal para que a app poida quitalo
+mover_hecho	Feito: o orixinal quitouse e agora só está no cartafol Libertalia
+mover_no_borrado	Non se quitou o orixinal (non era o mesmo ficheiro ou Android non o permitiu)
+mover_error_copiar	Non se puido copiar o cómic ao cartafol Libertalia
+importar_borrar_copia_texto	Este ficheiro de copia está no móbil e xa non fai falta: todo o que tiña está agora na túa biblioteca.
+importar_borrar_copia	Borrar o ficheiro de copia
+importar_borrar_copia_titulo	Borrar «%1$s»?
+importar_borrar_copia_confirmar	Bórrase só o ficheiro de copia; a túa biblioteca non cambia. Non se pode desfacer.
+importar_copia_borrada	Ficheiro de copia borrado
+importar_copia_no_borrada	Android non deixou borrar o ficheiro. Podes borralo desde o xestor de ficheiros.
+copia_titulo	Copia automática
+copia_explicacion	Unha soa copia de toda a túa biblioteca que se sobrescribe cada poucos días, sen que teñas que lembralo. Libertalia non inicia sesión en nada: se a gardas en Drive ou noutra nube, é a app desa nube a que a sobe.
+copia_donde	Onde se garda
+copia_sin_destino	Aínda non escolliches onde gardala.
+copia_destino_perdido	Xa non se atopa o ficheiro da copia.
+copia_elegir	Escoller onde gardala
+copia_cambiar	Cambiar o sitio
+copia_donde_nota	Podes escoller un cartafol do móbil, Google Drive ou outra nube instalada. Sempre é o mesmo ficheiro: non se acumulan copias.
+copia_frecuencia	Cada canto
+copia_cada_dias#one	Cada día
+copia_cada_dias#other	Cada %d días
+copia_cada_mes	Cada mes
+copia_nunca	Nunca
+copia_frecuencia_nota	Faise soa, con batería abonda e nunca mentres les. Se non cambiaches nada, non se volve facer.
+copia_estado	A copia
+copia_peso	Peso aproximado: %1$s
+copia_ultima	Última copia correcta: %1$s
+copia_ultima_corta	Última: %1$s
+copia_ninguna	Aínda non se fixo ningunha copia.
+copia_archivos_nota	Leva sempre todos os teus datos e tarxetas, e os ficheiros dos libros que teñen activado «Incluír o ficheiro na copia automática» (no seu menú).
+copia_hacer_ahora	Facer copia agora
+copia_haciendo	Facendo a copia… %1$d %%
+copia_sin_configurar	Sen configurar: escolle onde gardala
+copia_canal	Copia automática
+copia_fallo_titulo	Non se puido facer a copia automática
+copia_fallo_permiso	Libertalia xa non ten permiso para escribir no ficheiro da copia. Volve escoller onde gardala.
+copia_fallo_no_existe	O ficheiro da copia xa non existe (quizais se borrou ou se moveu). Volve escoller onde gardala.
+copia_fallo_error	Algo fallou ao escribila (sen espazo, sen conexión coa app da nube…). Volverase intentar; tamén podes premer «Facer copia agora».
+copia_fallo_aviso	A última copia automática non se puido facer. Revísaa en Axustes.
+pesado_titulo_tomo	%1$s · Tomo %2$d
+pesado_pregunta	Este ficheiro pesa moito. Queres incluílo na copia automática?
+pesado_explicacion	Se non o incluís, a copia gardará igualmente a páxina pola que vas e os teus marcadores, pero non o ficheiro.
+pesado_incluir	Incluír na copia
+pesado_solo_datos	Só a páxina e os marcadores
+menu_incluir_en_copia	Incluír o ficheiro na copia automática
+ajustes_titulo	Axustes
+cd_ajustes	Axustes
+ajustes_aviso_privacidad	Todo se garda só neste móbil. Para non perder nada ao cambiar de teléfono, exporta unha copia.
+ajustes_copias	Copias e cambio de móbil
+ajustes_exportar	Exportar
+ajustes_libros_este_anio	libros rematados este ano
+ajustes_esta_semana	lido esta semana
+ajustes_bloque_ajustes	Axustes
+ajustes_idioma	Idioma
+ajustes_idioma_nota	Cambia só o idioma desta app, non o do móbil.
+ajustes_carpeta	Cartafol da app
+ajustes_carpeta_nota	Aquí gárdanse os libros. Escóllese ao comezar a usar a app.
+ajustes_limite_pesado	Aviso de ficheiros grandes
+ajustes_limite_pesado_nota	Ao engadir un ficheiro máis grande, a app pregunta se o inclúe na copia automática.
+ajustes_mb	%1$d MB
+ajustes_originales	Ao engadir un libro de fóra, o orixinal
+ajustes_pesados	Ficheiros grandes na copia
+ajustes_borrar	Borralo
+ajustes_conservar	Conservalo
+ajustes_incluir	Incluílos
+ajustes_solo_datos	Só a páxina e os marcadores
+ajustes_preguntar	Preguntar cada vez
+ajustes_liberar_espacio	Liberar espazo
+ajustes_liberar_espacio_nota	Busca ficheiros repetidos ou que non son de ningún libro no cartafol da app.
+ajustes_bloque_comics	Lector de cómics
+ajustes_modo_comic	Modo predeterminado
+ajustes_modo_automatico	Automático (dobre en horizontal)
+ajustes_recortar	Recortar as marxes brancas
+ajustes_bloque_app	A app
+tiempo_horas	%1$d h %2$02d min
+tiempo_minutos	%1$d min
+idioma_sistema	O do móbil
+acerca_titulo	Acerca de Libertalia Reader
+acerca_version	Versión %1$s
+acerca_filosofia	De balde, sen anuncios e sen contas. Todo se garda no teu móbil: a app non usa internet nin recolle datos de ninguén.
+acerca_licencias	Licenzas
+acerca_licencias_nota	Grazas a todas as persoas que fan estas bibliotecas e tipografías. Todas permiten incluílas na app.
+acerca_unrar	De balde, pero non libre: non permite usala para crear un compresor RAR.
+limpieza_explicacion	Ficheiros do cartafol da app que non usa ningún libro da túa biblioteca. Os repetidos xa veñen marcados. Os libros da túa biblioteca nunca se tocan.
+limpieza_buscando	Revisando o cartafol… %1$d %%
+limpieza_borrando	Borrando…
+limpieza_hecho	Feito: liberáronse %1$s.
+limpieza_nada	Non hai nada que borrar: o cartafol está en orde.
+limpieza_copia_de	Repetido de «%1$s»
+limpieza_ningun_libro	Non é de ningún libro
+limpieza_fallos#one	Non se puido borrar %1$d ficheiro.
+limpieza_fallos#other	Non se puideron borrar %1$d ficheiros.
+limpieza_borrar#one	Borrar %1$d ficheiro · %2$s
+limpieza_borrar#other	Borrar %1$d ficheiros · %2$s
+limpieza_confirmar_titulo#one	Borrar %1$d ficheiro?
+limpieza_confirmar_titulo#other	Borrar %1$d ficheiros?
+limpieza_confirmar_texto	Borraranse para sempre do cartafol da app. Non se pode desfacer.
+exportar_tarjetas_titulo	Exportar tarxetas
+exportar_tarjetas_markdown	Markdown (para ler)
+exportar_tarjetas_csv	CSV (folla de cálculo)
+exportar_tarjetas_anki	Anki (para estudar)
+exportar_tarjetas_sufijo	tarxetas
+exportar_tarjetas_sufijo_anki	tarxetas para Anki
+csv_texto	Texto subliñado
+csv_frase	Frase
+csv_nota	Nota
+csv_etiquetas	Etiquetas
+csv_color	Cor
+csv_capitulo	Capítulo
+csv_pagina	Páxina
+csv_creada	Creada
+lector_escuchar	Escoitar
+cd_voz_reproducir	Seguir lendo en voz alta
+cd_voz_pausar	Pausar
+cd_voz_anterior	Frase anterior
+cd_voz_siguiente	Frase seguinte
+cd_voz_velocidad	Velocidade de lectura
+cd_voz_parar	Deixar de escoitar
+voz_velocidad	%1$s×
+voz_falta_titulo	Falta a voz
+voz_falta_texto	O móbil non ten unha voz para ler en %1$s. Podes descargala de balde nos axustes de voz de Android.
+voz_abrir_ajustes	Axustes de voz
+voz_falta_alternativa	Se o libro en realidade está en %1$s, podes lelo con esa voz.
+voz_leer_en	Ler en %1$s
+codigo_idioma	gl
+nombre_castellano	castelán
+voz_error	Non se puido ler este libro en voz alta. Comproba que o móbil ten un motor de voz instalado.
+estadisticas_titulo	Estatísticas
+estadisticas_tiempo	Tempo de lectura
+estadisticas_semana	Semana
+estadisticas_mes	Mes
+estadisticas_anio	Ano
+estadisticas_total	Total: %1$s
+estadisticas_media	Media: %1$s ao día
+estadisticas_libros_comics	Libros: %1$s · Cómics: %2$s
+estadisticas_velocidad	Velocidade de lectura
+estadisticas_ppm#one	%1$d palabra por minuto
+estadisticas_ppm#other	%1$d palabras por minuto
+estadisticas_velocidad_nota	Media nos libros, contando só as páxinas que pasas unha a unha (nin os saltos nin o que escoitas).
+estadisticas_velocidad_vacia	Aínda non hai datos. Mídese soa ao ler libros pasando as páxinas unha a unha.
+estadisticas_terminados	Rematados
+estadisticas_terminados_vacio	Aínda non remataches ningún libro nin cómic.
+estadisticas_n_libros#one	%1$d libro
+estadisticas_n_libros#other	%1$d libros
+estadisticas_n_comics#one	%1$d cómic
+estadisticas_n_comics#other	%1$d cómics
+cd_ver_titulos	Ver os títulos
+cd_ocultar_titulos	Ocultar os títulos

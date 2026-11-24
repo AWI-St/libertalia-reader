@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Textos de la interfaz en castellano (idioma base). -->
+<resources>
+    <string name="app_name" translatable="false">Libertalia Reader</string>
+
+    <!-- Elegir la carpeta de la app (primera vez) -->
+    <string name="carpeta_titulo">Dónde guardar tus libros</string>
+    <string name="carpeta_explicacion">Libertalia Reader guarda tus libros en una carpeta visible del móvil, Documentos › Libertalia. Así no se pierden aunque desinstales la app.</string>
+    <string name="carpeta_instrucciones">En la siguiente pantalla, comprueba que estás en la carpeta Libertalia y pulsa «Usar esta carpeta» y después «Permitir».</string>
+    <string name="carpeta_boton">Elegir la carpeta</string>
+
+    <!-- Biblioteca -->
+    <string name="biblioteca_titulo">Biblioteca</string>
+    <string name="cd_anadir_libros">Añadir libros</string>
+    <string name="vacia_titulo">Tu estantería está vacía</string>
+    <string name="vacia_mensaje">Añade libros, cómics o manga. Sin anuncios, sin cuentas, todo en tu móvil. Lo que subrayes se convertirá en tarjetas para releer cuando quieras.</string>
+    <string name="boton_anadir_desde_movil">Añadir desde el móvil</string>
+    <string name="libro_sin_archivo">Sin archivo</string>
+
+    <!-- Filtros y estantes por estado -->
+    <string name="filtro_todos">Todos</string>
+    <string name="estado_leyendo">Leyendo</string>
+    <string name="estado_pendientes">Pendientes</string>
+    <string name="estado_terminados">Terminados</string>
+    <plurals name="numero_libros">
+        <item quantity="one">%d libro</item>
+        <item quantity="other">%d libros</item>
+    </plurals>
+    <plurals name="numero_comics">
+        <item quantity="one">%d cómic</item>
+        <item quantity="other">%d cómics</item>
+    </plurals>
+    <string name="estante_vacio">Todavía no hay libros aquí.</string>
+
+    <!-- Seguir leyendo -->
+    <string name="seguir_leyendo">Seguir leyendo</string>
+    <!-- Capítulo y porcentaje o página, por ejemplo «Capítulo I · 4 %» o «Capítulo I · Pág. 3 de 7» -->
+    <string name="capitulo_y_progreso">%1$s · %2$s</string>
+    <!-- Formato y tamaño del archivo, por ejemplo «EPUB · 3,1 MB» -->
+    <string name="libro_formato_tamano">%1$s · %2$s</string>
+
+    <!-- Añadir libros -->
+    <string name="importando">Añadiendo libros…</string>
+    <plurals name="importacion_anadidos">
+        <item quantity="one">Se ha añadido %d libro</item>
+        <item quantity="other">Se han añadido %d libros</item>
+    </plurals>
+    <plurals name="importacion_recuperados">
+        <item quantity="one">Se ha recuperado %d libro con su página y sus notas</item>
+        <item quantity="other">Se han recuperado %d libros con su página y sus notas</item>
+    </plurals>
+    <plurals name="importacion_completados">
+        <item quantity="one">%d libro ha recuperado su archivo</item>
+        <item quantity="other">%d libros han recuperado su archivo</item>
+    </plurals>
+    <plurals name="importacion_ya_existian">
+        <item quantity="one">%d ya estaba en la biblioteca</item>
+        <item quantity="other">%d ya estaban en la biblioteca</item>
+    </plurals>
+    <plurals name="importacion_no_compatibles">
+        <item quantity="one">%d archivo no es un libro ni un cómic que la app sepa abrir</item>
+        <item quantity="other">%d archivos no son libros ni cómics que la app sepa abrir</item>
+    </plurals>
+    <plurals name="importacion_rar5">
+        <item quantity="one">%d CBR está en formato RAR 5, que la app no puede abrir. Si lo vuelves a guardar como CBZ o RAR 4, sí</item>
+        <item quantity="other">%d CBR están en formato RAR 5, que la app no puede abrir. Si los vuelves a guardar como CBZ o RAR 4, sí</item>
+    </plurals>
+    <plurals name="importacion_errores">
+        <item quantity="one">%d no se ha podido añadir</item>
+        <item quantity="other">%d no se han podido añadir</item>
+    </plurals>
+
+    <!-- Menú al mantener pulsado un libro -->
+    <string name="menu_editar">Editar título, autor y portada</string>
+    <string name="menu_cambiar_estado">Cambiar estado</string>
+    <string name="menu_anadir_estanteria">Añadir a estantería</string>
+    <string name="menu_eliminar">Eliminar libro</string>
+    <!-- Autor y estado bajo el título, por ejemplo «Galdós · Leyendo» -->
+    <string name="menu_subtitulo">%1$s · %2$s</string>
+    <string name="estado_libro_leyendo">Leyendo</string>
+    <string name="estado_libro_pendiente">Pendiente</string>
+    <string name="estado_libro_terminado">Terminado</string>
+
+    <!-- Editar datos del libro -->
+    <string name="editar_titulo">Editar libro</string>
+    <string name="campo_titulo">Título</string>
+    <string name="campo_autor">Autor</string>
+    <string name="cambiar_portada">Cambiar portada</string>
+    <string name="renombrar_archivo">Renombrar también el archivo con este título</string>
+    <string name="renombrar_archivo_nota">El contenido del libro no cambia.</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="boton_cancelar">Cancelar</string>
+
+    <!-- Estanterías -->
+    <string name="estanterias_vacio">Todavía no tienes estanterías. Crea una para ordenar tus libros como quieras.</string>
+    <string name="nueva_estanteria">Nueva estantería</string>
+    <string name="boton_crear">Crear</string>
+    <string name="boton_listo">Listo</string>
+    <string name="organizar_estanterias">Organizar estanterías</string>
+    <string name="campo_nombre">Nombre</string>
+    <string name="cd_subir">Subir</string>
+    <string name="cd_bajar">Bajar</string>
+    <string name="cd_renombrar">Cambiar nombre</string>
+    <string name="cd_eliminar_estanteria">Eliminar estantería</string>
+    <string name="renombrar_estanteria">Cambiar nombre de la estantería</string>
+    <string name="eliminar_estanteria_titulo">¿Eliminar la estantería?</string>
+    <string name="eliminar_estanteria_mensaje">«%1$s» desaparecerá, pero sus libros seguirán en la biblioteca.</string>
+
+    <!-- Eliminar libro -->
+    <string name="eliminar_titulo">¿Eliminar este libro?</string>
+    <string name="eliminar_mensaje">«%1$s» se quitará de la biblioteca. Si algún día lo vuelves a añadir, recuperará su página, sus notas y sus tarjetas.</string>
+    <string name="eliminar_archivo">Borrar también el archivo de la carpeta Libertalia</string>
+    <string name="boton_eliminar">Eliminar</string>
+
+    <!-- Avisos -->
+    <string name="aviso_libro_eliminado">Libro eliminado</string>
+    <string name="aviso_error_renombrar">No se ha podido renombrar el archivo</string>
+    <string name="aviso_error_borrar_archivo">No se ha podido borrar el archivo de la carpeta</string>
+    <string name="aviso_error_portada">No se ha podido usar esa imagen como portada</string>
+
+    <!-- Abrir libros -->
+    <string name="abriendo_libro">Abriendo el libro…</string>
+    <string name="error_abrir_libro">No se ha podido abrir el libro. %1$s</string>
+    <string name="error_libro_sin_archivo">Este libro no tiene su archivo. Añádelo desde el móvil para poder leerlo.</string>
+    <!-- Fase 3: prueba de la copia en la nube (pantalla provisional) -->
+    <string name="cd_volver">Volver</string>
+    <!-- Lector: barras, índice y búsqueda -->
+    <string name="lector_indice">Índice</string>
+    <string name="cd_progreso_libro">Posición en el libro</string>
+    <string name="lector_pagina">Pág. %1$d de %2$d</string>
+    <string name="cd_plegar_barra">Ocultar la barra inferior</string>
+    <string name="cd_desplegar_barra">Mostrar la barra inferior</string>
+    <string name="indice_vacio">Este libro no tiene índice.</string>
+    <string name="cd_buscar">Buscar en el libro</string>
+    <string name="buscar_pista">Buscar en el libro</string>
+    <string name="buscar_buscando">Buscando…</string>
+    <string name="buscar_sin_resultados">No se ha encontrado «%1$s».</string>
+    <plurals name="buscar_resultados">
+        <item quantity="one">%d resultado</item>
+        <item quantity="other">%d resultados</item>
+    </plurals>
+    <!-- Lector: panel de ajustes de lectura (Aa) -->
+    <string name="lector_ajustes">Ajustes</string>
+    <string name="ajustes_tema">Tema</string>
+    <string name="tema_crema">Crema</string>
+    <string name="tema_sepia">Sepia</string>
+    <string name="tema_oscuro">Oscuro</string>
+    <string name="ajustes_tamano">Tamaño</string>
+    <string name="cd_letra_menor">Letra más pequeña</string>
+    <string name="cd_letra_mayor">Letra más grande</string>
+    <string name="cd_tamano_letra">Tamaño de la letra</string>
+    <string name="ajustes_tipografia">Tipografía</string>
+    <string name="tipografia_literata">Literata</string>
+    <string name="tipografia_lora">Lora</string>
+    <string name="tipografia_sans">Sans</string>
+    <string name="tipografia_dislexia">Dislexia</string>
+    <string name="ajustes_margenes">Márgenes</string>
+    <string name="ajustes_interlineado">Interlineado</string>
+    <string name="cd_nivel_poco">Poco</string>
+    <string name="cd_nivel_normal">Normal</string>
+    <string name="cd_nivel_mucho">Mucho</string>
+    <string name="ajustes_brillo">Brillo</string>
+    <string name="ajustes_brillo_auto">Auto</string>
+    <string name="cd_brillo">Brillo de la pantalla</string>
+    <string name="cd_brillo_auto">Usar el brillo del móvil</string>
+    <string name="ajustes_volumen">Pasar página con el volumen</string>
+    <string name="ajustes_pantalla_encendida">Mantener la pantalla encendida</string>
+    <string name="ajustes_filtro_pdf">Filtro cálido en PDF</string>
+    <!-- Cómics: se abren desde donde están (no se copian) -->
+    <string name="comic_carpeta_titulo">¿Dónde está este cómic?</string>
+    <string name="comic_carpeta_texto">«%1$s» no se copia a tu biblioteca para no ocupar espacio dos veces: se abre desde donde está. Para que la app pueda abrirlo siempre, tócalo una vez en la lista que se abrirá. Si lo has movido o borrado, búscalo donde esté ahora.</string>
+    <string name="comic_carpeta_elegir">Elegir el cómic</string>
+    <string name="comic_carpeta_ahora_no">Ahora no</string>
+    <string name="comic_archivo_ok">Listo: el cómic seguirá en tu biblioteca.</string>
+    <string name="comic_archivo_otro">Ese no es el mismo cómic. Puedes volver a abrirlo desde la otra app o añadirlo con el botón +.</string>
+    <string name="comic_sin_acceso">No se puede abrir este cómic: ya no está donde estaba o la app no tiene permiso. Vuelve a añadirlo con el botón +.</string>
+
+    <!-- Lector de cómics -->
+    <string name="comic_abriendo">Abriendo «%1$s»…</string>
+    <string name="comic_abriendo_sin_titulo">Abriendo el cómic…</string>
+    <string name="comic_abriendo_nube">Si está en Google Drive u otra nube, la primera vez puede tardar un poco: la nube lo está descargando. Las siguientes veces se abrirá enseguida.</string>
+    <string name="comic_error_abrir">No se ha podido abrir este cómic. Puede que el archivo esté dañado o que ya no esté donde estaba.</string>
+    <string name="comic_titulo_tomo">%1$s · Tomo %2$d</string>
+    <string name="comic_subtitulo">%1$s · %2$s</string>
+    <string name="comic_tipo_manga">Manga</string>
+    <string name="comic_tipo_comic">Cómic</string>
+    <string name="sentido_ltr_corto">Izquierda a derecha</string>
+    <string name="sentido_rtl_corto">Derecha a izquierda</string>
+    <string name="comic_pagina_de">Pág. %1$d de %2$d</string>
+    <string name="comic_modo_pagina">Página</string>
+    <string name="comic_modo_doble">Doble</string>
+    <string name="comic_modo_scroll">Scroll</string>
+    <string name="comic_paginas_de">Pág. %1$d–%2$d de %3$d</string>
+    <string name="cd_recorte_activado">Recortar los márgenes blancos: activado. Toca para desactivarlo</string>
+    <string name="cd_recorte_desactivado">Recortar los márgenes blancos: desactivado. Toca para activarlo</string>
+    <string name="cd_poner_marcador">Marcar esta página</string>
+    <string name="cd_quitar_marcador">Quitar el marcador de esta página</string>
+    <string name="cd_lista_marcadores">Páginas marcadas</string>
+    <string name="cd_quitar_marcador_de">Quitar el marcador de la página %1$d</string>
+    <string name="comic_marcadores_titulo">Páginas marcadas</string>
+    <string name="comic_marcadores_vacio">Aún no has marcado ninguna página. Toca la cinta de arriba para marcar la que estás viendo.</string>
+    <string name="comic_marcadores_cerrar">Cerrar</string>
+    <string name="cd_pagina_comic">Página %1$d</string>
+    <string name="cd_progreso_comic">Página del cómic</string>
+    <string name="cd_cambiar_sentido">Cambiar el sentido de lectura</string>
+
+    <!-- Cómics en la nube: se recomienda guardarlos en el móvil -->
+    <string name="nube_titulo">Este cómic está en la nube</string>
+    <string name="nube_texto">«%1$s» está en Google Drive u otra nube. Si lo lees desde ahí, puede volver a descargarse y gastar datos cada vez, y sin conexión no se abrirá. Te recomendamos guardarlo en el móvil, en tu carpeta de Libertalia (en la nube seguirá estando). La nube es mejor para las copias de seguridad.</string>
+    <string name="nube_guardar">Guardar en el móvil</string>
+    <string name="nube_seguir">Seguir en la nube</string>
+    <string name="menu_guardar_en_movil">Guardar en el móvil</string>
+    <string name="nube_guardando">Guardando el cómic en el móvil… Puedes seguir usando la app.</string>
+    <string name="nube_guardado">Listo: el cómic ya está en el móvil y se leerá desde ahí.</string>
+    <string name="nube_error">No se ha podido guardar el cómic en el móvil. Comprueba la conexión y el espacio libre.</string>
+
+    <!-- Cómics en el menú del libro -->
+    <string name="menu_sentido_lectura">Sentido de lectura</string>
+    <string name="sentido_izquierda_derecha">De izquierda a derecha (cómic)</string>
+    <string name="sentido_derecha_izquierda">De derecha a izquierda (manga)</string>
+    <string name="menu_tratar_como_comic">Tratar como cómic</string>
+    <string name="menu_tratar_como_libro">Tratar como libro</string>
+    <string name="campo_tomo">Número de tomo</string>
+
+    <!-- Cómics en la estantería -->
+    <string name="estante_comics">Cómics y manga</string>
+    <string name="etiqueta_comic">CÓMIC</string>
+    <string name="etiqueta_manga">MANGA</string>
+    <string name="etiqueta_comic_tomo">%1$s · %2$d</string>
+    <string name="ajustes_notas">Separar las notas al pie</string>
+    <string name="ajustes_notas_explicacion">Solo en este libro. Si en este PDF se confunden notas y texto, desactívalo para leerlo tal cual.</string>
+    <string name="ajustes_nota_pdf">En los PDF solo cambian el tema y el filtro. El tamaño, la tipografía, los márgenes y el interlineado son para los EPUB.</string>
+    <!-- Lector: menú al seleccionar texto y marcapáginas -->
+    <string name="seleccion_marcapaginas">Marcapáginas</string>
+    <string name="seleccion_diccionario">Diccionario</string>
+    <string name="diccionario_elegir">Buscar en el diccionario</string>
+    <string name="diccionario_ninguno">No hay ningún diccionario en el móvil. Puedes instalar uno (por ejemplo, desde la tienda de apps) y volver a probar.</string>
+    <!-- Colores de subrayado -->
+    <string name="color_amarillo">Amarillo</string>
+    <string name="color_verde">Verde</string>
+    <string name="color_azul">Azul</string>
+    <string name="color_rosa">Rosa</string>
+    <!-- Subrayados y notas -->
+    <string name="aviso_subrayado">Al subrayar se crea una tarjeta con la frase completa</string>
+    <string name="subrayado_nota_actual">Nota: %1$s</string>
+    <string name="subrayado_anadir_nota">Añadir nota</string>
+    <string name="subrayado_editar_nota">Editar nota</string>
+    <string name="subrayado_borrar_nota">Borrar nota</string>
+    <string name="subrayado_quitar">Quitar subrayado</string>
+    <string name="nota_titulo_nueva">Nueva nota</string>
+    <string name="nota_titulo_editar">Editar nota</string>
+    <string name="nota_campo">Tu nota</string>
+    <!-- Páginas destacadas -->
+    <string name="cd_destacar_pagina">Destacar esta página</string>
+    <string name="cd_pagina_destacada">Página destacada: ver o cambiar su descripción</string>
+    <string name="destacada_titulo_nueva">Página destacada</string>
+    <string name="destacada_titulo">Página destacada</string>
+    <string name="destacada_explicacion">Puedes darle una descripción breve, que se verá como título en sus tarjetas para saber qué es.</string>
+    <string name="destacada_campo">Descripción (opcional)</string>
+    <string name="destacada_quitar">Quitar destacada</string>
+    <string name="lector_destacadas">Destacadas</string>
+    <!-- Racha de lectura (widget) -->
+    <string name="widget_racha_nombre">Racha de lectura</string>
+    <string name="widget_racha_descripcion">El pirata de tu racha: cuántos días seguidos llevas leyendo.</string>
+    <string name="widget_seguir_nombre">Seguir leyendo</string>
+    <string name="widget_seguir_descripcion">El libro o cómic que estás leyendo, para volver a él con un toque.</string>
+    <string name="widget_sin_libro">Abre un libro o un cómic y aparecerá aquí.</string>
+    <string name="racha_titulo">Racha de lectura</string>
+    <plurals name="racha_dias">
+        <item quantity="one">%d día</item>
+        <item quantity="other">%d días</item>
+    </plurals>
+    <string name="racha_contento">¡Hoy ya has leído!</string>
+    <string name="racha_tranquilo">Lee 5 minutos hoy para seguir</string>
+    <string name="racha_empezar">Lee 5 minutos para empezar tu racha</string>
+    <string name="racha_asustado">¡Tu racha está en peligro!</string>
+    <string name="racha_triste">Tu racha se ha roto. ¡Empieza otra!</string>
+
+    <!-- Tarjetas (subrayados) de un libro -->
+    <string name="lector_tarjetas">Tarjetas</string>
+    <string name="menu_ver_tarjetas">Ver tarjetas</string>
+    <string name="aviso_subrayado_ver">Ver</string>
+    <plurals name="numero_tarjetas">
+        <item quantity="one">%d tarjeta</item>
+        <item quantity="other">%d tarjetas</item>
+    </plurals>
+    <string name="tarjetas_subtitulo">%1$s · en el orden del libro</string>
+    <string name="tarjetas_todas">Todas</string>
+    <string name="tarjetas_filtro_color">Solo las de color %1$s</string>
+    <string name="tarjetas_pagina">Pág. %1$d</string>
+    <string name="tarjetas_vacio">Este libro aún no tiene tarjetas. Mientras lees, mantén pulsada una palabra o frase y elige un color: se creará una tarjeta con la frase completa.</string>
+    <string name="tarjetas_vacio_filtro">No hay tarjetas con este filtro.</string>
+    <string name="tarjetas_vacio_busqueda">Ninguna tarjeta de este libro contiene ese texto.</string>
+    <string name="tarjetas_etiquetas">Etiquetas</string>
+    <string name="tarjetas_filtro_etiquetas">Filtrar por etiqueta</string>
+    <string name="cd_buscar_en_tarjetas">Buscar en las tarjetas de este libro</string>
+    <string name="buscar_en_tarjetas_pista">Buscar en estas tarjetas</string>
+    <!-- Modo Tarjetas de la biblioteca (boceto 7) -->
+    <string name="titulo_tarjetas">Tarjetas</string>
+    <string name="modo_tarjetas">Tarjetas</string>
+    <string name="modo_libros">Libros</string>
+    <string name="modo_tarjetas_aviso">Toca un libro para ver sus tarjetas</string>
+    <!-- Buscar en las tarjetas de todos los libros -->
+    <string name="cd_buscar_tarjetas">Buscar en las tarjetas de todos los libros</string>
+    <string name="buscar_tarjetas_pista">Buscar en todas las tarjetas</string>
+    <string name="buscar_tarjetas_explicacion">Escribe al menos dos letras. Se busca en el texto subrayado, en la frase, en tus notas y en las etiquetas de todos los libros.</string>
+    <string name="buscar_tarjetas_nada">Ninguna tarjeta contiene ese texto.</string>
+    <plurals name="buscar_tarjetas_encontradas">
+        <item quantity="one">%d tarjeta encontrada</item>
+        <item quantity="other">%d tarjetas encontradas</item>
+    </plurals>
+    <!-- Tarjeta abierta -->
+    <string name="tarjeta_numero">Tarjeta %1$d de %2$d</string>
+    <string name="cd_compartir_tarjeta">Compartir la cita</string>
+    <string name="cd_borrar_tarjeta">Borrar la tarjeta</string>
+    <string name="tarjeta_editar_texto">Editar texto</string>
+    <string name="tarjeta_editar_explicacion">Puedes corregir el texto (por ejemplo, erratas del PDF). El libro no cambia.</string>
+    <string name="tarjeta_campo_subrayado">Texto subrayado</string>
+    <string name="tarjeta_campo_frase">Frase completa</string>
+    <string name="tarjeta_mi_nota">Mi nota</string>
+    <string name="tarjeta_nota_vacia">Escribe aquí tu nota (se guarda sola)</string>
+    <string name="tarjeta_etiquetas">Etiquetas</string>
+    <string name="tarjeta_anadir_etiqueta">+ Añadir</string>
+    <string name="cd_quitar_etiqueta">Quitar la etiqueta %1$s</string>
+    <string name="cd_ver_etiqueta">Ver todas las tarjetas con la etiqueta %1$s</string>
+    <!-- Una etiqueta: sus tarjetas de todos los libros -->
+    <string name="etiqueta_titulo">Etiqueta «%1$s»</string>
+    <string name="etiqueta_de_todos">de todos los libros</string>
+    <string name="etiqueta_vacia">Ya no hay tarjetas con esta etiqueta.</string>
+    <string name="buscar_etiqueta_pista">Buscar una etiqueta</string>
+    <string name="buscar_etiqueta_nada">No hay ninguna etiqueta con ese nombre.</string>
+    <string name="tarjeta_nueva_etiqueta">Nueva etiqueta</string>
+    <string name="tarjeta_campo_etiqueta">Etiqueta (por ejemplo, «productividad»)</string>
+    <string name="etiqueta_pista">productividad</string>
+    <string name="etiqueta_mas_usadas">Las que más usas</string>
+    <string name="etiqueta_parecidas">Ya existen</string>
+    <string name="etiqueta_sugerida">#%1$s · %2$d</string>
+    <string name="subrayado_anadir_etiqueta">Añadir etiqueta</string>
+    <string name="tarjeta_creada">Creada el %1$s</string>
+    <string name="tarjeta_creada_hoy">Creada hoy</string>
+    <string name="tarjeta_editada">editada el %1$s</string>
+    <string name="tarjeta_editada_hoy">editada hoy</string>
+    <string name="tarjeta_fechas">%1$s · %2$s</string>
+    <string name="tarjeta_ir_al_libro">Ir al libro</string>
+    <string name="cd_tarjeta_anterior">Tarjeta anterior</string>
+    <string name="cd_tarjeta_siguiente">Tarjeta siguiente</string>
+    <string name="tarjeta_borrar_titulo">¿Borrar esta tarjeta?</string>
+    <string name="tarjeta_borrar_texto">Se borrarán la tarjeta, su nota y el subrayado del libro.</string>
+    <string name="tarjeta_borrar_si">Borrar</string>
+    <string name="tarjeta_compartir_texto">«%1$s»\n— %2$s</string>
+    <string name="destacadas_titulo">Páginas destacadas</string>
+    <string name="destacadas_vacio">Aún no has destacado ninguna página. Toca la estrella de arriba para destacar la que estás leyendo.</string>
+    <string name="destacadas_sin_descripcion">Sin descripción</string>
+    <string name="destacadas_pagina">Pág. %1$d</string>
+    <string name="destacadas_editar">Cambiar la descripción o quitarla</string>
+    <string name="seleccion_copiar">Copiar</string>
+    <string name="marcapaginas_puesto">Marcapáginas puesto aquí. Puedes volver a él con el botón Marcapáginas de la barra inferior.</string>
+    <string name="marcapaginas_confirmar_titulo">¿Volver al marcapáginas?</string>
+    <string name="marcapaginas_confirmar_texto">Irás a la frase donde pusiste el marcapáginas y la lectura seguirá desde allí.</string>
+    <string name="marcapaginas_confirmar_ir">Ir al marcapáginas</string>
+    <string name="lector_marcapaginas">Marcapáginas</string>
+    <!-- Lector: modo texto para PDF -->
+    <string name="cd_modo_texto">Ver como texto</string>
+    <string name="cd_modo_pdf">Ver el PDF original</string>
+    <string name="modo_texto_preparando">Preparando el modo texto</string>
+    <string name="modo_texto_progreso">Página %1$d de %2$d</string>
+    <string name="modo_texto_aviso">Solo se hace la primera vez. En el modo texto se pierden las imágenes y la maquetación, y puede haber algún error, sobre todo en las notas al pie.</string>
+    <string name="modo_texto_sin_texto">Este PDF no tiene texto que se pueda sacar: sus páginas son imágenes escaneadas.</string>
+    <string name="modo_texto_error">No se ha podido preparar el modo texto de este PDF.</string>
+    <string name="modo_texto_bloque">Páginas %1$d–%2$d</string>
+    <string name="boton_entendido">Entendido</string>
+
+    <!-- Fase 10: exportar -->
+    <string name="menu_exportar">Exportar</string>
+    <string name="exportar_titulo">Exportar</string>
+    <string name="exportar_subtitulo">Libros con sus tarjetas, notas y posición</string>
+    <string name="exportar_incluir_archivos">Incluir los archivos de los libros</string>
+    <string name="exportar_incluir_archivos_si">Para cambiar de móvil: lo guarda todo</string>
+    <string name="exportar_incluir_archivos_no">Solo posiciones, marcadores, notas y tarjetas: mucho más ligero</string>
+    <string name="exportar_seleccionar_todos">Seleccionar todos</string>
+    <string name="exportar_x_de_y">%1$d de %2$d</string>
+    <string name="exportar_detalle_comic">Cómic · %1$s</string>
+    <plurals name="exportar_elementos">
+        <item quantity="one">%d elemento</item>
+        <item quantity="other">%d elementos</item>
+    </plurals>
+    <string name="exportar_aviso_correo">Pesa demasiado para enviarlo por correo. Guárdalo en el móvil o en Drive, o compártelo por WhatsApp o Telegram.</string>
+    <string name="exportar_guardar_en">Guardar en…</string>
+    <string name="exportar_compartir">Compartir</string>
+    <string name="exportar_pista_botones">Guardar en: móvil, Drive u otra nube · Compartir: WhatsApp, Telegram, correo…</string>
+    <string name="exportar_preparando">Preparando la copia… %1$d %%</string>
+    <string name="exportar_guardada">Copia guardada</string>
+    <string name="exportar_error">No se ha podido hacer la copia. Prueba otra vez o elige otro sitio.</string>
+    <string name="exportar_sin_archivo_titulo">Copia guardada, pero incompleta</string>
+    <plurals name="exportar_sin_archivo">
+        <item quantity="one">Están sus datos y tarjetas, pero no el archivo de este elemento, porque no se ha podido leer (quizá se movió o se borró). Vuelve a añadirlo y haz otra copia:</item>
+        <item quantity="other">Están sus datos y tarjetas, pero no el archivo de estos %d elementos, porque no se han podido leer (quizá se movieron o se borraron). Vuelve a añadirlos y haz otra copia:</item>
+    </plurals>
+    <string name="exportar_compartir_titulo">Compartir la copia</string>
+
+    <!-- Markdown de las tarjetas (para leerlas fuera de la app) -->
+    <string name="md_tarjetas">Tarjetas</string>
+    <string name="md_destacadas">Destacadas</string>
+    <string name="md_destacada_sin_descripcion">Página destacada</string>
+    <string name="md_nota">Nota:</string>
+    <string name="md_etiquetas">Etiquetas:</string>
+    <string name="md_exportado">Exportado de Libertalia Reader el %1$s</string>
+
+    <!-- Fase 10: importar copias -->
+    <string name="importar_titulo">Importar una copia</string>
+    <string name="importar_fecha">Copia del %1$s</string>
+    <string name="importar_leyendo">Leyendo la copia… %1$d %%</string>
+    <string name="importar_aplicando">Importando… %1$d %%</string>
+    <string name="importar_que_trae">Qué trae la copia</string>
+    <plurals name="importar_nuevos">
+        <item quantity="one">%d libro o cómic nuevo</item>
+        <item quantity="other">%d libros y cómics nuevos</item>
+    </plurals>
+    <plurals name="importar_anadidos">
+        <item quantity="one">%d libro o cómic añadido</item>
+        <item quantity="other">%d libros y cómics añadidos</item>
+    </plurals>
+    <plurals name="importar_ya_estaban">
+        <item quantity="one">%d ya estaba en tu biblioteca: se unen sus datos</item>
+        <item quantity="other">%d ya estaban en tu biblioteca: se unen sus datos</item>
+    </plurals>
+    <plurals name="importar_tarjetas_nuevas">
+        <item quantity="one">%d tarjeta nueva</item>
+        <item quantity="other">%d tarjetas nuevas</item>
+    </plurals>
+    <plurals name="importar_destacadas_nuevas">
+        <item quantity="one">%d página destacada nueva</item>
+        <item quantity="other">%d páginas destacadas nuevas</item>
+    </plurals>
+    <plurals name="importar_actualizadas">
+        <item quantity="one">%d tarjeta o destacada con cambios más recientes</item>
+        <item quantity="other">%d tarjetas o destacadas con cambios más recientes</item>
+    </plurals>
+    <plurals name="importar_sin_archivo">
+        <item quantity="one">%d llega sin su archivo: tendrás sus datos y tarjetas, y se completará cuando lo añadas.</item>
+        <item quantity="other">%d llegan sin su archivo: tendrás sus datos y tarjetas, y se completarán cuando los añadas.</item>
+    </plurals>
+    <plurals name="importar_libro_tarjetas">
+        <item quantity="one">%d tarjeta o destacada nueva</item>
+        <item quantity="other">%d tarjetas o destacadas nuevas</item>
+    </plurals>
+    <string name="importar_libro_sin_archivo">sin archivo</string>
+    <string name="importar_etiqueta_nuevo">Nuevo</string>
+    <string name="importar_etiqueta_ya_esta">Ya está</string>
+    <string name="importar_etiqueta_vuelve">Vuelve</string>
+    <string name="importar_sin_cambios">Todo lo de esta copia ya está en tu biblioteca.</string>
+    <string name="importar_nada_se_borra">No se borra nada: lo de la copia se une con lo que ya tienes. Si algo está en los dos sitios, se queda el cambio más reciente.</string>
+    <string name="importar_boton">Importar</string>
+    <string name="importar_hecho">Copia importada</string>
+    <string name="importar_ir_biblioteca">Ir a la biblioteca</string>
+    <string name="importar_error_titulo">No se puede importar</string>
+    <string name="importar_error_no_es_copia">Este archivo no es una copia de Libertalia Reader, o está dañado.</string>
+    <string name="importar_error_version">Esta copia se hizo con una versión más nueva de Libertalia Reader. Actualiza la app para importarla.</string>
+    <string name="importar_error_ilegible">No se ha podido leer la copia. Comprueba que hay espacio libre en el móvil y vuelve a intentarlo.</string>
+    <string name="ajustes_importar">Importar una copia</string>
+    <string name="vacia_importar">Importar una copia</string>
+
+    <!-- Espacio: no tener los libros dos veces -->
+    <plurals name="originales_titulo">
+        <item quantity="one">¿Borrar el original?</item>
+        <item quantity="other">¿Borrar los originales?</item>
+    </plurals>
+    <plurals name="originales_texto">
+        <item quantity="one">«%2$s» ya está guardado en la carpeta Libertalia. Si borras el archivo que añadiste, no ocupará espacio dos veces.</item>
+        <item quantity="other">%1$d libros ya están guardados en la carpeta Libertalia. Si borras los archivos que añadiste (por ejemplo, «%2$s»), no ocuparán espacio dos veces.</item>
+    </plurals>
+    <string name="originales_recordar">Recordar mi elección para los próximos</string>
+    <string name="originales_borrar">Borrar</string>
+    <string name="originales_conservar">Conservar</string>
+    <string name="originales_borrados">Se ha borrado el archivo original: el libro sigue en tu biblioteca</string>
+    <string name="originales_no_borrados">Android no ha dejado borrar algún original. Puedes borrarlo desde el gestor de archivos.</string>
+    <!-- «Abrir con»: añadir a la biblioteca o solo leer, y quitar el original -->
+    <string name="abrir_con_titulo">¿Añadir a la biblioteca?</string>
+    <string name="abrir_con_texto">«%1$s» no está en tu biblioteca. Puedes añadirlo o solo leerlo: si solo lo lees, no se guarda nada (ni la página, ni subrayados, ni tiempo de lectura).</string>
+    <string name="abrir_con_anadir">Añadir</string>
+    <string name="abrir_con_solo_leer">Solo leer</string>
+    <string name="abrir_con_error">No se ha podido abrir el archivo</string>
+    <string name="mover_titulo">¿Quitar el original?</string>
+    <string name="mover_texto_libro">El libro ya está guardado en la carpeta Libertalia. ¿Quitar «%1$s» de su carpeta para no tenerlo dos veces?</string>
+    <string name="mover_texto_comic">¿Mover «%1$s» a la carpeta Libertalia? Se quitará de su carpeta actual: así no ocupa espacio dos veces.</string>
+    <string name="mover_si">Sí</string>
+    <string name="mover_elige">Toca el archivo original para que la app pueda quitarlo</string>
+    <string name="mover_hecho">Hecho: el original se ha quitado y queda solo en la carpeta Libertalia</string>
+    <string name="mover_no_borrado">No se ha quitado el original (no era el mismo archivo o Android no lo ha permitido)</string>
+    <string name="mover_error_copiar">No se ha podido copiar el cómic a la carpeta Libertalia</string>
+    <string name="importar_borrar_copia_texto">Este archivo de copia está en el móvil y ya no hace falta: todo lo que tenía está ahora en tu biblioteca.</string>
+    <string name="importar_borrar_copia">Borrar el archivo de copia</string>
+    <string name="importar_borrar_copia_titulo">¿Borrar «%1$s»?</string>
+    <string name="importar_borrar_copia_confirmar">Se borra solo el archivo de copia; tu biblioteca no cambia. No se puede deshacer.</string>
+    <string name="importar_copia_borrada">Archivo de copia borrado</string>
+    <string name="importar_copia_no_borrada">Android no ha dejado borrar el archivo. Puedes borrarlo desde el gestor de archivos.</string>
+
+    <!-- Fase 10c: copia automática -->
+    <string name="copia_titulo">Copia automática</string>
+    <string name="copia_explicacion">Una sola copia de toda tu biblioteca que se sobrescribe cada pocos días, sin que tengas que acordarte. Libertalia no inicia sesión en nada: si la guardas en Drive u otra nube, es la app de esa nube la que la sube.</string>
+    <string name="copia_donde">Dónde se guarda</string>
+    <string name="copia_sin_destino">Todavía no has elegido dónde guardarla.</string>
+    <string name="copia_destino_perdido">El archivo de la copia ya no se encuentra.</string>
+    <string name="copia_elegir">Elegir dónde guardarla</string>
+    <string name="copia_cambiar">Cambiar el sitio</string>
+    <string name="copia_donde_nota">Puedes elegir una carpeta del móvil, Google Drive u otra nube instalada. Siempre es el mismo archivo: no se acumulan copias.</string>
+    <string name="copia_frecuencia">Cada cuánto</string>
+    <plurals name="copia_cada_dias">
+        <item quantity="one">Cada día</item>
+        <item quantity="other">Cada %d días</item>
+    </plurals>
+    <string name="copia_cada_mes">Cada mes</string>
+    <string name="copia_nunca">Nunca</string>
+    <string name="copia_frecuencia_nota">Se hace sola, con batería suficiente y nunca mientras lees. Si no has cambiado nada, no se rehace.</string>
+    <string name="copia_estado">La copia</string>
+    <string name="copia_peso">Peso aproximado: %1$s</string>
+    <string name="copia_ultima">Última copia correcta: %1$s</string>
+    <string name="copia_ultima_corta">última: %1$s</string>
+    <string name="copia_ninguna">Todavía no se ha hecho ninguna copia.</string>
+    <string name="copia_archivos_nota">Lleva siempre todos tus datos y tarjetas, y los archivos de los libros que tienen activado «Incluir el archivo en la copia automática» (en su menú).</string>
+    <string name="copia_hacer_ahora">Hacer copia ahora</string>
+    <string name="copia_haciendo">Haciendo la copia… %1$d %%</string>
+    <string name="copia_sin_configurar">Sin configurar: elige dónde guardarla</string>
+    <string name="copia_canal">Copia automática</string>
+    <string name="copia_fallo_titulo">No se ha podido hacer la copia automática</string>
+    <string name="copia_fallo_permiso">Libertalia ya no tiene permiso para escribir en el archivo de la copia. Vuelve a elegir dónde guardarla.</string>
+    <string name="copia_fallo_no_existe">El archivo de la copia ya no existe (quizá se borró o se movió). Vuelve a elegir dónde guardarla.</string>
+    <string name="copia_fallo_error">Algo ha fallado al escribirla (sin espacio, sin conexión con la app de la nube…). Se volverá a intentar; también puedes pulsar «Hacer copia ahora».</string>
+    <string name="copia_fallo_aviso">La última copia automática no se ha podido hacer. Revísala en Ajustes.</string>
+
+    <!-- Archivos pesados (boceto 14) -->
+    <string name="pesado_titulo_tomo">%1$s · Tomo %2$d</string>
+    <string name="pesado_pregunta">Este archivo pesa mucho. ¿Quieres incluirlo en la copia automática?</string>
+    <string name="pesado_explicacion">Si no lo incluyes, la copia guardará igualmente la página por la que vas y tus marcadores, pero no el archivo.</string>
+    <string name="pesado_incluir">Incluir en la copia</string>
+    <string name="pesado_solo_datos">Solo la página y los marcadores</string>
+    <string name="menu_incluir_en_copia">Incluir el archivo en la copia automática</string>
+
+    <!-- Fase 10: ajustes -->
+    <string name="ajustes_titulo">Ajustes</string>
+    <string name="cd_ajustes">Ajustes</string>
+    <string name="ajustes_aviso_privacidad">Todo se guarda solo en este móvil. Para no perder nada al cambiar de teléfono, exporta una copia.</string>
+    <string name="ajustes_copias">Copias y cambio de móvil</string>
+    <string name="ajustes_exportar">Exportar</string>
+
+    <!-- Ajustes (paso 10d) -->
+    <string name="ajustes_libros_este_anio">libros terminados este año</string>
+    <string name="ajustes_esta_semana">leído esta semana</string>
+    <string name="ajustes_bloque_ajustes">Ajustes</string>
+    <string name="ajustes_idioma">Idioma</string>
+    <string name="ajustes_idioma_nota">Cambia solo el idioma de esta app, no el del móvil.</string>
+    <string name="ajustes_carpeta">Carpeta de la app</string>
+    <string name="ajustes_carpeta_nota">Aquí se guardan los libros. Se elige al empezar a usar la app.</string>
+    <string name="ajustes_limite_pesado">Aviso de archivos pesados</string>
+    <string name="ajustes_limite_pesado_nota">Al añadir un archivo más grande, la app pregunta si incluirlo en la copia automática.</string>
+    <string name="ajustes_mb">%1$d MB</string>
+    <string name="ajustes_originales">Al añadir un libro de fuera, el original</string>
+    <string name="ajustes_pesados">Archivos pesados en la copia</string>
+    <string name="ajustes_borrar">Borrarlo</string>
+    <string name="ajustes_conservar">Conservarlo</string>
+    <string name="ajustes_incluir">Incluirlos</string>
+    <string name="ajustes_solo_datos">Solo la página y los marcadores</string>
+    <string name="ajustes_preguntar">Preguntar cada vez</string>
+    <string name="ajustes_liberar_espacio">Liberar espacio</string>
+    <string name="ajustes_liberar_espacio_nota">Busca archivos repetidos o que no son de ningún libro en la carpeta de la app.</string>
+    <string name="ajustes_bloque_comics">Lector de cómics</string>
+    <string name="ajustes_modo_comic">Modo por defecto</string>
+    <string name="ajustes_modo_automatico">Automático (doble en horizontal)</string>
+    <string name="ajustes_recortar">Recortar los márgenes blancos</string>
+    <string name="ajustes_bloque_app">La app</string>
+    <string name="tiempo_horas">%1$d h %2$02d min</string>
+    <string name="tiempo_minutos">%1$d min</string>
+    <string name="idioma_sistema">El del móvil</string>
+    <string name="idioma_es" translatable="false">Castellano</string>
+    <string name="idioma_gl" translatable="false">Galego</string>
+    <string name="idioma_eu" translatable="false">Euskara</string>
+    <string name="idioma_ca" translatable="false">Català</string>
+    <string name="idioma_en" translatable="false">English</string>
+    <string name="idioma_fr" translatable="false">Français</string>
+
+    <!-- Acerca de -->
+    <string name="acerca_titulo">Acerca de Libertalia Reader</string>
+    <string name="acerca_version">Versión %1$s</string>
+    <string name="acerca_filosofia">Gratis, sin anuncios y sin cuentas. Todo se guarda en tu móvil: la app no usa internet ni recoge datos de nadie.</string>
+    <string name="acerca_licencias">Licencias</string>
+    <string name="acerca_licencias_nota">Gracias a todas las personas que hacen estas librerías y tipografías. Todas permiten incluirlas en la app.</string>
+    <string name="acerca_unrar">Gratuita, pero no libre: no permite usarla para crear un compresor RAR.</string>
+
+    <!-- Liberar espacio -->
+    <string name="limpieza_explicacion">Archivos de la carpeta de la app que no usa ningún libro de tu biblioteca. Los repetidos vienen ya marcados. Los libros de tu biblioteca nunca se tocan.</string>
+    <string name="limpieza_buscando">Revisando la carpeta… %1$d %%</string>
+    <string name="limpieza_borrando">Borrando…</string>
+    <string name="limpieza_hecho">Listo: se han liberado %1$s.</string>
+    <string name="limpieza_nada">No hay nada que borrar: la carpeta está en orden.</string>
+    <string name="limpieza_copia_de">Repetido de «%1$s»</string>
+    <string name="limpieza_ningun_libro">No es de ningún libro</string>
+    <plurals name="limpieza_fallos">
+        <item quantity="one">No se ha podido borrar %1$d archivo.</item>
+        <item quantity="other">No se han podido borrar %1$d archivos.</item>
+    </plurals>
+    <plurals name="limpieza_borrar">
+        <item quantity="one">Borrar %1$d archivo · %2$s</item>
+        <item quantity="other">Borrar %1$d archivos · %2$s</item>
+    </plurals>
+    <plurals name="limpieza_confirmar_titulo">
+        <item quantity="one">¿Borrar %1$d archivo?</item>
+        <item quantity="other">¿Borrar %1$d archivos?</item>
+    </plurals>
+    <string name="limpieza_confirmar_texto">Se borrarán para siempre de la carpeta de la app. No se puede deshacer.</string>
+
+    <!-- Exportar las tarjetas de un libro -->
+    <string name="exportar_tarjetas_titulo">Exportar tarjetas</string>
+    <string name="exportar_tarjetas_markdown">Markdown (para leer)</string>
+    <string name="exportar_tarjetas_csv">CSV (hoja de cálculo)</string>
+    <string name="exportar_tarjetas_anki">Anki (para estudiar)</string>
+    <string name="exportar_tarjetas_sufijo">tarjetas</string>
+    <string name="exportar_tarjetas_sufijo_anki">tarjetas para Anki</string>
+    <string name="csv_texto">Texto subrayado</string>
+    <string name="csv_frase">Frase</string>
+    <string name="csv_nota">Nota</string>
+    <string name="csv_etiquetas">Etiquetas</string>
+    <string name="csv_color">Color</string>
+    <string name="csv_capitulo">Capítulo</string>
+    <string name="csv_pagina">Página</string>
+    <string name="csv_creada">Creada</string>
+
+    <!-- Lectura en voz alta (fase 11) -->
+    <string name="lector_escuchar">Escuchar</string>
+    <string name="cd_voz_reproducir">Seguir leyendo en voz alta</string>
+    <string name="cd_voz_pausar">Pausar</string>
+    <string name="cd_voz_anterior">Frase anterior</string>
+    <string name="cd_voz_siguiente">Frase siguiente</string>
+    <string name="cd_voz_velocidad">Velocidad de lectura</string>
+    <string name="cd_voz_parar">Dejar de escuchar</string>
+    <string name="voz_velocidad">%1$s×</string>
+    <string name="voz_falta_titulo">Falta la voz</string>
+    <string name="voz_falta_texto">El móvil no tiene una voz para leer en %1$s. Puedes descargarla gratis en los ajustes de voz de Android.</string>
+    <string name="voz_abrir_ajustes">Ajustes de voz</string>
+    <string name="voz_falta_alternativa">Si el libro en realidad está en %1$s, puedes leerlo con esa voz.</string>
+    <string name="voz_leer_en">Leer en %1$s</string>
+    <!-- Código del idioma de estos textos (es, gl, eu, ca, en, fr): al traducir, poner el del idioma. -->
+    <string name="codigo_idioma">es</string>
+    <!-- Nombre del castellano en minúscula, en medio de una frase («leer en castellano»). -->
+    <string name="nombre_castellano">castellano</string>
+    <string name="voz_error">No se ha podido leer este libro en voz alta. Comprueba que el móvil tiene un motor de voz instalado.</string>
+
+    <!-- Estadísticas (fase 12) -->
+    <string name="estadisticas_titulo">Estadísticas</string>
+    <string name="estadisticas_tiempo">Tiempo leído</string>
+    <string name="estadisticas_semana">Semana</string>
+    <string name="estadisticas_mes">Mes</string>
+    <string name="estadisticas_anio">Año</string>
+    <string name="estadisticas_total">Total: %1$s</string>
+    <string name="estadisticas_media">Media: %1$s al día</string>
+    <string name="estadisticas_libros_comics">Libros: %1$s · Cómics: %2$s</string>
+    <string name="estadisticas_velocidad">Velocidad de lectura</string>
+    <plurals name="estadisticas_ppm">
+        <item quantity="one">%1$d palabra por minuto</item>
+        <item quantity="other">%1$d palabras por minuto</item>
+    </plurals>
+    <string name="estadisticas_velocidad_nota">Media en libros, contando solo las páginas que pasas una a una (no los saltos ni lo escuchado).</string>
+    <string name="estadisticas_velocidad_vacia">Aún no hay datos. Se mide sola al leer libros pasando las páginas de una en una.</string>
+    <string name="estadisticas_terminados">Terminados</string>
+    <string name="estadisticas_terminados_vacio">Todavía no has terminado ningún libro ni cómic.</string>
+    <plurals name="estadisticas_n_libros">
+        <item quantity="one">%1$d libro</item>
+        <item quantity="other">%1$d libros</item>
+    </plurals>
+    <plurals name="estadisticas_n_comics">
+        <item quantity="one">%1$d cómic</item>
+        <item quantity="other">%1$d cómics</item>
+    </plurals>
+    <string name="cd_ver_titulos">Ver los títulos</string>
+    <string name="cd_ocultar_titulos">Ocultar los títulos</string>
+</resources>

@@ -1,0 +1,522 @@
+carpeta_titulo	Non gorde zure liburuak
+carpeta_explicacion	Libertalia Readerrek mugikorreko karpeta ikusgai batean gordetzen ditu zure liburuak: Dokumentuak › Libertalia. Horrela, ez dira galtzen aplikazioa desinstalatu arren.
+carpeta_instrucciones	Hurrengo pantailan, egiaztatu Libertalia karpetan zaudela eta sakatu «Erabili karpeta hau» eta, ondoren, «Baimendu».
+carpeta_boton	Aukeratu karpeta
+biblioteca_titulo	Liburutegia
+cd_anadir_libros	Gehitu liburuak
+vacia_titulo	Zure apala hutsik dago
+vacia_mensaje	Gehitu liburuak, komikiak edo mangak. Iragarkirik gabe, konturik gabe, dena zure mugikorrean. Azpimarratzen duzuna txartel bihurtuko da, nahi duzunean berriro irakurtzeko.
+boton_anadir_desde_movil	Gehitu mugikorretik
+libro_sin_archivo	Fitxategirik gabe
+filtro_todos	Denak
+estado_leyendo	Irakurtzen
+estado_pendientes	Irakurtzeko
+estado_terminados	Amaituak
+numero_libros#one	%d liburu
+numero_libros#other	%d liburu
+numero_comics#one	%d komiki
+numero_comics#other	%d komiki
+estante_vacio	Oraindik ez dago libururik hemen.
+seguir_leyendo	Jarraitu irakurtzen
+capitulo_y_progreso	%1$s · %2$s
+libro_formato_tamano	%1$s · %2$s
+importando	Liburuak gehitzen…
+importacion_anadidos#one	%d liburu gehitu da
+importacion_anadidos#other	%d liburu gehitu dira
+importacion_recuperados#one	%d liburu berreskuratu da, bere orrialdearekin eta oharrekin
+importacion_recuperados#other	%d liburu berreskuratu dira, beren orrialdearekin eta oharrekin
+importacion_completados#one	%d liburuk bere fitxategia berreskuratu du
+importacion_completados#other	%d liburuk beren fitxategia berreskuratu dute
+importacion_ya_existian#one	%d lehendik zegoen liburutegian
+importacion_ya_existian#other	%d lehendik zeuden liburutegian
+importacion_no_compatibles#one	%d fitxategi ez da aplikazioak ireki dezakeen liburu edo komiki bat
+importacion_no_compatibles#other	%d fitxategi ez dira aplikazioak ireki ditzakeen liburu edo komikiak
+importacion_rar5#one	%d CBR RAR 5 formatuan dago, eta aplikazioak ezin du ireki. CBZ edo RAR 4 gisa berriro gordetzen baduzu, bai
+importacion_rar5#other	%d CBR RAR 5 formatuan daude, eta aplikazioak ezin ditu ireki. CBZ edo RAR 4 gisa berriro gordetzen badituzu, bai
+importacion_errores#one	%d ezin izan da gehitu
+importacion_errores#other	%d ezin izan dira gehitu
+menu_editar	Editatu izenburua, egilea eta azala
+menu_cambiar_estado	Aldatu egoera
+menu_anadir_estanteria	Gehitu apal batera
+menu_eliminar	Kendu liburua
+menu_subtitulo	%1$s · %2$s
+estado_libro_leyendo	Irakurtzen
+estado_libro_pendiente	Irakurtzeko
+estado_libro_terminado	Amaitua
+editar_titulo	Editatu liburua
+campo_titulo	Izenburua
+campo_autor	Egilea
+cambiar_portada	Aldatu azala
+renombrar_archivo	Aldatu fitxategiaren izena ere izenburu honekin
+renombrar_archivo_nota	Liburuaren edukia ez da aldatzen.
+boton_guardar	Gorde
+boton_cancelar	Utzi
+estanterias_vacio	Oraindik ez duzu apalik. Sortu bat zure liburuak nahi duzun bezala antolatzeko.
+nueva_estanteria	Apal berria
+boton_crear	Sortu
+boton_listo	Eginda
+organizar_estanterias	Antolatu apalak
+campo_nombre	Izena
+cd_subir	Igo
+cd_bajar	Jaitsi
+cd_renombrar	Aldatu izena
+cd_eliminar_estanteria	Ezabatu apala
+renombrar_estanteria	Aldatu apalaren izena
+eliminar_estanteria_titulo	Apala ezabatu nahi duzu?
+eliminar_estanteria_mensaje	«%1$s» desagertu egingo da, baina bere liburuak liburutegian jarraituko dute.
+eliminar_titulo	Liburu hau kendu nahi duzu?
+eliminar_mensaje	«%1$s» liburutegitik kenduko da. Egunen batean berriro gehitzen baduzu, bere orrialdea, oharrak eta txartelak berreskuratuko ditu.
+eliminar_archivo	Ezabatu fitxategia ere Libertalia karpetatik
+boton_eliminar	Kendu
+aviso_libro_eliminado	Liburua kendu da
+aviso_error_renombrar	Ezin izan da fitxategiaren izena aldatu
+aviso_error_borrar_archivo	Ezin izan da fitxategia karpetatik ezabatu
+aviso_error_portada	Ezin izan da irudi hori azal gisa erabili
+abriendo_libro	Liburua irekitzen…
+error_abrir_libro	Ezin izan da liburua ireki. %1$s
+error_libro_sin_archivo	Liburu honek ez du bere fitxategia. Gehitu mugikorretik irakurri ahal izateko.
+cd_volver	Atzera
+lector_indice	Aurkibidea
+cd_progreso_libro	Liburuko kokapena
+lector_pagina	%1$d/%2$d orr.
+cd_plegar_barra	Ezkutatu beheko barra
+cd_desplegar_barra	Erakutsi beheko barra
+indice_vacio	Liburu honek ez du aurkibiderik.
+cd_buscar	Bilatu liburuan
+buscar_pista	Bilatu liburuan
+buscar_buscando	Bilatzen…
+buscar_sin_resultados	Ez da «%1$s» aurkitu.
+buscar_resultados#one	%d emaitza
+buscar_resultados#other	%d emaitza
+lector_ajustes	Ezarpenak
+ajustes_tema	Gaia
+tema_crema	Krema
+tema_sepia	Sepia
+tema_oscuro	Iluna
+ajustes_tamano	Tamaina
+cd_letra_menor	Letra txikiagoa
+cd_letra_mayor	Letra handiagoa
+cd_tamano_letra	Letraren tamaina
+ajustes_tipografia	Tipografia
+tipografia_literata	Literata
+tipografia_lora	Lora
+tipografia_sans	Sans
+tipografia_dislexia	Dislexia
+ajustes_margenes	Marjinak
+ajustes_interlineado	Lerroartea
+cd_nivel_poco	Gutxi
+cd_nivel_normal	Normala
+cd_nivel_mucho	Asko
+ajustes_brillo	Distira
+ajustes_brillo_auto	Auto
+cd_brillo	Pantailaren distira
+cd_brillo_auto	Erabili mugikorraren distira
+ajustes_volumen	Pasatu orria bolumen-botoiekin
+ajustes_pantalla_encendida	Mantendu pantaila piztuta
+ajustes_filtro_pdf	Iragazki beroa PDFetan
+comic_carpeta_titulo	Non dago komiki hau?
+comic_carpeta_texto	«%1$s» ez da zure liburutegira kopiatzen, lekua bi aldiz ez hartzeko: dagoen lekutik irekitzen da. Aplikazioak beti ireki ahal izan dezan, sakatu behin irekiko den zerrendan. Mugitu edo ezabatu baduzu, bilatu orain dagoen lekuan.
+comic_carpeta_elegir	Aukeratu komikia
+comic_carpeta_ahora_no	Orain ez
+comic_archivo_ok	Eginda: komikiak zure liburutegian jarraituko du.
+comic_archivo_otro	Hori ez da komiki bera. Beste aplikaziotik berriro ireki dezakezu edo + botoiarekin gehitu.
+comic_sin_acceso	Ezin da komiki hau ireki: ez dago lehen zegoen lekuan edo aplikazioak ez du baimenik. Gehitu berriro + botoiarekin.
+comic_abriendo	«%1$s» irekitzen…
+comic_abriendo_sin_titulo	Komikia irekitzen…
+comic_abriendo_nube	Google Driven edo beste hodei batean badago, lehen aldian denbora pixka bat behar izan dezake: hodeia deskargatzen ari da. Hurrengo aldietan berehala irekiko da.
+comic_error_abrir	Ezin izan da komiki hau ireki. Baliteke fitxategia hondatuta egotea edo lehen zegoen lekuan ez egotea.
+comic_titulo_tomo	%1$s · %2$d. liburukia
+comic_subtitulo	%1$s · %2$s
+comic_tipo_manga	Manga
+comic_tipo_comic	Komikia
+sentido_ltr_corto	Ezkerretik eskuinera
+sentido_rtl_corto	Eskuinetik ezkerrera
+comic_pagina_de	%1$d/%2$d orr.
+comic_modo_pagina	Orria
+comic_modo_doble	Bikoitza
+comic_modo_scroll	Jarraitua
+comic_paginas_de	%1$d–%2$d/%3$d orr.
+cd_recorte_activado	Moztu marjina zuriak: aktibatuta. Sakatu desaktibatzeko
+cd_recorte_desactivado	Moztu marjina zuriak: desaktibatuta. Sakatu aktibatzeko
+cd_poner_marcador	Markatu orri hau
+cd_quitar_marcador	Kendu orri honen markatzailea
+cd_lista_marcadores	Markatutako orriak
+cd_quitar_marcador_de	Kendu %1$d. orriaren markatzailea
+comic_marcadores_titulo	Markatutako orriak
+comic_marcadores_vacio	Oraindik ez duzu orririk markatu. Sakatu goiko zinta ikusten ari zarena markatzeko.
+comic_marcadores_cerrar	Itxi
+cd_pagina_comic	%1$d. orria
+cd_progreso_comic	Komikiaren orria
+cd_cambiar_sentido	Aldatu irakurtzeko noranzkoa
+nube_titulo	Komiki hau hodeian dago
+nube_texto	«%1$s» Google Driven edo beste hodei batean dago. Handik irakurtzen baduzu, baliteke aldi bakoitzean berriro deskargatzea eta datuak gastatzea, eta konexiorik gabe ez da irekiko. Mugikorrean gordetzea gomendatzen dizugu, zure Libertalia karpetan (hodeian ere egongo da). Hodeia hobea da segurtasun-kopietarako.
+nube_guardar	Gorde mugikorrean
+nube_seguir	Jarraitu hodeian
+menu_guardar_en_movil	Gorde mugikorrean
+nube_guardando	Komikia mugikorrean gordetzen… Aplikazioa erabiltzen jarrai dezakezu.
+nube_guardado	Eginda: komikia mugikorrean dago jada, eta handik irakurriko da.
+nube_error	Ezin izan da komikia mugikorrean gorde. Egiaztatu konexioa eta leku librea.
+menu_sentido_lectura	Irakurtzeko noranzkoa
+sentido_izquierda_derecha	Ezkerretik eskuinera (komikia)
+sentido_derecha_izquierda	Eskuinetik ezkerrera (manga)
+menu_tratar_como_comic	Tratatu komiki gisa
+menu_tratar_como_libro	Tratatu liburu gisa
+campo_tomo	Liburuki-zenbakia
+estante_comics	Komikiak eta mangak
+etiqueta_comic	KOMIKIA
+etiqueta_manga	MANGA
+etiqueta_comic_tomo	%1$s · %2$d
+ajustes_notas	Bereizi oin-oharrak
+ajustes_notas_explicacion	Liburu honetan bakarrik. PDF honetan oharrak eta testua nahasten badira, desaktibatu dagoen bezala irakurtzeko.
+ajustes_nota_pdf	PDFetan gaia eta iragazkia bakarrik aldatzen dira. Tamaina, tipografia, marjinak eta lerroartea EPUBetarako dira.
+seleccion_marcapaginas	Orri-markatzailea
+seleccion_diccionario	Hiztegia
+diccionario_elegir	Bilatu hiztegian
+diccionario_ninguno	Ez dago hiztegirik mugikorrean. Bat instalatu dezakezu (adibidez, aplikazio-dendatik) eta berriro saiatu.
+color_amarillo	Horia
+color_verde	Berdea
+color_azul	Urdina
+color_rosa	Arrosa
+aviso_subrayado	Azpimarratzean, esaldi osoarekin txartel bat sortzen da
+subrayado_nota_actual	Oharra: %1$s
+subrayado_anadir_nota	Gehitu oharra
+subrayado_editar_nota	Editatu oharra
+subrayado_borrar_nota	Ezabatu oharra
+subrayado_quitar	Kendu azpimarra
+nota_titulo_nueva	Ohar berria
+nota_titulo_editar	Editatu oharra
+nota_campo	Zure oharra
+cd_destacar_pagina	Nabarmendu orri hau
+cd_pagina_destacada	Orri nabarmendua: ikusi edo aldatu deskribapena
+destacada_titulo_nueva	Orri nabarmendua
+destacada_titulo	Orri nabarmendua
+destacada_explicacion	Deskribapen labur bat eman diezaiokezu; bere txarteletan izenburu gisa ikusiko da, zer den jakiteko.
+destacada_campo	Deskribapena (aukerakoa)
+destacada_quitar	Kendu nabarmentzea
+lector_destacadas	Nabarmenduak
+widget_racha_nombre	Irakurketa-segida
+widget_racha_descripcion	Zure segidaren pirata: zenbat egun jarraian zaramatzan irakurtzen.
+widget_seguir_nombre	Jarraitu irakurtzen
+widget_seguir_descripcion	Irakurtzen ari zaren liburua edo komikia, sakatze batez itzultzeko.
+widget_sin_libro	Ireki liburu edo komiki bat, eta hemen agertuko da.
+racha_titulo	Irakurketa-segida
+racha_dias#one	%d egun
+racha_dias#other	%d egun
+racha_contento	Gaur irakurri duzu jada!
+racha_tranquilo	Irakurri 5 minutu gaur jarraitzeko
+racha_empezar	Irakurri 5 minutu zure segida hasteko
+racha_asustado	Zure segida arriskuan dago!
+racha_triste	Zure segida hautsi da. Hasi beste bat!
+lector_tarjetas	Txartelak
+menu_ver_tarjetas	Ikusi txartelak
+aviso_subrayado_ver	Ikusi
+numero_tarjetas#one	%d txartel
+numero_tarjetas#other	%d txartel
+tarjetas_subtitulo	%1$s · liburuaren ordenan
+tarjetas_todas	Denak
+tarjetas_filtro_color	%1$s kolorekoak bakarrik
+tarjetas_pagina	%1$d. or.
+tarjetas_vacio	Liburu honek ez du txartelik oraindik. Irakurtzen ari zarela, sakatu luze hitz edo esaldi bat eta aukeratu kolore bat: esaldi osoarekin txartel bat sortuko da.
+tarjetas_vacio_filtro	Ez dago iragazki honekin bat datorren txartelik.
+tarjetas_vacio_busqueda	Liburu honetako txartel batek ere ez du testu hori.
+tarjetas_etiquetas	Etiketak
+tarjetas_filtro_etiquetas	Iragazi etiketaren arabera
+cd_buscar_en_tarjetas	Bilatu liburu honen txarteletan
+buscar_en_tarjetas_pista	Bilatu txartel hauetan
+titulo_tarjetas	Txartelak
+modo_tarjetas	Txartelak
+modo_libros	Liburuak
+modo_tarjetas_aviso	Sakatu liburu bat bere txartelak ikusteko
+cd_buscar_tarjetas	Bilatu liburu guztien txarteletan
+buscar_tarjetas_pista	Bilatu txartel guztietan
+buscar_tarjetas_explicacion	Idatzi gutxienez bi letra. Azpimarratutako testuan, esaldian, zure oharretan eta liburu guztien etiketetan bilatzen da.
+buscar_tarjetas_nada	Txartel batek ere ez du testu hori.
+buscar_tarjetas_encontradas#one	%d txartel aurkitu da
+buscar_tarjetas_encontradas#other	%d txartel aurkitu dira
+tarjeta_numero	%1$d/%2$d txartela
+cd_compartir_tarjeta	Partekatu aipua
+cd_borrar_tarjeta	Ezabatu txartela
+tarjeta_editar_texto	Editatu testua
+tarjeta_editar_explicacion	Testua zuzendu dezakezu (adibidez, PDFaren akatsak). Liburua ez da aldatzen.
+tarjeta_campo_subrayado	Azpimarratutako testua
+tarjeta_campo_frase	Esaldi osoa
+tarjeta_mi_nota	Nire oharra
+tarjeta_nota_vacia	Idatzi hemen zure oharra (bakarrik gordetzen da)
+tarjeta_etiquetas	Etiketak
+tarjeta_anadir_etiqueta	+ Gehitu
+cd_quitar_etiqueta	Kendu %1$s etiketa
+cd_ver_etiqueta	Ikusi %1$s etiketa duten txartel guztiak
+etiqueta_titulo	«%1$s» etiketa
+etiqueta_de_todos	liburu guztietakoak
+etiqueta_vacia	Jada ez dago etiketa hau duen txartelik.
+buscar_etiqueta_pista	Bilatu etiketa bat
+buscar_etiqueta_nada	Ez dago izen hori duen etiketarik.
+tarjeta_nueva_etiqueta	Etiketa berria
+tarjeta_campo_etiqueta	Etiketa (adibidez, «produktibitatea»)
+etiqueta_pista	produktibitatea
+etiqueta_mas_usadas	Gehien erabiltzen dituzunak
+etiqueta_parecidas	Badaude jada
+etiqueta_sugerida	#%1$s · %2$d
+subrayado_anadir_etiqueta	Gehitu etiketa
+tarjeta_creada	Sortze-data: %1$s
+tarjeta_creada_hoy	Gaur sortua
+tarjeta_editada	edizio-data: %1$s
+tarjeta_editada_hoy	gaur editatua
+tarjeta_fechas	%1$s · %2$s
+tarjeta_ir_al_libro	Joan liburura
+cd_tarjeta_anterior	Aurreko txartela
+cd_tarjeta_siguiente	Hurrengo txartela
+tarjeta_borrar_titulo	Txartel hau ezabatu nahi duzu?
+tarjeta_borrar_texto	Txartela, bere oharra eta liburuko azpimarra ezabatuko dira.
+tarjeta_borrar_si	Ezabatu
+tarjeta_compartir_texto	«%1$s»\n— %2$s
+destacadas_titulo	Orri nabarmenduak
+destacadas_vacio	Oraindik ez duzu orririk nabarmendu. Sakatu goiko izarra irakurtzen ari zarena nabarmentzeko.
+destacadas_sin_descripcion	Deskribapenik gabe
+destacadas_pagina	%1$d. or.
+destacadas_editar	Aldatu edo kendu deskribapena
+seleccion_copiar	Kopiatu
+marcapaginas_puesto	Orri-markatzailea hemen jarri da. Beheko barrako Orri-markatzailea botoiarekin itzul zaitezke hona.
+marcapaginas_confirmar_titulo	Orri-markatzailera itzuli nahi duzu?
+marcapaginas_confirmar_texto	Orri-markatzailea jarri zenuen esaldira joango zara, eta handik jarraituko du irakurketak.
+marcapaginas_confirmar_ir	Joan orri-markatzailera
+lector_marcapaginas	Orri-markatzailea
+cd_modo_texto	Ikusi testu gisa
+cd_modo_pdf	Ikusi jatorrizko PDFa
+modo_texto_preparando	Testu modua prestatzen
+modo_texto_progreso	%1$d/%2$d orria
+modo_texto_aviso	Lehen aldian bakarrik egiten da. Testu moduan irudiak eta maketazioa galtzen dira, eta akatsen bat egon daiteke, batez ere oin-oharretan.
+modo_texto_sin_texto	PDF honek ez du ateratzeko moduko testurik: bere orriak eskaneatutako irudiak dira.
+modo_texto_error	Ezin izan da PDF honen testu modua prestatu.
+modo_texto_bloque	%1$d–%2$d orriak
+boton_entendido	Ulertuta
+menu_exportar	Esportatu
+exportar_titulo	Esportatu
+exportar_subtitulo	Liburuak beren txartel, ohar eta kokapenarekin
+exportar_incluir_archivos	Sartu liburuen fitxategiak
+exportar_incluir_archivos_si	Mugikorrez aldatzeko: dena gordetzen du
+exportar_incluir_archivos_no	Kokapenak, markatzaileak, oharrak eta txartelak bakarrik: askoz arinagoa
+exportar_seleccionar_todos	Hautatu denak
+exportar_x_de_y	%1$d/%2$d
+exportar_detalle_comic	Komikia · %1$s
+exportar_elementos#one	%d elementu
+exportar_elementos#other	%d elementu
+exportar_aviso_correo	Handiegia da posta elektronikoz bidaltzeko. Gorde mugikorrean edo Driven, edo partekatu WhatsApp edo Telegram bidez.
+exportar_guardar_en	Gorde hemen…
+exportar_compartir	Partekatu
+exportar_pista_botones	Gorde hemen: mugikorra, Drive edo beste hodei bat · Partekatu: WhatsApp, Telegram, posta…
+exportar_preparando	Kopia prestatzen… %% %1$d
+exportar_guardada	Kopia gorde da
+exportar_error	Ezin izan da kopia egin. Saiatu berriro edo aukeratu beste leku bat.
+exportar_sin_archivo_titulo	Kopia gorde da, baina osatu gabe
+exportar_sin_archivo#one	Bere datuak eta txartelak daude, baina ez elementu honen fitxategia, ezin izan delako irakurri (agian mugitu edo ezabatu egin zen). Gehitu berriro eta egin beste kopia bat:
+exportar_sin_archivo#other	Beren datuak eta txartelak daude, baina ez %d elementu hauen fitxategiak, ezin izan direlako irakurri (agian mugitu edo ezabatu egin ziren). Gehitu berriro eta egin beste kopia bat:
+exportar_compartir_titulo	Partekatu kopia
+md_tarjetas	Txartelak
+md_destacadas	Nabarmenduak
+md_destacada_sin_descripcion	Orri nabarmendua
+md_nota	Oharra:
+md_etiquetas	Etiketak:
+md_exportado	Libertalia Readerretik esportatua (%1$s)
+importar_titulo	Inportatu kopia bat
+importar_fecha	Kopiaren data: %1$s
+importar_leyendo	Kopia irakurtzen… %% %1$d
+importar_aplicando	Inportatzen… %% %1$d
+importar_que_trae	Zer dakar kopiak
+importar_nuevos#one	%d liburu edo komiki berri
+importar_nuevos#other	%d liburu eta komiki berri
+importar_anadidos#one	%d liburu edo komiki gehitu da
+importar_anadidos#other	%d liburu eta komiki gehitu dira
+importar_ya_estaban#one	%d lehendik zegoen zure liburutegian: datuak batzen dira
+importar_ya_estaban#other	%d lehendik zeuden zure liburutegian: datuak batzen dira
+importar_tarjetas_nuevas#one	%d txartel berri
+importar_tarjetas_nuevas#other	%d txartel berri
+importar_destacadas_nuevas#one	%d orri nabarmendu berri
+importar_destacadas_nuevas#other	%d orri nabarmendu berri
+importar_actualizadas#one	%d txartel edo nabarmendu, aldaketa berriagoekin
+importar_actualizadas#other	%d txartel edo nabarmendu, aldaketa berriagoekin
+importar_sin_archivo#one	%d bere fitxategirik gabe dator: bere datuak eta txartelak izango dituzu, eta gehitzen duzunean osatuko da.
+importar_sin_archivo#other	%d beren fitxategirik gabe datoz: beren datuak eta txartelak izango dituzu, eta gehitzen dituzunean osatuko dira.
+importar_libro_tarjetas#one	%d txartel edo nabarmendu berri
+importar_libro_tarjetas#other	%d txartel edo nabarmendu berri
+importar_libro_sin_archivo	fitxategirik gabe
+importar_etiqueta_nuevo	Berria
+importar_etiqueta_ya_esta	Badago
+importar_etiqueta_vuelve	Itzultzen da
+importar_sin_cambios	Kopia honetako guztia zure liburutegian dago jada.
+importar_nada_se_borra	Ez da ezer ezabatzen: kopiakoa lehendik duzunarekin batzen da. Zerbait bi lekuetan badago, aldaketarik berriena gordetzen da.
+importar_boton	Inportatu
+importar_hecho	Kopia inportatu da
+importar_ir_biblioteca	Joan liburutegira
+importar_error_titulo	Ezin da inportatu
+importar_error_no_es_copia	Fitxategi hau ez da Libertalia Readerren kopia bat, edo hondatuta dago.
+importar_error_version	Kopia hau Libertalia Readerren bertsio berriago batekin egin zen. Eguneratu aplikazioa inportatzeko.
+importar_error_ilegible	Ezin izan da kopia irakurri. Egiaztatu mugikorrean leku librea dagoela eta saiatu berriro.
+ajustes_importar	Inportatu kopia bat
+vacia_importar	Inportatu kopia bat
+originales_titulo#one	Jatorrizkoa ezabatu nahi duzu?
+originales_titulo#other	Jatorrizkoak ezabatu nahi dituzu?
+originales_texto#one	«%2$s» Libertalia karpetan gordeta dago jada. Gehitu zenuen fitxategia ezabatzen baduzu, ez du lekua bi aldiz hartuko.
+originales_texto#other	%1$d liburu Libertalia karpetan gordeta daude jada. Gehitu zenituen fitxategiak ezabatzen badituzu (adibidez, «%2$s»), ez dute lekua bi aldiz hartuko.
+originales_recordar	Gogoratu nire aukera hurrengoetarako
+originales_borrar	Ezabatu
+originales_conservar	Mantendu
+originales_borrados	Jatorrizko fitxategia ezabatu da: liburuak zure liburutegian jarraitzen du
+originales_no_borrados	Androidek ez du utzi jatorrizkoren bat ezabatzen. Fitxategi-kudeatzailetik ezaba dezakezu.
+abrir_con_titulo	Liburutegira gehitu?
+abrir_con_texto	«%1$s» ez dago zure liburutegian. Gehitu dezakezu edo irakurri besterik ez: irakurri besterik egiten ez baduzu, ez da ezer gordetzen (ez orria, ez azpimarrak, ez irakurketa-denbora).
+abrir_con_anadir	Gehitu
+abrir_con_solo_leer	Irakurri soilik
+abrir_con_error	Ezin izan da fitxategia ireki
+mover_titulo	Jatorrizkoa kendu?
+mover_texto_libro	Liburua Libertalia karpetan gordeta dago jada. «%1$s» bere karpetatik kendu, bi aldiz ez izateko?
+mover_texto_comic	«%1$s» Libertalia karpetara eraman? Orain dagoen karpetatik kenduko da: horrela ez du bi aldiz lekurik hartzen.
+mover_si	Bai
+mover_elige	Ukitu jatorrizko fitxategia, aplikazioak kendu ahal izateko
+mover_hecho	Eginda: jatorrizkoa kendu da, eta Libertalia karpetan bakarrik dago orain
+mover_no_borrado	Ez da jatorrizkoa kendu (ez zen fitxategi bera edo Androidek ez du utzi)
+mover_error_copiar	Ezin izan da komikia Libertalia karpetara kopiatu
+importar_borrar_copia_texto	Kopia-fitxategi hau mugikorrean dago eta ez da behar jada: zuen guztia zure liburutegian dago orain.
+importar_borrar_copia	Ezabatu kopia-fitxategia
+importar_borrar_copia_titulo	«%1$s» ezabatu nahi duzu?
+importar_borrar_copia_confirmar	Kopia-fitxategia bakarrik ezabatzen da; zure liburutegia ez da aldatzen. Ezin da desegin.
+importar_copia_borrada	Kopia-fitxategia ezabatu da
+importar_copia_no_borrada	Androidek ez du utzi fitxategia ezabatzen. Fitxategi-kudeatzailetik ezaba dezakezu.
+copia_titulo	Kopia automatikoa
+copia_explicacion	Zure liburutegi osoaren kopia bakarra, egun gutxiro gainidazten dena, zuk gogoratu beharrik gabe. Libertaliak ez du saiorik hasten inon: Driven edo beste hodei batean gordetzen baduzu, hodei horren aplikazioak igotzen du.
+copia_donde	Non gordetzen den
+copia_sin_destino	Oraindik ez duzu aukeratu non gorde.
+copia_destino_perdido	Kopiaren fitxategia ez da aurkitzen jada.
+copia_elegir	Aukeratu non gorde
+copia_cambiar	Aldatu lekua
+copia_donde_nota	Mugikorreko karpeta bat, Google Drive edo instalatutako beste hodei bat aukera dezakezu. Beti fitxategi bera da: kopiak ez dira pilatzen.
+copia_frecuencia	Zenbatean behin
+copia_cada_dias#one	Egunero
+copia_cada_dias#other	%d egunean behin
+copia_cada_mes	Hilean behin
+copia_nunca	Inoiz ez
+copia_frecuencia_nota	Bakarrik egiten da, bateria nahikoarekin eta inoiz ez irakurtzen ari zarela. Ezer aldatu ez baduzu, ez da berriro egiten.
+copia_estado	Kopia
+copia_peso	Gutxi gorabeherako tamaina: %1$s
+copia_ultima	Azken kopia zuzena: %1$s
+copia_ultima_corta	Azkena: %1$s
+copia_ninguna	Oraindik ez da kopiarik egin.
+copia_archivos_nota	Beti darama zure datu eta txartel guztiak, eta «Sartu fitxategia kopia automatikoan» aktibatuta duten liburuen fitxategiak (beren menuan).
+copia_hacer_ahora	Egin kopia orain
+copia_haciendo	Kopia egiten… %% %1$d
+copia_sin_configurar	Konfiguratu gabe: aukeratu non gorde
+copia_canal	Kopia automatikoa
+copia_fallo_titulo	Ezin izan da kopia automatikoa egin
+copia_fallo_permiso	Libertaliak ez du baimenik jada kopiaren fitxategian idazteko. Aukeratu berriro non gorde.
+copia_fallo_no_existe	Kopiaren fitxategia ez dago jada (agian ezabatu edo mugitu egin zen). Aukeratu berriro non gorde.
+copia_fallo_error	Zerbaitek huts egin du idaztean (lekurik ez, hodeiko aplikazioarekin konexiorik ez…). Berriro saiatuko da; «Egin kopia orain» ere saka dezakezu.
+copia_fallo_aviso	Azken kopia automatikoa ezin izan da egin. Berrikusi Ezarpenetan.
+pesado_titulo_tomo	%1$s · %2$d. liburukia
+pesado_pregunta	Fitxategi honek asko pisatzen du. Kopia automatikoan sartu nahi duzu?
+pesado_explicacion	Sartzen ez baduzu, kopiak gordeko ditu, hala ere, zauden orria eta zure markatzaileak, baina ez fitxategia.
+pesado_incluir	Sartu kopian
+pesado_solo_datos	Orria eta markatzaileak bakarrik
+menu_incluir_en_copia	Sartu fitxategia kopia automatikoan
+ajustes_titulo	Ezarpenak
+cd_ajustes	Ezarpenak
+ajustes_aviso_privacidad	Dena mugikor honetan bakarrik gordetzen da. Telefonoz aldatzean ezer ez galtzeko, esportatu kopia bat.
+ajustes_copias	Kopiak eta mugikor-aldaketa
+ajustes_exportar	Esportatu
+ajustes_libros_este_anio	liburu amaitu aurten
+ajustes_esta_semana	irakurrita aste honetan
+ajustes_bloque_ajustes	Ezarpenak
+ajustes_idioma	Hizkuntza
+ajustes_idioma_nota	Aplikazio honen hizkuntza bakarrik aldatzen du, ez mugikorrarena.
+ajustes_carpeta	Aplikazioaren karpeta
+ajustes_carpeta_nota	Hemen gordetzen dira liburuak. Aplikazioa erabiltzen hastean aukeratzen da.
+ajustes_limite_pesado	Fitxategi handien abisua
+ajustes_limite_pesado_nota	Fitxategi handiago bat gehitzean, aplikazioak galdetzen du kopia automatikoan sartu behar den.
+ajustes_mb	%1$d MB
+ajustes_originales	Kanpoko liburu bat gehitzean, jatorrizkoa
+ajustes_pesados	Fitxategi handiak kopian
+ajustes_borrar	Ezabatu
+ajustes_conservar	Mantendu
+ajustes_incluir	Sartu
+ajustes_solo_datos	Orria eta markatzaileak bakarrik
+ajustes_preguntar	Galdetu aldi bakoitzean
+ajustes_liberar_espacio	Askatu lekua
+ajustes_liberar_espacio_nota	Aplikazioaren karpetan fitxategi errepikatuak edo inongo libururenak ez direnak bilatzen ditu.
+ajustes_bloque_comics	Komiki-irakurgailua
+ajustes_modo_comic	Modu lehenetsia
+ajustes_modo_automatico	Automatikoa (bikoitza horizontalean)
+ajustes_recortar	Moztu marjina zuriak
+ajustes_bloque_app	Aplikazioa
+tiempo_horas	%1$d h %2$02d min
+tiempo_minutos	%1$d min
+idioma_sistema	Mugikorrarena
+acerca_titulo	Libertalia Readerri buruz
+acerca_version	%1$s bertsioa
+acerca_filosofia	Doakoa, iragarkirik eta konturik gabe. Dena zure mugikorrean gordetzen da: aplikazioak ez du internet erabiltzen, eta ez du inoren daturik biltzen.
+acerca_licencias	Lizentziak
+acerca_licencias_nota	Eskerrik asko liburutegi eta tipografia hauek egiten dituzten pertsona guztiei. Guztiek baimentzen dute aplikazioan sartzea.
+acerca_unrar	Doakoa, baina ez librea: ezin da erabili RAR konpresore bat sortzeko.
+limpieza_explicacion	Aplikazioaren karpetako fitxategiak, zure liburutegiko inongo liburuk erabiltzen ez dituenak. Errepikatuak markatuta datoz jada. Zure liburutegiko liburuak ez dira inoiz ukitzen.
+limpieza_buscando	Karpeta berrikusten… %% %1$d
+limpieza_borrando	Ezabatzen…
+limpieza_hecho	Eginda: %1$s askatu dira.
+limpieza_nada	Ez dago ezabatzeko ezer: karpeta txukun dago.
+limpieza_copia_de	«%1$s»(r)en errepikapena
+limpieza_ningun_libro	Ez da inongo libururena
+limpieza_fallos#one	Ezin izan da %1$d fitxategi ezabatu.
+limpieza_fallos#other	Ezin izan dira %1$d fitxategi ezabatu.
+limpieza_borrar#one	Ezabatu %1$d fitxategi · %2$s
+limpieza_borrar#other	Ezabatu %1$d fitxategi · %2$s
+limpieza_confirmar_titulo#one	%1$d fitxategi ezabatu nahi duzu?
+limpieza_confirmar_titulo#other	%1$d fitxategi ezabatu nahi dituzu?
+limpieza_confirmar_texto	Betiko ezabatuko dira aplikazioaren karpetatik. Ezin da desegin.
+exportar_tarjetas_titulo	Esportatu txartelak
+exportar_tarjetas_markdown	Markdown (irakurtzeko)
+exportar_tarjetas_csv	CSV (kalkulu-orria)
+exportar_tarjetas_anki	Anki (ikasteko)
+exportar_tarjetas_sufijo	txartelak
+exportar_tarjetas_sufijo_anki	Ankirako txartelak
+csv_texto	Azpimarratutako testua
+csv_frase	Esaldia
+csv_nota	Oharra
+csv_etiquetas	Etiketak
+csv_color	Kolorea
+csv_capitulo	Kapitulua
+csv_pagina	Orria
+csv_creada	Sortze-data
+lector_escuchar	Entzun
+cd_voz_reproducir	Jarraitu ozen irakurtzen
+cd_voz_pausar	Pausatu
+cd_voz_anterior	Aurreko esaldia
+cd_voz_siguiente	Hurrengo esaldia
+cd_voz_velocidad	Irakurtzeko abiadura
+cd_voz_parar	Utzi entzuteari
+voz_velocidad	%1$s×
+voz_falta_titulo	Ahotsa falta da
+voz_falta_texto	Mugikorrak ez du ahotsik hizkuntza honetan irakurtzeko: %1$s. Doan deskarga dezakezu Androiden ahots-ezarpenetan.
+voz_abrir_ajustes	Ahots-ezarpenak
+voz_falta_alternativa	Liburua benetan hizkuntza honetan badago (%1$s), ahots horrekin irakur dezakezu.
+voz_leer_en	Irakurri: %1$s
+codigo_idioma	eu
+nombre_castellano	gaztelania
+voz_error	Ezin izan da liburu hau ozen irakurri. Egiaztatu mugikorrak ahots-motor bat instalatuta duela.
+estadisticas_titulo	Estatistikak
+estadisticas_tiempo	Irakurketa-denbora
+estadisticas_semana	Astea
+estadisticas_mes	Hilabetea
+estadisticas_anio	Urtea
+estadisticas_total	Guztira: %1$s
+estadisticas_media	Batez beste: %1$s egunean
+estadisticas_libros_comics	Liburuak: %1$s · Komikiak: %2$s
+estadisticas_velocidad	Irakurtzeko abiadura
+estadisticas_ppm#one	%1$d hitz minutuko
+estadisticas_ppm#other	%1$d hitz minutuko
+estadisticas_velocidad_nota	Liburuetako batez bestekoa, banan-banan pasatzen dituzun orriak bakarrik kontatuta (ez jauziak, ez entzundakoa).
+estadisticas_velocidad_vacia	Oraindik ez dago daturik. Bakarrik neurtzen da liburuak orriak banan-banan pasatuz irakurtzean.
+estadisticas_terminados	Amaituak
+estadisticas_terminados_vacio	Oraindik ez duzu libururik edo komikirik amaitu.
+estadisticas_n_libros#one	%1$d liburu
+estadisticas_n_libros#other	%1$d liburu
+estadisticas_n_comics#one	%1$d komiki
+estadisticas_n_comics#other	%1$d komiki
+cd_ver_titulos	Erakutsi izenburuak
+cd_ocultar_titulos	Ezkutatu izenburuak

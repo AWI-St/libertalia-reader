@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Pantalla del lector: debajo, el libro (Readium lo coloca en "contenedor_navegador");
+    encima, la capa de controles hecha con Compose (barras, índice, búsqueda).
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raiz_lector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_lectura">
+
+    <!--
+        Marco del libro: la app le pone espacio arriba y abajo para que el texto ocupe
+        solo el hueco libre entre las barras (y entre las barras del sistema).
+    -->
+    <FrameLayout
+        android:id="@+id/marco_libro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/contenedor_navegador"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/capa_controles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

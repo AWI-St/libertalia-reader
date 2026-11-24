@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        allowBackup="false": la copia automática de Android queda desactivada,
+        así no se sube nada a ninguna cuenta. Las copias las hace el usuario.
+        No se pide permiso de internet: la app funciona sin conexión.
+    -->
+    <!-- Para «Diccionario» al seleccionar texto: ver qué apps del móvil ofrecen opciones
+         de texto (diccionarios...). No da acceso a nada más. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT" />
+            <data android:mimeType="text/plain" />
+        </intent>
+    </queries>
+
+    <!-- Solo para avisar si la copia automática falla (nunca cuando va bien). -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Lectura en voz alta con la pantalla apagada (servicio con notificación de controles). -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <application
+        android:localeConfig="@xml/locales_config"
+        android:name=".LibertaliaApp"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Libertalia">
+
+        <!--
+            singleTop: si la app ya está abierta y llega otro libro con «Abrir con»,
+            se usa la misma pantalla en lugar de abrir otra encima.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- «Abrir con» desde el gestor de archivos, WhatsApp, el navegador... -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:mimeType="application/epub+zip" />
+                <data android:mimeType="application/pdf" />
+                <!-- Cómics: CBZ y CBR (cada app los llama de una forma). -->
+                <data android:mimeType="application/vnd.comicbook+zip" />
+                <data android:mimeType="application/vnd.comicbook-rar" />
+                <data android:mimeType="application/x-cbz" />
+                <data android:mimeType="application/x-cbr" />
+                <data android:mimeType="application/x-rar" />
+                <data android:mimeType="application/rar" />
+                <data android:mimeType="application/x-rar-compressed" />
+                <data android:mimeType="application/vnd.rar" />
+                <!-- Copias .libertalia: no tienen un tipo propio; cada app las manda como ZIP o «binario». -->
+                <data android:mimeType="application/zip" />
+                <data android:mimeType="application/x-zip-compressed" />
+                <data android:mimeType="application/octet-stream" />
+            </intent-filter>
+
+            <!-- «Compartir» un libro con Libertalia Reader. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/epub+zip" />
+                <data android:mimeType="application/pdf" />
+                <!-- Cómics: CBZ y CBR (cada app los llama de una forma). -->
+                <data android:mimeType="application/vnd.comicbook+zip" />
+                <data android:mimeType="application/vnd.comicbook-rar" />
+                <data android:mimeType="application/x-cbz" />
+                <data android:mimeType="application/x-cbr" />
+                <data android:mimeType="application/x-rar" />
+                <data android:mimeType="application/rar" />
+                <data android:mimeType="application/x-rar-compressed" />
+                <data android:mimeType="application/vnd.rar" />
+                <!-- Copias .libertalia: no tienen un tipo propio; cada app las manda como ZIP o «binario». -->
+                <data android:mimeType="application/zip" />
+                <data android:mimeType="application/x-zip-compressed" />
+                <data android:mimeType="application/octet-stream" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            adjustNothing: al abrir el teclado (por ejemplo, para buscar) el libro no se
+            encoge. Si se encogiera, Readium volvería a paginar y se movería de página.
+        -->
+        <!-- Lector de cómics y manga (fondo oscuro). -->
+        <activity
+            android:name=".comic.LectorComicActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Libertalia.Lector" />
+
+        <!-- Widgets de la pantalla de inicio: racha de lectura y «Seguir leyendo». -->
+        <receiver
+            android:name=".widgets.ReceptorWidgetRacha"
+            android:exported="true"
+            android:label="@string/widget_racha_nombre">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_racha" />
+        </receiver>
+        <receiver
+            android:name=".widgets.ReceptorWidgetSeguirLeyendo"
+            android:exported="true"
+            android:label="@string/widget_seguir_nombre">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_seguir_leyendo" />
+        </receiver>
+
+        <!-- Las tarjetas (subrayados) de un libro y la tarjeta abierta. -->
+        <activity
+            android:name=".tarjetas.TarjetasActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".lector.LectorActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Libertalia.Lector"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!-- Para compartir las copias .libertalia (WhatsApp, Telegram, correo...) sin dar acceso a nada más. -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.archivos"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/archivos_compartidos" />
+        </provider>
+
+        <!-- Recuerda el idioma elegido en la app también en Android 12 o anterior. -->
+        <!-- Lectura en voz alta: sigue sonando con la pantalla apagada o en otra app. -->
+        <service
+            android:name=".voz.ServicioVoz"
+            android:exported="true"
+            android:foregroundServiceType="mediaPlayback">
+            <intent-filter>
+                <action android:name="androidx.media3.session.MediaSessionService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+    </application>
+</manifest>

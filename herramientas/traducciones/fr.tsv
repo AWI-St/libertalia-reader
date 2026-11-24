@@ -1,0 +1,522 @@
+carpeta_titulo	Où ranger vos livres
+carpeta_explicacion	Libertalia Reader range vos livres dans un dossier visible du téléphone, Documents › Libertalia. Ainsi, ils ne se perdent pas même si vous désinstallez l’appli.
+carpeta_instrucciones	À l’écran suivant, vérifiez que vous êtes dans le dossier Libertalia, puis touchez « Utiliser ce dossier » et « Autoriser ».
+carpeta_boton	Choisir le dossier
+biblioteca_titulo	Bibliothèque
+cd_anadir_libros	Ajouter des livres
+vacia_titulo	Votre étagère est vide
+vacia_mensaje	Ajoutez des livres, des BD ou des mangas. Sans pub, sans compte, tout sur votre téléphone. Ce que vous surlignez devient des fiches à relire quand vous voulez.
+boton_anadir_desde_movil	Ajouter depuis le téléphone
+libro_sin_archivo	Sans fichier
+filtro_todos	Tous
+estado_leyendo	En cours
+estado_pendientes	À lire
+estado_terminados	Terminés
+numero_libros#one	%d livre
+numero_libros#other	%d livres
+numero_comics#one	%d BD
+numero_comics#other	%d BD
+estante_vacio	Pas encore de livres ici.
+seguir_leyendo	Reprendre la lecture
+capitulo_y_progreso	%1$s · %2$s
+libro_formato_tamano	%1$s · %2$s
+importando	Ajout des livres…
+importacion_anadidos#one	%d livre ajouté
+importacion_anadidos#other	%d livres ajoutés
+importacion_recuperados#one	%d livre récupéré avec sa page et ses notes
+importacion_recuperados#other	%d livres récupérés avec leur page et leurs notes
+importacion_completados#one	%d livre a retrouvé son fichier
+importacion_completados#other	%d livres ont retrouvé leur fichier
+importacion_ya_existian#one	%d était déjà dans la bibliothèque
+importacion_ya_existian#other	%d étaient déjà dans la bibliothèque
+importacion_no_compatibles#one	%d fichier n’est ni un livre ni une BD que l’appli sait ouvrir
+importacion_no_compatibles#other	%d fichiers ne sont ni des livres ni des BD que l’appli sait ouvrir
+importacion_rar5#one	%d CBR est au format RAR 5, que l’appli ne peut pas ouvrir. Réenregistrez-le en CBZ ou RAR 4 et il s’ouvrira
+importacion_rar5#other	%d CBR sont au format RAR 5, que l’appli ne peut pas ouvrir. Réenregistrez-les en CBZ ou RAR 4 et ils s’ouvriront
+importacion_errores#one	%d n’a pas pu être ajouté
+importacion_errores#other	%d n’ont pas pu être ajoutés
+menu_editar	Modifier le titre, l’auteur et la couverture
+menu_cambiar_estado	Changer l’état
+menu_anadir_estanteria	Ajouter à une étagère
+menu_eliminar	Retirer le livre
+menu_subtitulo	%1$s · %2$s
+estado_libro_leyendo	En cours
+estado_libro_pendiente	À lire
+estado_libro_terminado	Terminé
+editar_titulo	Modifier le livre
+campo_titulo	Titre
+campo_autor	Auteur
+cambiar_portada	Changer la couverture
+renombrar_archivo	Renommer aussi le fichier avec ce titre
+renombrar_archivo_nota	Le contenu du livre ne change pas.
+boton_guardar	Enregistrer
+boton_cancelar	Annuler
+estanterias_vacio	Vous n’avez pas encore d’étagères. Créez-en une pour ranger vos livres comme vous voulez.
+nueva_estanteria	Nouvelle étagère
+boton_crear	Créer
+boton_listo	OK
+organizar_estanterias	Organiser les étagères
+campo_nombre	Nom
+cd_subir	Monter
+cd_bajar	Descendre
+cd_renombrar	Renommer
+cd_eliminar_estanteria	Supprimer l’étagère
+renombrar_estanteria	Renommer l’étagère
+eliminar_estanteria_titulo	Supprimer l’étagère ?
+eliminar_estanteria_mensaje	« %1$s » va disparaître, mais ses livres resteront dans la bibliothèque.
+eliminar_titulo	Retirer ce livre ?
+eliminar_mensaje	« %1$s » sera retiré de la bibliothèque. Si vous l’ajoutez à nouveau un jour, il retrouvera sa page, ses notes et ses fiches.
+eliminar_archivo	Supprimer aussi le fichier du dossier Libertalia
+boton_eliminar	Retirer
+aviso_libro_eliminado	Livre retiré
+aviso_error_renombrar	Impossible de renommer le fichier
+aviso_error_borrar_archivo	Impossible de supprimer le fichier du dossier
+aviso_error_portada	Impossible d’utiliser cette image comme couverture
+abriendo_libro	Ouverture du livre…
+error_abrir_libro	Impossible d’ouvrir le livre. %1$s
+error_libro_sin_archivo	Ce livre n’a pas son fichier. Ajoutez-le depuis le téléphone pour le lire.
+cd_volver	Retour
+lector_indice	Sommaire
+cd_progreso_libro	Position dans le livre
+lector_pagina	Page %1$d sur %2$d
+cd_plegar_barra	Masquer la barre du bas
+cd_desplegar_barra	Afficher la barre du bas
+indice_vacio	Ce livre n’a pas de sommaire.
+cd_buscar	Rechercher dans le livre
+buscar_pista	Rechercher dans le livre
+buscar_buscando	Recherche…
+buscar_sin_resultados	« %1$s » introuvable.
+buscar_resultados#one	%d résultat
+buscar_resultados#other	%d résultats
+lector_ajustes	Réglages
+ajustes_tema	Thème
+tema_crema	Crème
+tema_sepia	Sépia
+tema_oscuro	Sombre
+ajustes_tamano	Taille
+cd_letra_menor	Texte plus petit
+cd_letra_mayor	Texte plus grand
+cd_tamano_letra	Taille du texte
+ajustes_tipografia	Police
+tipografia_literata	Literata
+tipografia_lora	Lora
+tipografia_sans	Sans
+tipografia_dislexia	Dyslexie
+ajustes_margenes	Marges
+ajustes_interlineado	Interligne
+cd_nivel_poco	Peu
+cd_nivel_normal	Normal
+cd_nivel_mucho	Beaucoup
+ajustes_brillo	Luminosité
+ajustes_brillo_auto	Auto
+cd_brillo	Luminosité de l’écran
+cd_brillo_auto	Utiliser la luminosité du téléphone
+ajustes_volumen	Tourner les pages avec le volume
+ajustes_pantalla_encendida	Garder l’écran allumé
+ajustes_filtro_pdf	Filtre chaud pour les PDF
+comic_carpeta_titulo	Où est cette BD ?
+comic_carpeta_texto	« %1$s » n’est pas copiée dans votre bibliothèque pour ne pas occuper deux fois la place : elle s’ouvre depuis son emplacement. Pour que l’appli puisse toujours l’ouvrir, touchez-la une fois dans la liste qui va s’afficher. Si vous l’avez déplacée ou supprimée, cherchez-la là où elle est maintenant.
+comic_carpeta_elegir	Choisir la BD
+comic_carpeta_ahora_no	Pas maintenant
+comic_archivo_ok	C’est fait : la BD reste dans votre bibliothèque.
+comic_archivo_otro	Ce n’est pas la même BD. Vous pouvez la rouvrir depuis l’autre appli ou l’ajouter avec le bouton +.
+comic_sin_acceso	Impossible d’ouvrir cette BD : elle n’est plus à sa place ou l’appli n’a pas l’autorisation. Ajoutez-la à nouveau avec le bouton +.
+comic_abriendo	Ouverture de « %1$s »…
+comic_abriendo_sin_titulo	Ouverture de la BD…
+comic_abriendo_nube	Si elle est sur Google Drive ou un autre cloud, la première fois peut prendre un peu de temps : le cloud la télécharge. Les fois suivantes, elle s’ouvrira tout de suite.
+comic_error_abrir	Impossible d’ouvrir cette BD. Le fichier est peut-être endommagé ou n’est plus à sa place.
+comic_titulo_tomo	%1$s · Tome %2$d
+comic_subtitulo	%1$s · %2$s
+comic_tipo_manga	Manga
+comic_tipo_comic	BD
+sentido_ltr_corto	De gauche à droite
+sentido_rtl_corto	De droite à gauche
+comic_pagina_de	Page %1$d sur %2$d
+comic_modo_pagina	Page
+comic_modo_doble	Double
+comic_modo_scroll	Continu
+comic_paginas_de	Pages %1$d–%2$d sur %3$d
+cd_recorte_activado	Rogner les marges blanches : activé. Touchez pour désactiver
+cd_recorte_desactivado	Rogner les marges blanches : désactivé. Touchez pour activer
+cd_poner_marcador	Marquer cette page
+cd_quitar_marcador	Retirer le marque-page de cette page
+cd_lista_marcadores	Pages marquées
+cd_quitar_marcador_de	Retirer le marque-page de la page %1$d
+comic_marcadores_titulo	Pages marquées
+comic_marcadores_vacio	Vous n’avez encore marqué aucune page. Touchez le ruban en haut pour marquer celle que vous voyez.
+comic_marcadores_cerrar	Fermer
+cd_pagina_comic	Page %1$d
+cd_progreso_comic	Page de la BD
+cd_cambiar_sentido	Changer le sens de lecture
+nube_titulo	Cette BD est dans le cloud
+nube_texto	« %1$s » est sur Google Drive ou un autre cloud. Si vous la lisez depuis là, elle peut se retélécharger et consommer des données à chaque fois, et elle ne s’ouvrira pas hors connexion. Nous vous conseillons de l’enregistrer sur le téléphone, dans votre dossier Libertalia (elle restera aussi dans le cloud). Le cloud est plus adapté aux sauvegardes.
+nube_guardar	Enregistrer sur le téléphone
+nube_seguir	Garder dans le cloud
+menu_guardar_en_movil	Enregistrer sur le téléphone
+nube_guardando	Enregistrement de la BD sur le téléphone… Vous pouvez continuer à utiliser l’appli.
+nube_guardado	C’est fait : la BD est sur le téléphone et sera lue depuis là.
+nube_error	Impossible d’enregistrer la BD sur le téléphone. Vérifiez la connexion et l’espace libre.
+menu_sentido_lectura	Sens de lecture
+sentido_izquierda_derecha	De gauche à droite (BD)
+sentido_derecha_izquierda	De droite à gauche (manga)
+menu_tratar_como_comic	Traiter comme une BD
+menu_tratar_como_libro	Traiter comme un livre
+campo_tomo	Numéro du tome
+estante_comics	BD et mangas
+etiqueta_comic	BD
+etiqueta_manga	MANGA
+etiqueta_comic_tomo	%1$s · %2$d
+ajustes_notas	Séparer les notes de bas de page
+ajustes_notas_explicacion	Pour ce livre seulement. Si les notes et le texte se mélangent dans ce PDF, désactivez-le pour le lire tel quel.
+ajustes_nota_pdf	Dans les PDF, seuls le thème et le filtre changent. La taille, la police, les marges et l’interligne s’appliquent aux EPUB.
+seleccion_marcapaginas	Marque-page
+seleccion_diccionario	Dictionnaire
+diccionario_elegir	Chercher dans le dictionnaire
+diccionario_ninguno	Aucun dictionnaire sur le téléphone. Vous pouvez en installer un (par exemple depuis la boutique d’applis) et réessayer.
+color_amarillo	Jaune
+color_verde	Vert
+color_azul	Bleu
+color_rosa	Rose
+aviso_subrayado	Surligner crée une fiche avec la phrase complète
+subrayado_nota_actual	Note : %1$s
+subrayado_anadir_nota	Ajouter une note
+subrayado_editar_nota	Modifier la note
+subrayado_borrar_nota	Supprimer la note
+subrayado_quitar	Retirer le surlignage
+nota_titulo_nueva	Nouvelle note
+nota_titulo_editar	Modifier la note
+nota_campo	Votre note
+cd_destacar_pagina	Mettre cette page en favori
+cd_pagina_destacada	Page favorite : voir ou modifier sa description
+destacada_titulo_nueva	Page favorite
+destacada_titulo	Page favorite
+destacada_explicacion	Vous pouvez lui donner une courte description, qui servira de titre dans ses fiches pour savoir de quoi il s’agit.
+destacada_campo	Description (facultative)
+destacada_quitar	Retirer des favoris
+lector_destacadas	Favoris
+widget_racha_nombre	Série de lecture
+widget_racha_descripcion	Le pirate de votre série : combien de jours de suite vous lisez.
+widget_seguir_nombre	Reprendre la lecture
+widget_seguir_descripcion	Le livre ou la BD que vous lisez, pour y revenir d’un geste.
+widget_sin_libro	Ouvrez un livre ou une BD et il apparaîtra ici.
+racha_titulo	Série de lecture
+racha_dias#one	%d jour
+racha_dias#other	%d jours
+racha_contento	Vous avez lu aujourd’hui !
+racha_tranquilo	Lisez 5 minutes aujourd’hui pour continuer
+racha_empezar	Lisez 5 minutes pour commencer votre série
+racha_asustado	Votre série est en danger !
+racha_triste	Votre série est rompue. Commencez-en une autre !
+lector_tarjetas	Fiches
+menu_ver_tarjetas	Voir les fiches
+aviso_subrayado_ver	Voir
+numero_tarjetas#one	%d fiche
+numero_tarjetas#other	%d fiches
+tarjetas_subtitulo	%1$s · dans l’ordre du livre
+tarjetas_todas	Toutes
+tarjetas_filtro_color	Seulement en %1$s
+tarjetas_pagina	p. %1$d
+tarjetas_vacio	Ce livre n’a pas encore de fiches. Pendant la lecture, appuyez longuement sur un mot ou une phrase et choisissez une couleur : une fiche sera créée avec la phrase complète.
+tarjetas_vacio_filtro	Aucune fiche avec ce filtre.
+tarjetas_vacio_busqueda	Aucune fiche de ce livre ne contient ce texte.
+tarjetas_etiquetas	Étiquettes
+tarjetas_filtro_etiquetas	Filtrer par étiquette
+cd_buscar_en_tarjetas	Rechercher dans les fiches de ce livre
+buscar_en_tarjetas_pista	Rechercher dans ces fiches
+titulo_tarjetas	Fiches
+modo_tarjetas	Fiches
+modo_libros	Livres
+modo_tarjetas_aviso	Touchez un livre pour voir ses fiches
+cd_buscar_tarjetas	Rechercher dans les fiches de tous les livres
+buscar_tarjetas_pista	Rechercher dans toutes les fiches
+buscar_tarjetas_explicacion	Tapez au moins deux lettres. La recherche porte sur le texte surligné, la phrase, vos notes et les étiquettes de tous les livres.
+buscar_tarjetas_nada	Aucune fiche ne contient ce texte.
+buscar_tarjetas_encontradas#one	%d fiche trouvée
+buscar_tarjetas_encontradas#other	%d fiches trouvées
+tarjeta_numero	Fiche %1$d sur %2$d
+cd_compartir_tarjeta	Partager la citation
+cd_borrar_tarjeta	Supprimer la fiche
+tarjeta_editar_texto	Modifier le texte
+tarjeta_editar_explicacion	Vous pouvez corriger le texte (par exemple, des coquilles du PDF). Le livre ne change pas.
+tarjeta_campo_subrayado	Texte surligné
+tarjeta_campo_frase	Phrase complète
+tarjeta_mi_nota	Ma note
+tarjeta_nota_vacia	Écrivez votre note ici (elle s’enregistre toute seule)
+tarjeta_etiquetas	Étiquettes
+tarjeta_anadir_etiqueta	+ Ajouter
+cd_quitar_etiqueta	Retirer l’étiquette %1$s
+cd_ver_etiqueta	Voir toutes les fiches avec l’étiquette %1$s
+etiqueta_titulo	Étiquette « %1$s »
+etiqueta_de_todos	de tous les livres
+etiqueta_vacia	Il n’y a plus de fiches avec cette étiquette.
+buscar_etiqueta_pista	Rechercher une étiquette
+buscar_etiqueta_nada	Aucune étiquette ne porte ce nom.
+tarjeta_nueva_etiqueta	Nouvelle étiquette
+tarjeta_campo_etiqueta	Étiquette (par exemple, « productivité »)
+etiqueta_pista	productivité
+etiqueta_mas_usadas	Les plus utilisées
+etiqueta_parecidas	Existent déjà
+etiqueta_sugerida	#%1$s · %2$d
+subrayado_anadir_etiqueta	Ajouter une étiquette
+tarjeta_creada	Créée le %1$s
+tarjeta_creada_hoy	Créée aujourd’hui
+tarjeta_editada	modifiée le %1$s
+tarjeta_editada_hoy	modifiée aujourd’hui
+tarjeta_fechas	%1$s · %2$s
+tarjeta_ir_al_libro	Aller au livre
+cd_tarjeta_anterior	Fiche précédente
+cd_tarjeta_siguiente	Fiche suivante
+tarjeta_borrar_titulo	Supprimer cette fiche ?
+tarjeta_borrar_texto	La fiche, sa note et le surlignage dans le livre seront supprimés.
+tarjeta_borrar_si	Supprimer
+tarjeta_compartir_texto	« %1$s »\n— %2$s
+destacadas_titulo	Pages favorites
+destacadas_vacio	Vous n’avez encore mis aucune page en favori. Touchez l’étoile en haut pour y mettre celle que vous lisez.
+destacadas_sin_descripcion	Sans description
+destacadas_pagina	p. %1$d
+destacadas_editar	Modifier ou retirer la description
+seleccion_copiar	Copier
+marcapaginas_puesto	Marque-page placé ici. Vous pouvez y revenir avec le bouton Marque-page de la barre du bas.
+marcapaginas_confirmar_titulo	Revenir au marque-page ?
+marcapaginas_confirmar_texto	Vous irez à la phrase où vous avez placé le marque-page et la lecture reprendra de là.
+marcapaginas_confirmar_ir	Aller au marque-page
+lector_marcapaginas	Marque-page
+cd_modo_texto	Afficher en texte
+cd_modo_pdf	Afficher le PDF d’origine
+modo_texto_preparando	Préparation du mode texte
+modo_texto_progreso	Page %1$d sur %2$d
+modo_texto_aviso	Cela ne se fait que la première fois. En mode texte, les images et la mise en page sont perdues, et il peut y avoir des erreurs, surtout dans les notes de bas de page.
+modo_texto_sin_texto	Ce PDF n’a pas de texte récupérable : ses pages sont des images numérisées.
+modo_texto_error	Impossible de préparer le mode texte de ce PDF.
+modo_texto_bloque	Pages %1$d–%2$d
+boton_entendido	Compris
+menu_exportar	Exporter
+exportar_titulo	Exporter
+exportar_subtitulo	Les livres avec leurs fiches, notes et position
+exportar_incluir_archivos	Inclure les fichiers des livres
+exportar_incluir_archivos_si	Pour changer de téléphone : tout est sauvegardé
+exportar_incluir_archivos_no	Seulement positions, marque-pages, notes et fiches : beaucoup plus léger
+exportar_seleccionar_todos	Tout sélectionner
+exportar_x_de_y	%1$d sur %2$d
+exportar_detalle_comic	BD · %1$s
+exportar_elementos#one	%d élément
+exportar_elementos#other	%d éléments
+exportar_aviso_correo	Trop lourd pour être envoyé par e-mail. Enregistrez-le sur le téléphone ou sur Drive, ou partagez-le par WhatsApp ou Telegram.
+exportar_guardar_en	Enregistrer dans…
+exportar_compartir	Partager
+exportar_pista_botones	Enregistrer dans : téléphone, Drive ou autre cloud · Partager : WhatsApp, Telegram, e-mail…
+exportar_preparando	Préparation de la sauvegarde… %1$d %%
+exportar_guardada	Sauvegarde enregistrée
+exportar_error	Impossible de faire la sauvegarde. Réessayez ou choisissez un autre endroit.
+exportar_sin_archivo_titulo	Sauvegarde enregistrée, mais incomplète
+exportar_sin_archivo#one	Ses données et ses fiches y sont, mais pas le fichier de cet élément, qui n’a pas pu être lu (il a peut-être été déplacé ou supprimé). Ajoutez-le à nouveau et refaites une sauvegarde :
+exportar_sin_archivo#other	Leurs données et leurs fiches y sont, mais pas les fichiers de ces %d éléments, qui n’ont pas pu être lus (ils ont peut-être été déplacés ou supprimés). Ajoutez-les à nouveau et refaites une sauvegarde :
+exportar_compartir_titulo	Partager la sauvegarde
+md_tarjetas	Fiches
+md_destacadas	Favoris
+md_destacada_sin_descripcion	Page favorite
+md_nota	Note :
+md_etiquetas	Étiquettes :
+md_exportado	Exporté de Libertalia Reader le %1$s
+importar_titulo	Importer une sauvegarde
+importar_fecha	Sauvegarde du %1$s
+importar_leyendo	Lecture de la sauvegarde… %1$d %%
+importar_aplicando	Importation… %1$d %%
+importar_que_trae	Contenu de la sauvegarde
+importar_nuevos#one	%d nouveau livre ou nouvelle BD
+importar_nuevos#other	%d nouveaux livres et BD
+importar_anadidos#one	%d livre ou BD ajouté
+importar_anadidos#other	%d livres et BD ajoutés
+importar_ya_estaban#one	%d était déjà dans votre bibliothèque : ses données sont fusionnées
+importar_ya_estaban#other	%d étaient déjà dans votre bibliothèque : leurs données sont fusionnées
+importar_tarjetas_nuevas#one	%d nouvelle fiche
+importar_tarjetas_nuevas#other	%d nouvelles fiches
+importar_destacadas_nuevas#one	%d nouvelle page favorite
+importar_destacadas_nuevas#other	%d nouvelles pages favorites
+importar_actualizadas#one	%d fiche ou favori avec des modifications plus récentes
+importar_actualizadas#other	%d fiches ou favoris avec des modifications plus récentes
+importar_sin_archivo#one	%d arrive sans son fichier : vous aurez ses données et ses fiches, et il sera complété quand vous l’ajouterez.
+importar_sin_archivo#other	%d arrivent sans leur fichier : vous aurez leurs données et leurs fiches, et ils seront complétés quand vous les ajouterez.
+importar_libro_tarjetas#one	%d nouvelle fiche ou favori
+importar_libro_tarjetas#other	%d nouvelles fiches ou favoris
+importar_libro_sin_archivo	sans fichier
+importar_etiqueta_nuevo	Nouveau
+importar_etiqueta_ya_esta	Déjà là
+importar_etiqueta_vuelve	Revient
+importar_sin_cambios	Tout le contenu de cette sauvegarde est déjà dans votre bibliothèque.
+importar_nada_se_borra	Rien n’est supprimé : la sauvegarde est fusionnée avec ce que vous avez déjà. Si quelque chose existe des deux côtés, la modification la plus récente est conservée.
+importar_boton	Importer
+importar_hecho	Sauvegarde importée
+importar_ir_biblioteca	Aller à la bibliothèque
+importar_error_titulo	Importation impossible
+importar_error_no_es_copia	Ce fichier n’est pas une sauvegarde de Libertalia Reader, ou il est endommagé.
+importar_error_version	Cette sauvegarde a été faite avec une version plus récente de Libertalia Reader. Mettez l’appli à jour pour l’importer.
+importar_error_ilegible	Impossible de lire la sauvegarde. Vérifiez qu’il reste de l’espace libre sur le téléphone et réessayez.
+ajustes_importar	Importer une sauvegarde
+vacia_importar	Importer une sauvegarde
+originales_titulo#one	Supprimer l’original ?
+originales_titulo#other	Supprimer les originaux ?
+originales_texto#one	« %2$s » est déjà enregistré dans le dossier Libertalia. Si vous supprimez le fichier ajouté, il n’occupera pas deux fois la place.
+originales_texto#other	%1$d livres sont déjà enregistrés dans le dossier Libertalia. Si vous supprimez les fichiers ajoutés (par exemple « %2$s »), ils n’occuperont pas deux fois la place.
+originales_recordar	Mémoriser mon choix pour la suite
+originales_borrar	Supprimer
+originales_conservar	Conserver
+originales_borrados	Le fichier d’origine a été supprimé : le livre reste dans votre bibliothèque
+originales_no_borrados	Android n’a pas permis de supprimer certains originaux. Vous pouvez les supprimer depuis le gestionnaire de fichiers.
+abrir_con_titulo	Ajouter à la bibliothèque ?
+abrir_con_texto	« %1$s » n’est pas dans votre bibliothèque. Vous pouvez l’ajouter ou seulement le lire : si vous le lisez seulement, rien n’est enregistré (ni la page, ni les surlignages, ni le temps de lecture).
+abrir_con_anadir	Ajouter
+abrir_con_solo_leer	Seulement lire
+abrir_con_error	Impossible d’ouvrir le fichier
+mover_titulo	Retirer l’original ?
+mover_texto_libro	Le livre est déjà enregistré dans le dossier Libertalia. Retirer « %1$s » de son dossier pour ne pas l’avoir en double ?
+mover_texto_comic	Déplacer « %1$s » dans le dossier Libertalia ? Il sera retiré de son dossier actuel : ainsi, il n’occupe pas deux fois de l’espace.
+mover_si	Oui
+mover_elige	Touchez le fichier original pour que l’app puisse le retirer
+mover_hecho	C’est fait : l’original a été retiré et se trouve seulement dans le dossier Libertalia
+mover_no_borrado	L’original n’a pas été retiré (ce n’était pas le même fichier ou Android ne l’a pas permis)
+mover_error_copiar	Impossible de copier la BD dans le dossier Libertalia
+importar_borrar_copia_texto	Ce fichier de sauvegarde est sur le téléphone et n’est plus utile : tout son contenu est maintenant dans votre bibliothèque.
+importar_borrar_copia	Supprimer le fichier de sauvegarde
+importar_borrar_copia_titulo	Supprimer « %1$s » ?
+importar_borrar_copia_confirmar	Seul le fichier de sauvegarde est supprimé ; votre bibliothèque ne change pas. C’est irréversible.
+importar_copia_borrada	Fichier de sauvegarde supprimé
+importar_copia_no_borrada	Android n’a pas permis de supprimer le fichier. Vous pouvez le supprimer depuis le gestionnaire de fichiers.
+copia_titulo	Sauvegarde automatique
+copia_explicacion	Une seule sauvegarde de toute votre bibliothèque, remplacée tous les quelques jours, sans que vous ayez à y penser. Libertalia ne se connecte à rien : si vous l’enregistrez sur Drive ou un autre cloud, c’est l’appli de ce cloud qui l’envoie.
+copia_donde	Emplacement
+copia_sin_destino	Vous n’avez pas encore choisi où l’enregistrer.
+copia_destino_perdido	Le fichier de sauvegarde est introuvable.
+copia_elegir	Choisir où l’enregistrer
+copia_cambiar	Changer d’emplacement
+copia_donde_nota	Vous pouvez choisir un dossier du téléphone, Google Drive ou un autre cloud installé. C’est toujours le même fichier : les sauvegardes ne s’accumulent pas.
+copia_frecuencia	Fréquence
+copia_cada_dias#one	Tous les jours
+copia_cada_dias#other	Tous les %d jours
+copia_cada_mes	Tous les mois
+copia_nunca	Jamais
+copia_frecuencia_nota	Elle se fait toute seule, avec assez de batterie et jamais pendant la lecture. Si rien n’a changé, elle n’est pas refaite.
+copia_estado	La sauvegarde
+copia_peso	Taille approximative : %1$s
+copia_ultima	Dernière sauvegarde réussie : %1$s
+copia_ultima_corta	Dernière : %1$s
+copia_ninguna	Aucune sauvegarde n’a encore été faite.
+copia_archivos_nota	Elle contient toujours toutes vos données et fiches, ainsi que les fichiers des livres pour lesquels « Inclure le fichier dans la sauvegarde automatique » est activé (dans leur menu).
+copia_hacer_ahora	Sauvegarder maintenant
+copia_haciendo	Sauvegarde en cours… %1$d %%
+copia_sin_configurar	Non configurée : choisissez où l’enregistrer
+copia_canal	Sauvegarde automatique
+copia_fallo_titulo	La sauvegarde automatique a échoué
+copia_fallo_permiso	Libertalia n’a plus l’autorisation d’écrire dans le fichier de sauvegarde. Choisissez à nouveau où l’enregistrer.
+copia_fallo_no_existe	Le fichier de sauvegarde n’existe plus (il a peut-être été supprimé ou déplacé). Choisissez à nouveau où l’enregistrer.
+copia_fallo_error	Un problème est survenu à l’écriture (pas d’espace, pas de connexion avec l’appli du cloud…). Un nouvel essai aura lieu ; vous pouvez aussi toucher « Sauvegarder maintenant ».
+copia_fallo_aviso	La dernière sauvegarde automatique a échoué. Vérifiez-la dans les Réglages.
+pesado_titulo_tomo	%1$s · Tome %2$d
+pesado_pregunta	Ce fichier est très lourd. Voulez-vous l’inclure dans la sauvegarde automatique ?
+pesado_explicacion	Si vous ne l’incluez pas, la sauvegarde gardera quand même la page où vous en êtes et vos marque-pages, mais pas le fichier.
+pesado_incluir	Inclure dans la sauvegarde
+pesado_solo_datos	Seulement la page et les marque-pages
+menu_incluir_en_copia	Inclure le fichier dans la sauvegarde automatique
+ajustes_titulo	Réglages
+cd_ajustes	Réglages
+ajustes_aviso_privacidad	Tout est enregistré uniquement sur ce téléphone. Pour ne rien perdre en changeant de téléphone, exportez une sauvegarde.
+ajustes_copias	Sauvegardes et changement de téléphone
+ajustes_exportar	Exporter
+ajustes_libros_este_anio	livres terminés cette année
+ajustes_esta_semana	lu cette semaine
+ajustes_bloque_ajustes	Réglages
+ajustes_idioma	Langue
+ajustes_idioma_nota	Change seulement la langue de cette appli, pas celle du téléphone.
+ajustes_carpeta	Dossier de l’appli
+ajustes_carpeta_nota	Les livres sont enregistrés ici. Il est choisi au début de l’utilisation de l’appli.
+ajustes_limite_pesado	Alerte de fichiers lourds
+ajustes_limite_pesado_nota	Quand vous ajoutez un fichier plus lourd, l’appli demande s’il faut l’inclure dans la sauvegarde automatique.
+ajustes_mb	%1$d Mo
+ajustes_originales	En ajoutant un livre venant d’ailleurs, l’original
+ajustes_pesados	Fichiers lourds dans la sauvegarde
+ajustes_borrar	Le supprimer
+ajustes_conservar	Le conserver
+ajustes_incluir	Les inclure
+ajustes_solo_datos	Seulement la page et les marque-pages
+ajustes_preguntar	Demander à chaque fois
+ajustes_liberar_espacio	Libérer de l’espace
+ajustes_liberar_espacio_nota	Cherche les fichiers en double ou qui n’appartiennent à aucun livre dans le dossier de l’appli.
+ajustes_bloque_comics	Lecteur de BD
+ajustes_modo_comic	Mode par défaut
+ajustes_modo_automatico	Automatique (double en paysage)
+ajustes_recortar	Rogner les marges blanches
+ajustes_bloque_app	L’appli
+tiempo_horas	%1$d h %2$02d min
+tiempo_minutos	%1$d min
+idioma_sistema	Celle du téléphone
+acerca_titulo	À propos de Libertalia Reader
+acerca_version	Version %1$s
+acerca_filosofia	Gratuite, sans pub et sans compte. Tout est enregistré sur votre téléphone : l’appli n’utilise pas internet et ne collecte les données de personne.
+acerca_licencias	Licences
+acerca_licencias_nota	Merci à toutes les personnes qui créent ces bibliothèques et ces polices. Toutes permettent d’être incluses dans l’appli.
+acerca_unrar	Gratuite, mais pas libre : elle ne peut pas servir à créer un compresseur RAR.
+limpieza_explicacion	Fichiers du dossier de l’appli qu’aucun livre de votre bibliothèque n’utilise. Les doublons sont déjà cochés. Les livres de votre bibliothèque ne sont jamais touchés.
+limpieza_buscando	Vérification du dossier… %1$d %%
+limpieza_borrando	Suppression…
+limpieza_hecho	C’est fait : %1$s libérés.
+limpieza_nada	Rien à supprimer : le dossier est en ordre.
+limpieza_copia_de	Doublon de « %1$s »
+limpieza_ningun_libro	N’appartient à aucun livre
+limpieza_fallos#one	Impossible de supprimer %1$d fichier.
+limpieza_fallos#other	Impossible de supprimer %1$d fichiers.
+limpieza_borrar#one	Supprimer %1$d fichier · %2$s
+limpieza_borrar#other	Supprimer %1$d fichiers · %2$s
+limpieza_confirmar_titulo#one	Supprimer %1$d fichier ?
+limpieza_confirmar_titulo#other	Supprimer %1$d fichiers ?
+limpieza_confirmar_texto	Ils seront supprimés définitivement du dossier de l’appli. C’est irréversible.
+exportar_tarjetas_titulo	Exporter les fiches
+exportar_tarjetas_markdown	Markdown (pour lire)
+exportar_tarjetas_csv	CSV (tableur)
+exportar_tarjetas_anki	Anki (pour étudier)
+exportar_tarjetas_sufijo	fiches
+exportar_tarjetas_sufijo_anki	fiches pour Anki
+csv_texto	Texte surligné
+csv_frase	Phrase
+csv_nota	Note
+csv_etiquetas	Étiquettes
+csv_color	Couleur
+csv_capitulo	Chapitre
+csv_pagina	Page
+csv_creada	Créée
+lector_escuchar	Écouter
+cd_voz_reproducir	Reprendre la lecture à voix haute
+cd_voz_pausar	Pause
+cd_voz_anterior	Phrase précédente
+cd_voz_siguiente	Phrase suivante
+cd_voz_velocidad	Vitesse de lecture
+cd_voz_parar	Arrêter l’écoute
+voz_velocidad	%1$s×
+voz_falta_titulo	Voix manquante
+voz_falta_texto	Le téléphone n’a pas de voix pour lire en %1$s. Vous pouvez la télécharger gratuitement dans les réglages de voix d’Android.
+voz_abrir_ajustes	Réglages de voix
+voz_falta_alternativa	Si le livre est en réalité en %1$s, vous pouvez le lire avec cette voix.
+voz_leer_en	Lire en %1$s
+codigo_idioma	fr
+nombre_castellano	espagnol
+voz_error	Impossible de lire ce livre à voix haute. Vérifiez qu’un moteur de synthèse vocale est installé sur le téléphone.
+estadisticas_titulo	Statistiques
+estadisticas_tiempo	Temps de lecture
+estadisticas_semana	Semaine
+estadisticas_mes	Mois
+estadisticas_anio	Année
+estadisticas_total	Total : %1$s
+estadisticas_media	Moyenne : %1$s par jour
+estadisticas_libros_comics	Livres : %1$s · BD : %2$s
+estadisticas_velocidad	Vitesse de lecture
+estadisticas_ppm#one	%1$d mot par minute
+estadisticas_ppm#other	%1$d mots par minute
+estadisticas_velocidad_nota	Moyenne dans les livres, en ne comptant que les pages tournées une à une (ni les sauts ni l’écoute).
+estadisticas_velocidad_vacia	Pas encore de données. Elle se mesure toute seule quand vous lisez des livres en tournant les pages une à une.
+estadisticas_terminados	Terminés
+estadisticas_terminados_vacio	Vous n’avez encore terminé aucun livre ni aucune BD.
+estadisticas_n_libros#one	%1$d livre
+estadisticas_n_libros#other	%1$d livres
+estadisticas_n_comics#one	%1$d BD
+estadisticas_n_comics#other	%1$d BD
+cd_ver_titulos	Afficher les titres
+cd_ocultar_titulos	Masquer les titres

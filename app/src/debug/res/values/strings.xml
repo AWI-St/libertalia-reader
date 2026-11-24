@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Textos de las herramientas de pruebas (solo en la versión de pruebas, no se traducen). -->
+<resources>
+    <string name="depuracion_volcando">Sacando las líneas de los PDF…</string>
+    <string name="depuracion_volcado_listo">Listo: %1$d PDF volcados en files/volcados.</string>
+</resources>
