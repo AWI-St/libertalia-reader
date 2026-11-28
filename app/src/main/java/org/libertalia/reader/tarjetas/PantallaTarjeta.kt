@@ -190,8 +190,11 @@ fun PantallaTarjeta(
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     SelectorColores(tarjeta.color, { estado.cambiarColor(tarjeta, it) }, Modifier.weight(1f))
                 }
-                TextButton(onClick = { editandoTexto = true }, modifier = Modifier.align(Alignment.End)) {
-                    Text(stringResource(R.string.tarjeta_editar_texto))
+                // (Una tarjeta con varios subrayados unidos no se edita: cada fragmento es del libro.)
+                if (!Fragmentos.esUnida(tarjeta)) {
+                    TextButton(onClick = { editandoTexto = true }, modifier = Modifier.align(Alignment.End)) {
+                        Text(stringResource(R.string.tarjeta_editar_texto))
+                    }
                 }
             }
 

@@ -15,7 +15,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
  */
 @Database(
     entities = [Libro::class, Estanteria::class, LibroEnEstanteria::class, Tarjeta::class, DiaLectura::class],
-    version = 8,
+    version = 9,
     exportSchema = true,
     autoMigrations = [
         // 1 → 2: se añade el capítulo actual de cada libro.
@@ -32,6 +32,8 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         AutoMigration(from = 6, to = 7),
         // 7 → 8: estadísticas (fecha de terminado; tiempo de libros y de cómics y palabras por día).
         AutoMigration(from = 7, to = 8, spec = BaseDatos.Migracion7a8::class),
+        // 8 → 9: subrayados unidos en una sola tarjeta («Unir con otro subrayado»).
+        AutoMigration(from = 8, to = 9),
     ],
 )
 abstract class BaseDatos : RoomDatabase() {

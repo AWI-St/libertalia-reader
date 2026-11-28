@@ -44,6 +44,13 @@ menu_paginas#one	%d orrialde
 menu_paginas#other	%d orrialde
 menu_isbn	ISBN %1$s
 tarjeta_numero_titulo	%1$d. %2$s
+unir_opcion	Elkartu beste azpimarra batekin
+unir_separar_opcion	Txarteletik bereizi
+unir_instrucciones	Ukitu elkartu nahi duzun azpimarra (orria pasa dezakezu)
+unir_hecho	Azpimarrak txartel batean elkartuta
+unir_automatico	Paragrafo honetako azpimarrarekin elkartuta
+unir_separado	Azpimarra bereizita: berriro du bere txartela
+unir_separar	Bereizi
 campo_isbn	ISBN (aukerakoa)
 estado_libro_leyendo	Irakurtzen
 estado_libro_pendiente	Irakurtzeko

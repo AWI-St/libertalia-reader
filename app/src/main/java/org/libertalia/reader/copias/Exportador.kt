@@ -112,7 +112,7 @@ class Exportador(private val app: LibertaliaApp) {
                 zip.closeEntry()
 
                 // 4. Las tarjetas para leer fuera de la app.
-                MarkdownTarjetas.de(contexto, libro, tarjetas, ahora)?.let { md ->
+                MarkdownTarjetas.de(contexto, libro, org.libertalia.reader.tarjetas.Fragmentos.agrupar(tarjetas.filter { !it.eliminada }), ahora)?.let { md ->
                     val nombre = nombreLegible(libro.titulo, nombresLegibles)
                     zip.putNextEntry(ZipEntry(FormatoCopia.CARPETA_LEGIBLE + nombre))
                     zip.write(md.toByteArray())

@@ -567,6 +567,12 @@ class LectorActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 // Primero se lee lo seleccionado y después se cierra el menú.
                 val seleccion = seleccionable.currentSelection()
+                // El párrafo donde empieza la selección (para unir solos los subrayados de un
+                // mismo párrafo). Hay que preguntarlo antes de quitar la selección.
+                val parrafo = if (color != null) {
+                    runCatching { (navegador as? EpubNavigatorFragment)?.evaluateJavascript(JS_PARRAFO) }
+                        .getOrNull()?.trim('"', ' ')?.toDoubleOrNull()?.toInt()
+                } else null
                 modo.finish()
                 seleccionable.clearSelection()
                 seleccion ?: return@launch
@@ -575,7 +581,7 @@ class LectorActivity : AppCompatActivity() {
                     color != null -> {
                         val alto = (navegador as? Fragment)?.view?.height?.takeIf { it > 0 }
                         val altura = seleccion.rect?.top?.let { arriba -> alto?.let { arriba.toDouble() / it } } ?: 0.0
-                        estado.subrayar(seleccion.locator, color, altura)
+                        estado.subrayar(seleccion.locator, color, altura, parrafo)
                     }
                     id == ID_DICCIONARIO -> abrirDiccionario(texto)
                     id == ID_COPIAR -> getSystemService(ClipboardManager::class.java)
@@ -827,6 +833,17 @@ class LectorActivity : AppCompatActivity() {
 
         /** Empezar a leer en voz alta al abrir (al pulsar «Escuchar» en un PDF). */
         const val EXTRA_ESCUCHAR = "escuchar"
+
+        /**
+         * Número del párrafo (o título, elemento de lista, cita...) donde empieza la selección,
+         * contando desde el principio del capítulo; -1 si no se sabe.
+         */
+        const val JS_PARRAFO =
+            "(function(){var s=window.getSelection();if(!s||s.rangeCount==0)return -1;" +
+                "var n=s.getRangeAt(0).startContainer;var e=n.nodeType==1?n:n.parentElement;if(!e)return -1;" +
+                "var q='p,li,blockquote,h1,h2,h3,h4,h5,h6,dd,dt,pre,figcaption';" +
+                "var b=e.closest(q);if(!b)return -1;" +
+                "return Array.prototype.indexOf.call(document.querySelectorAll(q),b);})()"
 
         /** Ancho total del capítulo dividido entre el ancho de una pantalla. */
         const val JS_PANTALLAS =

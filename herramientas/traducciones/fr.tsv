@@ -44,6 +44,13 @@ menu_paginas#one	%d page
 menu_paginas#other	%d pages
 menu_isbn	ISBN %1$s
 tarjeta_numero_titulo	%1$d. %2$s
+unir_opcion	Joindre à un autre surlignage
+unir_separar_opcion	Séparer de la fiche
+unir_instrucciones	Touchez le surlignage à joindre (vous pouvez tourner la page)
+unir_hecho	Surlignages réunis dans une fiche
+unir_automatico	Joint au surlignage de ce paragraphe
+unir_separado	Surlignage séparé : il a de nouveau sa propre fiche
+unir_separar	Séparer
 campo_isbn	ISBN (facultatif)
 estado_libro_leyendo	En cours
 estado_libro_pendiente	À lire

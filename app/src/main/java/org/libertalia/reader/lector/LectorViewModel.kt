@@ -463,7 +463,12 @@ class LectorViewModel(aplicacion: Application) : AndroidViewModel(aplicacion) {
      * Readium no siempre dice en qué punto exacto del libro está una selección (solo la
      * pantalla): con la altura se ordenan bien las tarjetas de una misma pantalla.
      */
-    fun subrayar(seleccion: Locator, color: ColorSubrayado, alturaEnPantalla: Double = 0.0) {
+    /**
+     * Subraya lo seleccionado y crea su tarjeta. [parrafo] es el número del párrafo (dentro del
+     * capítulo) donde empieza la selección: si ya hay otro subrayado en ese párrafo, los dos
+     * se unen solos en una tarjeta (se puede «Separar» desde el aviso).
+     */
+    fun subrayar(seleccion: Locator, color: ColorSubrayado, alturaEnPantalla: Double = 0.0, parrafo: Int? = null) {
         val libro = LibroAbierto.libro ?: return
         val texto = seleccion.text.highlight?.trim().orEmpty()
         if (texto.isEmpty()) return
@@ -471,7 +476,10 @@ class LectorViewModel(aplicacion: Application) : AndroidViewModel(aplicacion) {
         // En modo texto se apunta también la página del PDF (para las tarjetas y para volver).
         val paginaPdf = mapa?.paginaDe(seleccion)
         val sitio = seleccion.toJSON()
-        if (paginaPdf != null) sitio.put(CLAVE_PROPIA, JSONObject().put("paginaPdf", paginaPdf))
+        val propio = JSONObject()
+        if (paginaPdf != null) propio.put("paginaPdf", paginaPdf)
+        if (parrafo != null && parrafo >= 0) propio.put("parrafo", parrafo)
+        if (propio.length() > 0) sitio.put(CLAVE_PROPIA, propio)
         val tarjeta = Tarjeta(
             id = UUID.randomUUID().toString(),
             idLibro = libro.id,
@@ -487,8 +495,65 @@ class LectorViewModel(aplicacion: Application) : AndroidViewModel(aplicacion) {
             fechaCreacion = ahora,
             fechaModificacion = ahora,
         )
-        guardarEnSegundoPlano { tarjetasDao.insertar(tarjeta) }
-        mostrarAvisoSubrayado()
+        // ¿Hay ya otro subrayado en el mismo párrafo? Entonces van en la misma tarjeta.
+        val href = seleccion.href.toString()
+        val vecino = parrafo?.takeIf { it >= 0 }?.let { p ->
+            tarjetas.firstOrNull { it.tipo == TipoTarjeta.SUBRAYADO && !it.eliminada && parrafoDe(it) == p && hrefDe(it) == href }
+        }
+        guardarEnSegundoPlano {
+            tarjetasDao.insertar(tarjeta)
+            if (vecino != null) tarjetasDao.unir(tarjeta.id, vecino.id, System.currentTimeMillis())
+        }
+        if (vecino != null) avisar(R.string.unir_automatico, separar = tarjeta) else mostrarAvisoSubrayado()
+    }
+
+    private fun parrafoDe(tarjeta: Tarjeta): Int? = runCatching {
+        JSONObject(tarjeta.posicion).optJSONObject(CLAVE_PROPIA)?.optInt("parrafo", -1)?.takeIf { it >= 0 }
+    }.getOrNull()
+
+    private fun hrefDe(tarjeta: Tarjeta): String? = runCatching { JSONObject(tarjeta.posicion).optString("href") }.getOrNull()
+
+    // ---- «Unir con otro subrayado» ----
+
+    /** El subrayado que se va a unir con el siguiente que se toque (null: no se está uniendo). */
+    var uniendo by mutableStateOf<Tarjeta?>(null)
+
+    /** Aviso pequeño («Subrayados unidos»…) y, si se puede, el subrayado que «Separar» saca. */
+    var aviso by mutableStateOf<Pair<Int, Tarjeta?>?>(null)
+        private set
+    private var trabajoAvisoUnir: Job? = null
+
+    private fun avisar(texto: Int, separar: Tarjeta? = null) {
+        aviso = texto to separar
+        trabajoAvisoUnir?.cancel()
+        trabajoAvisoUnir = viewModelScope.launch {
+            delay(5_000)
+            aviso = null
+        }
+    }
+
+    /** La tarjeta principal de un subrayado (él mismo si no está unido a otros). */
+    fun cabezaDe(tarjeta: Tarjeta): Tarjeta =
+        tarjeta.idGrupo?.let { id -> tarjetas.firstOrNull { it.id == id } } ?: tarjeta
+
+    /** Si el subrayado comparte tarjeta con otros. */
+    fun estaUnido(tarjeta: Tarjeta): Boolean =
+        tarjeta.idGrupo != null || tarjetas.any { it.idGrupo == tarjeta.id && !it.eliminada }
+
+    fun empezarAUnir(tarjeta: Tarjeta) {
+        subrayadoAbierto = null
+        uniendo = tarjeta
+    }
+
+    fun cancelarUnir() {
+        uniendo = null
+    }
+
+    fun separar(tarjeta: Tarjeta) {
+        subrayadoAbierto = null
+        aviso = null
+        guardarEnSegundoPlano { tarjetasDao.separar(tarjeta.id, System.currentTimeMillis()) }
+        avisar(R.string.unir_separado)
     }
 
     private fun mostrarAvisoSubrayado() {
@@ -502,12 +567,24 @@ class LectorViewModel(aplicacion: Application) : AndroidViewModel(aplicacion) {
 
     /** El usuario ha tocado un subrayado del libro. */
     fun subrayadoTocado(id: String) {
+        // Se estaba uniendo: este es el otro subrayado.
+        uniendo?.let { primero ->
+            uniendo = null
+            if (id != primero.id) {
+                guardarEnSegundoPlano { tarjetasDao.unir(primero.id, id, System.currentTimeMillis()) }
+                avisar(R.string.unir_hecho)
+            }
+            return
+        }
         subrayadoAbierto = tarjetas.firstOrNull { it.id == id }
     }
 
     fun cambiarColor(tarjeta: Tarjeta, color: ColorSubrayado) {
         subrayadoAbierto = tarjeta.copy(color = color)
-        guardarEnSegundoPlano { tarjetasDao.cambiarColor(tarjeta.id, color, System.currentTimeMillis()) }
+        guardarEnSegundoPlano {
+            val grupo = tarjeta.idGrupo ?: tarjeta.id
+            tarjetasDao.cambiarColorGrupo(grupo, color, System.currentTimeMillis())
+        }
     }
 
     /** Guarda la nota (o la borra, si queda vacía o con null). */
@@ -531,7 +608,8 @@ class LectorViewModel(aplicacion: Application) : AndroidViewModel(aplicacion) {
 
     /** Quita un subrayado o una página destacada (y su tarjeta). */
     fun quitarTarjeta(tarjeta: Tarjeta) {
-        guardarEnSegundoPlano { tarjetasDao.eliminar(tarjeta.id, System.currentTimeMillis()) }
+        // (Si estaba unido a otros, la tarjeta común sigue con los demás.)
+        guardarEnSegundoPlano { tarjetasDao.eliminarFragmento(tarjeta.id, System.currentTimeMillis()) }
     }
 
     /** La página destacada que se está viendo ahora, si la hay. */

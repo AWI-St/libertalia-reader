@@ -138,6 +138,7 @@ object FormatoCopia {
         .put("fechaCreacion", t.fechaCreacion)
         .put("fechaModificacion", t.fechaModificacion)
         .put("eliminada", t.eliminada)
+        .putOpt("idGrupo", t.idGrupo)
 
     fun tarjetaDeJson(json: JSONObject, idLibro: String): Tarjeta = Tarjeta(
         id = json.getString("id"),
@@ -156,6 +157,7 @@ object FormatoCopia {
         fechaCreacion = json.optLong("fechaCreacion"),
         fechaModificacion = json.optLong("fechaModificacion"),
         eliminada = json.optBoolean("eliminada"),
+        idGrupo = json.optStringONull("idGrupo"),
     )
 
     // ---- Estanterías y días leídos ----

@@ -67,6 +67,13 @@
     </plurals>
     <string name="menu_isbn">ISBN %1$s</string>
     <string name="tarjeta_numero_titulo">%1$d. %2$s</string>
+    <string name="unir_opcion">Join with another highlight</string>
+    <string name="unir_separar_opcion">Separate from the card</string>
+    <string name="unir_instrucciones">Tap the highlight you want to join (you can turn the page)</string>
+    <string name="unir_hecho">Highlights joined in one card</string>
+    <string name="unir_automatico">Joined to the highlight in this paragraph</string>
+    <string name="unir_separado">Highlight separated: it has its own card again</string>
+    <string name="unir_separar">Separate</string>
     <string name="campo_isbn">ISBN (optional)</string>
     <string name="estado_libro_leyendo">Reading</string>
     <string name="estado_libro_pendiente">To read</string>

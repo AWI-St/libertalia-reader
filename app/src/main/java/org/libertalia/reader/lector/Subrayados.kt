@@ -117,6 +117,11 @@ fun SelectorColores(elegido: ColorSubrayado?, alElegir: (ColorSubrayado) -> Unit
 @Composable
 fun HojaSubrayado(
     tarjeta: Tarjeta,
+    /** La tarjeta común (si el subrayado está unido a otros; si no, el mismo). */
+    cabeza: Tarjeta = tarjeta,
+    unido: Boolean = false,
+    alUnir: () -> Unit = {},
+    alSeparar: () -> Unit = {},
     alCambiarColor: (ColorSubrayado) -> Unit,
     alEscribirNota: () -> Unit,
     alBorrarNota: () -> Unit,
@@ -139,7 +144,7 @@ fun HojaSubrayado(
                 overflow = TextOverflow.Ellipsis,
                 modifier = Modifier.padding(horizontal = 24.dp),
             )
-            tarjeta.nota?.let { nota ->
+            cabeza.nota?.let { nota ->
                 Spacer(Modifier.heightIn(min = 8.dp))
                 Text(
                     stringResource(R.string.subrayado_nota_actual, nota),
@@ -156,12 +161,12 @@ fun HojaSubrayado(
                 color = MaterialTheme.colorScheme.outline,
                 modifier = Modifier.padding(horizontal = 24.dp, vertical = 12.dp),
             )
-            OpcionHoja(R.drawable.ic_editar, stringResource(if (tarjeta.nota == null) R.string.subrayado_anadir_nota else R.string.subrayado_editar_nota), onClick = alEscribirNota)
-            if (tarjeta.nota != null) {
+            OpcionHoja(R.drawable.ic_editar, stringResource(if (cabeza.nota == null) R.string.subrayado_anadir_nota else R.string.subrayado_editar_nota), onClick = alEscribirNota)
+            if (cabeza.nota != null) {
                 OpcionHoja(R.drawable.ic_eliminar, stringResource(R.string.subrayado_borrar_nota), onClick = alBorrarNota)
             }
             // Etiquetas de esta tarjeta: «#etiqueta ×» y «Añadir etiqueta».
-            val etiquetas = org.libertalia.reader.tarjetas.Etiquetas.de(tarjeta)
+            val etiquetas = org.libertalia.reader.tarjetas.Etiquetas.de(cabeza)
             if (etiquetas.isNotEmpty()) {
                 androidx.compose.foundation.layout.FlowRow(
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -188,6 +193,9 @@ fun HojaSubrayado(
                 }
             }
             OpcionHoja(R.drawable.ic_etiqueta, stringResource(R.string.subrayado_anadir_etiqueta), onClick = alAnadirEtiqueta)
+            // Juntar este subrayado con otro en una sola tarjeta (o sacarlo de ella).
+            OpcionHoja(R.drawable.ic_tarjetas, stringResource(R.string.unir_opcion), onClick = alUnir)
+            if (unido) OpcionHoja(R.drawable.ic_tarjetas, stringResource(R.string.unir_separar_opcion), onClick = alSeparar)
             OpcionHoja(
                 R.drawable.ic_eliminar,
                 stringResource(R.string.subrayado_quitar),

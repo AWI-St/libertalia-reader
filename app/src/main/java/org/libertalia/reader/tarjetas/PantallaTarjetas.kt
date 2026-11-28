@@ -446,7 +446,13 @@ fun fraseResaltada(tarjeta: Tarjeta, recortar: Boolean = false): AnnotatedString
     val subrayado = tarjeta.texto
     val inicio = frase.indexOf(subrayado).takeIf { it >= 0 }
     return buildAnnotatedString {
-        if (inicio == null) {
+        if (Fragmentos.esUnida(tarjeta)) {
+            // Subrayados unidos: cada fragmento resaltado y «[…]» entre ellos.
+            tarjeta.texto.split(Fragmentos.SEPARADOR).forEachIndexed { i, fragmento ->
+                if (i > 0) withStyle(SpanStyle(color = alrededor)) { append(Fragmentos.SEPARADOR) }
+                withStyle(SpanStyle(background = fondo, color = texto, fontWeight = FontWeight.SemiBold)) { append(fragmento) }
+            }
+        } else if (inicio == null) {
             // No se encuentra el subrayado dentro de la frase (por ejemplo, tras editarla): todo resaltado.
             withStyle(SpanStyle(background = fondo, color = texto, fontWeight = FontWeight.SemiBold)) { append(subrayado) }
             if (frase != subrayado && !recortar) {

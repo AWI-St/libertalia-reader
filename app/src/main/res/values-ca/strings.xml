@@ -67,6 +67,13 @@
     </plurals>
     <string name="menu_isbn">ISBN %1$s</string>
     <string name="tarjeta_numero_titulo">%1$d. %2$s</string>
+    <string name="unir_opcion">Unir amb un altre subratllat</string>
+    <string name="unir_separar_opcion">Separar de la targeta</string>
+    <string name="unir_instrucciones">Toca el subratllat que vols unir (pots passar de pàgina)</string>
+    <string name="unir_hecho">Subratllats units en una targeta</string>
+    <string name="unir_automatico">Unit al subratllat d’aquest paràgraf</string>
+    <string name="unir_separado">Subratllat separat: torna a tenir la seva targeta</string>
+    <string name="unir_separar">Separar</string>
     <string name="campo_isbn">ISBN (opcional)</string>
     <string name="estado_libro_leyendo">Llegint</string>
     <string name="estado_libro_pendiente">Pendent</string>

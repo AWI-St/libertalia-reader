@@ -67,6 +67,13 @@
     </plurals>
     <string name="menu_isbn">ISBN %1$s</string>
     <string name="tarjeta_numero_titulo">%1$d. %2$s</string>
+    <string name="unir_opcion">Unir con outro subliñado</string>
+    <string name="unir_separar_opcion">Separar da tarxeta</string>
+    <string name="unir_instrucciones">Toca o subliñado que queres unir (podes pasar de páxina)</string>
+    <string name="unir_hecho">Subliñados unidos nunha tarxeta</string>
+    <string name="unir_automatico">Unido ao subliñado deste parágrafo</string>
+    <string name="unir_separado">Subliñado separado: volve ter a súa propia tarxeta</string>
+    <string name="unir_separar">Separar</string>
     <string name="campo_isbn">ISBN (opcional)</string>
     <string name="estado_libro_leyendo">Lendo</string>
     <string name="estado_libro_pendiente">Pendente</string>

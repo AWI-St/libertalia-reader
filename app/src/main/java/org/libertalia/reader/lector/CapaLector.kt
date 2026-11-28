@@ -220,6 +220,31 @@ fun CapaLector(
         ) {
             AvisoSubrayado(alVer = acciones.abrirTarjetas)
         }
+
+        // «Unir con otro subrayado»: mientras se elige el otro (se puede pasar de página).
+        estado.uniendo?.let {
+            AvisoUnir(
+                texto = stringResource(R.string.unir_instrucciones),
+                boton = stringResource(R.string.boton_cancelar),
+                alPulsar = estado::cancelarUnir,
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .statusBarsPadding()
+                    .padding(start = 16.dp, end = 16.dp, top = (ALTO_BARRA_SUPERIOR_DP + 12).dp),
+            )
+        }
+        // «Subrayados unidos» / «Unido al subrayado de este párrafo · Separar».
+        estado.aviso?.let { (texto, separar) ->
+            AvisoUnir(
+                texto = stringResource(texto),
+                boton = separar?.let { stringResource(R.string.unir_separar) },
+                alPulsar = { separar?.let(estado::separar) },
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .navigationBarsPadding()
+                    .padding(start = 16.dp, end = 16.dp, bottom = 200.dp),
+            )
+        }
     }
     AvisoProblemaVoz()
 
@@ -239,19 +264,25 @@ fun CapaLector(
         )
     }
     estado.subrayadoAbierto?.let { tarjeta ->
+        // La nota y las etiquetas son de la tarjeta común (si este subrayado está unido a otros).
+        val cabeza = estado.cabezaDe(tarjeta)
         HojaSubrayado(
             tarjeta = tarjeta,
+            cabeza = cabeza,
+            unido = estado.estaUnido(tarjeta),
+            alUnir = { estado.empezarAUnir(tarjeta) },
+            alSeparar = { estado.separar(tarjeta) },
             alCambiarColor = { estado.cambiarColor(tarjeta, it) },
             alEscribirNota = {
                 estado.subrayadoAbierto = null
-                estado.notaAbierta = tarjeta
+                estado.notaAbierta = cabeza
             },
             alBorrarNota = {
                 estado.subrayadoAbierto = null
-                estado.guardarNota(tarjeta, null)
+                estado.guardarNota(cabeza, null)
             },
-            alAnadirEtiqueta = { estado.etiquetaAbierta = tarjeta },
-            alQuitarEtiqueta = { estado.quitarEtiqueta(tarjeta, it) },
+            alAnadirEtiqueta = { estado.etiquetaAbierta = cabeza },
+            alQuitarEtiqueta = { estado.quitarEtiqueta(cabeza, it) },
             alQuitar = {
                 estado.subrayadoAbierto = null
                 estado.quitarTarjeta(tarjeta)
@@ -779,5 +810,25 @@ fun BarraProgreso(
         drawLine(colorLleno, Offset(0f, y), Offset(xPunto, y), grosor, StrokeCap.Round)
         drawCircle(colorBorde, radio + 3.dp.toPx(), Offset(xPunto, y))
         drawCircle(colorLleno, radio, Offset(xPunto, y))
+    }
+}
+
+/** Aviso oscuro con un texto y, si hay, un botón (Cancelar, Separar). */
+@Composable
+private fun AvisoUnir(texto: String, boton: String?, alPulsar: () -> Unit, modifier: Modifier = Modifier) {
+    androidx.compose.material3.Surface(
+        shape = RoundedCornerShape(16.dp),
+        color = colorResource(R.color.texto),
+        contentColor = colorResource(R.color.fondo_tarjeta),
+        modifier = modifier.fillMaxWidth(),
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(start = 20.dp, end = 8.dp, top = 6.dp, bottom = 6.dp)) {
+            Text(texto, style = MaterialTheme.typography.bodyMedium, modifier = Modifier.weight(1f).padding(vertical = 10.dp))
+            if (boton != null) {
+                androidx.compose.material3.TextButton(onClick = alPulsar) {
+                    Text(boton, color = colorResource(R.color.fondo_tarjeta), fontWeight = FontWeight.SemiBold)
+                }
+            }
+        }
     }
 }

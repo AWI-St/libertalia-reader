@@ -44,6 +44,13 @@ menu_paginas#one	%d páxina
 menu_paginas#other	%d páxinas
 menu_isbn	ISBN %1$s
 tarjeta_numero_titulo	%1$d. %2$s
+unir_opcion	Unir con outro subliñado
+unir_separar_opcion	Separar da tarxeta
+unir_instrucciones	Toca o subliñado que queres unir (podes pasar de páxina)
+unir_hecho	Subliñados unidos nunha tarxeta
+unir_automatico	Unido ao subliñado deste parágrafo
+unir_separado	Subliñado separado: volve ter a súa propia tarxeta
+unir_separar	Separar
 campo_isbn	ISBN (opcional)
 estado_libro_leyendo	Lendo
 estado_libro_pendiente	Pendente

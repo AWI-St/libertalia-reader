@@ -85,6 +85,7 @@ class BibliotecaViewModel(aplicacion: Application) : AndroidViewModel(aplicacion
 
     /** Todas las tarjetas (subrayados) de todos los libros, para la búsqueda de la biblioteca. */
     val todasLasTarjetas: StateFlow<List<Tarjeta>?> = app.baseDatos.tarjetas().observarTodosLosSubrayados()
+        .map { org.libertalia.reader.tarjetas.Fragmentos.agrupar(it) }
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
     /** El último libro abierto que no está terminado: la tarjeta «Seguir leyendo». */

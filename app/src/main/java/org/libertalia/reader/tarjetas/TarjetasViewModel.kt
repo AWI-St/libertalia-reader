@@ -62,15 +62,16 @@ class TarjetasViewModel(aplicacion: Application) : AndroidViewModel(aplicacion) 
         cargado = true
         // El título y el autor se leen siempre del libro: si se editan, las tarjetas cambian solas.
         viewModelScope.launch { app.baseDatos.libros().observar(idLibro).collect { libro = it } }
-        viewModelScope.launch { tarjetasDao.observarSubrayados(idLibro).collect { todas = it } }
+        viewModelScope.launch { tarjetasDao.observarSubrayados(idLibro).collect { todas = Fragmentos.agrupar(it) } }
         viewModelScope.launch { app.baseDatos.libros().observarTodos().collect { libros = it } }
-        viewModelScope.launch { tarjetasDao.observarTodosLosSubrayados().collect { todasLasTarjetas = it } }
+        viewModelScope.launch { tarjetasDao.observarTodosLosSubrayados().collect { todasLasTarjetas = Fragmentos.agrupar(it) } }
     }
 
     fun tarjeta(id: String): Tarjeta? = todas?.firstOrNull { it.id == id }
 
     fun cambiarColor(tarjeta: Tarjeta, color: ColorSubrayado) = guardar {
-        tarjetasDao.cambiarColor(tarjeta.id, color, System.currentTimeMillis())
+        // (En una tarjeta unida, el color es el de todos sus subrayados.)
+        tarjetasDao.cambiarColorGrupo(tarjeta.id, color, System.currentTimeMillis())
     }
 
     /** Corrige el texto subrayado y la frase. Si la frase queda vacía, se usa solo el subrayado. */
@@ -98,7 +99,8 @@ class TarjetasViewModel(aplicacion: Application) : AndroidViewModel(aplicacion) 
 
     /** Borra la tarjeta (y, con ella, el subrayado del libro). */
     fun eliminar(tarjeta: Tarjeta) = guardar {
-        tarjetasDao.eliminar(tarjeta.id, System.currentTimeMillis())
+        // Borrar la tarjeta borra todos sus subrayados (también los unidos a ella).
+        tarjetasDao.eliminarGrupo(tarjeta.id, System.currentTimeMillis())
     }
 
     /** Se guarda aunque se cierre la pantalla justo después. */

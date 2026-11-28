@@ -44,6 +44,13 @@ menu_paginas#one	%d page
 menu_paginas#other	%d pages
 menu_isbn	ISBN %1$s
 tarjeta_numero_titulo	%1$d. %2$s
+unir_opcion	Join with another highlight
+unir_separar_opcion	Separate from the card
+unir_instrucciones	Tap the highlight you want to join (you can turn the page)
+unir_hecho	Highlights joined in one card
+unir_automatico	Joined to the highlight in this paragraph
+unir_separado	Highlight separated: it has its own card again
+unir_separar	Separate
 campo_isbn	ISBN (optional)
 estado_libro_leyendo	Reading
 estado_libro_pendiente	To read

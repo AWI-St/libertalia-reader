@@ -44,6 +44,13 @@ menu_paginas#one	%d pàgina
 menu_paginas#other	%d pàgines
 menu_isbn	ISBN %1$s
 tarjeta_numero_titulo	%1$d. %2$s
+unir_opcion	Unir amb un altre subratllat
+unir_separar_opcion	Separar de la targeta
+unir_instrucciones	Toca el subratllat que vols unir (pots passar de pàgina)
+unir_hecho	Subratllats units en una targeta
+unir_automatico	Unit al subratllat d’aquest paràgraf
+unir_separado	Subratllat separat: torna a tenir la seva targeta
+unir_separar	Separar
 campo_isbn	ISBN (opcional)
 estado_libro_leyendo	Llegint
 estado_libro_pendiente	Pendent

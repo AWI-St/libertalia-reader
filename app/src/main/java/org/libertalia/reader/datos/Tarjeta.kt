@@ -59,4 +59,10 @@ data class Tarjeta(
     val fechaModificacion: Long,
     @ColumnInfo(defaultValue = "0")
     val eliminada: Boolean = false,
+    /**
+     * «Unir con otro subrayado»: varios subrayados forman una sola tarjeta. El primero (el que
+     * va antes en el libro) es la tarjeta «principal» y tiene idGrupo = null; los demás guardan
+     * aquí el id de la principal. Cada subrayado sigue pintado en su sitio del libro.
+     */
+    val idGrupo: String? = null,
 )

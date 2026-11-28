@@ -67,6 +67,13 @@
     </plurals>
     <string name="menu_isbn">ISBN %1$s</string>
     <string name="tarjeta_numero_titulo">%1$d. %2$s</string>
+    <string name="unir_opcion">Joindre à un autre surlignage</string>
+    <string name="unir_separar_opcion">Séparer de la fiche</string>
+    <string name="unir_instrucciones">Touchez le surlignage à joindre (vous pouvez tourner la page)</string>
+    <string name="unir_hecho">Surlignages réunis dans une fiche</string>
+    <string name="unir_automatico">Joint au surlignage de ce paragraphe</string>
+    <string name="unir_separado">Surlignage séparé : il a de nouveau sa propre fiche</string>
+    <string name="unir_separar">Séparer</string>
     <string name="campo_isbn">ISBN (facultatif)</string>
     <string name="estado_libro_leyendo">En cours</string>
     <string name="estado_libro_pendiente">À lire</string>

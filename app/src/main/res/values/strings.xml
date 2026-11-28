@@ -83,6 +83,13 @@
     </plurals>
     <string name="menu_isbn">ISBN %1$s</string>
     <string name="tarjeta_numero_titulo">%1$d. %2$s</string>
+    <string name="unir_opcion">Unir con otro subrayado</string>
+    <string name="unir_separar_opcion">Separar de la tarjeta</string>
+    <string name="unir_instrucciones">Toca el subrayado que quieres unir (puedes pasar de página)</string>
+    <string name="unir_hecho">Subrayados unidos en una tarjeta</string>
+    <string name="unir_automatico">Unido al subrayado de este párrafo</string>
+    <string name="unir_separado">Subrayado separado: vuelve a tener su propia tarjeta</string>
+    <string name="unir_separar">Separar</string>
     <string name="campo_isbn">ISBN (opcional)</string>
     <string name="estado_libro_leyendo">Leyendo</string>
     <string name="estado_libro_pendiente">Pendiente</string>
