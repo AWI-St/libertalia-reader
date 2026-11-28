@@ -4,6 +4,8 @@ import android.app.Application
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.flow.debounce
+import kotlinx.coroutines.flow.drop
 import kotlinx.coroutines.launch
 import org.libertalia.reader.biblioteca.CarpetaLibertalia
 import org.libertalia.reader.biblioteca.Importador
@@ -35,6 +37,21 @@ class LibertaliaApp : Application() {
     /** El vínculo con la bóveda de Obsidian (si el usuario la ha elegido en Ajustes). */
     val obsidian by lazy { org.libertalia.reader.obsidian.Obsidian(this) }
 
+    /**
+     * Obsidian al momento: 3 segundos después del último cambio en las tarjetas (subrayar,
+     * nota, etiqueta, color, unir, borrar) se pone al día la bóveda, aunque se siga leyendo.
+     * Solo se reescriben los archivos que han cambiado.
+     */
+    @OptIn(kotlinx.coroutines.FlowPreview::class)
+    private fun vigilarTarjetasParaObsidian() {
+        alcanceApp.launch {
+            baseDatos.tarjetas().observarTodosLosSubrayados()
+                .drop(1) // la primera lista es la de al arrancar: no es un cambio
+                .debounce(3_000)
+                .collect { if (obsidian.boveda != null) obsidian.sincronizar() }
+        }
+    }
+
     /** Pide a Obsidian que lea lo cambiado allí y escriba lo cambiado aquí (sin esperar). */
     fun sincronizarObsidian() {
         if (obsidian.boveda != null) alcanceApp.launch { obsidian.sincronizar() }
@@ -58,6 +75,7 @@ class LibertaliaApp : Application() {
         org.libertalia.reader.biblioteca.LibroDePaso.limpiarRestos(this)
         // Que la copia automática esté programada (si ya lo estaba, no se toca).
         copiaAutomatica.programar()
+        vigilarTarjetasParaObsidian()
         // Obsidian: al volver a la app (por si se cambió algo allí) y al dejarla (para escribir
         // lo cambiado aquí).
         registerActivityLifecycleCallbacks(object : ActivityLifecycleCallbacks {
