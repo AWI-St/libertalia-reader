@@ -185,7 +185,7 @@ class Obsidian(private val app: LibertaliaApp) {
 
         /**
          * El archivo de un libro: cabecera con su id (para reconocerlo aunque cambie de nombre),
-         * título, autor y una sección por tarjeta (los subrayados unidos van juntos). null si el
+         * propiedades (libro, autor) y una sección por tarjeta (los subrayados unidos van juntos). null si el
          * libro no tiene subrayados.
          */
         fun markdown(contexto: Context, libro: Libro, tarjetas: List<Tarjeta>): String? {
@@ -199,9 +199,9 @@ class Obsidian(private val app: LibertaliaApp) {
             md.append("libro: \"").append(MarkdownTarjetas.unaLinea(libro.titulo).replace("\"", "'")).append("\"\n")
             if (libro.autor.isNotBlank()) md.append("autor: \"").append(MarkdownTarjetas.unaLinea(libro.autor).replace("\"", "'")).append("\"\n")
             md.append("libertalia: ").append(libro.id).append("\n")
+            // Sin «# Título» ni autor debajo: Obsidian ya enseña el nombre del archivo como título
+            // y las propiedades de arriba (libro, autor); si no, el título sale dos veces.
             md.append("---\n\n")
-            md.append("# ").append(MarkdownTarjetas.unaLinea(libro.titulo)).append("\n\n")
-            if (libro.autor.isNotBlank()) md.append("*").append(MarkdownTarjetas.unaLinea(libro.autor)).append("*\n\n")
             subrayados.forEachIndexed { i, t ->
                 val titulo = listOfNotNull("${i + 1}.", MarkdownTarjetas.lugar(contexto, libro, t)).joinToString(" ")
                 md.append("> [!quote] ").append(titulo).append("\n")
