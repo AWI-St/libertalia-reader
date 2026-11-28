@@ -451,6 +451,10 @@ ajustes_esta_semana	read this week
 ajustes_bloque_ajustes	Settings
 ajustes_idioma	Language
 ajustes_idioma_nota	Only changes the language of this app, not of the phone.
+ajustes_aspecto	Appearance
+aspecto_sistema	Same as the phone
+aspecto_claro	Light
+aspecto_oscuro	Dark
 ajustes_carpeta	App folder
 ajustes_carpeta_nota	Books are saved here. It is chosen when you start using the app.
 ajustes_limite_pesado	Large file warning

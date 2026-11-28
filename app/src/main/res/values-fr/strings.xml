@@ -508,6 +508,10 @@
     <string name="ajustes_bloque_ajustes">Réglages</string>
     <string name="ajustes_idioma">Langue</string>
     <string name="ajustes_idioma_nota">Change seulement la langue de cette appli, pas celle du téléphone.</string>
+    <string name="ajustes_aspecto">Apparence</string>
+    <string name="aspecto_sistema">Comme le téléphone</string>
+    <string name="aspecto_claro">Clair</string>
+    <string name="aspecto_oscuro">Sombre</string>
     <string name="ajustes_carpeta">Dossier de l’appli</string>
     <string name="ajustes_carpeta_nota">Les livres sont enregistrés ici. Il est choisi au début de l’utilisation de l’appli.</string>
     <string name="ajustes_limite_pesado">Alerte de fichiers lourds</string>

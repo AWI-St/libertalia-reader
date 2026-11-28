@@ -451,6 +451,10 @@ ajustes_esta_semana	irakurrita aste honetan
 ajustes_bloque_ajustes	Ezarpenak
 ajustes_idioma	Hizkuntza
 ajustes_idioma_nota	Aplikazio honen hizkuntza bakarrik aldatzen du, ez mugikorrarena.
+ajustes_aspecto	Itxura
+aspecto_sistema	Mugikorraren berdina
+aspecto_claro	Argia
+aspecto_oscuro	Iluna
 ajustes_carpeta	Aplikazioaren karpeta
 ajustes_carpeta_nota	Hemen gordetzen dira liburuak. Aplikazioa erabiltzen hastean aukeratzen da.
 ajustes_limite_pesado	Fitxategi handien abisua

@@ -29,6 +29,10 @@
     <color name="lector_oscuro_texto">#E6D9C6</color>
 
     <!-- Barras y bordes del lector en cada tema -->
+    <!-- Barras del tema crema (fijas: no cambian con el aspecto oscuro de la app) -->
+    <color name="lector_crema_barra">#F3EADB</color>
+    <color name="lector_crema_borde">#E4D6C1</color>
+    <color name="lector_claro_texto_secundario">#6E5A4B</color>
     <color name="lector_sepia_barra">#E2CEAC</color>
     <color name="lector_sepia_borde">#D3BD98</color>
     <color name="lector_oscuro_barra">#221E1B</color>

@@ -40,7 +40,41 @@ object AjustesApp {
     fun cargar(contexto: Context) {
         val nombre = prefs(contexto).getString(CLAVE_TIPOGRAFIA, null)
         tipografia = nombre?.let { runCatching { TipografiaLector.valueOf(it) }.getOrNull() } ?: TipografiaLector.LITERATA
+        aspecto = prefs(contexto).getString(CLAVE_ASPECTO, null)
+            ?.let { runCatching { AspectoApp.valueOf(it) }.getOrNull() } ?: AspectoApp.SISTEMA
+        aplicarAspecto()
     }
+
+    // ---- Aspecto (claro / oscuro) ----
+
+    /**
+     * Claro, oscuro o como el móvil. Los colores oscuros están en res/values-night/colors.xml;
+     * Android elige solo unos u otros según lo que se diga aquí.
+     */
+    var aspecto by mutableStateOf(AspectoApp.SISTEMA)
+        private set
+
+    fun cambiarAspecto(contexto: Context, nuevo: AspectoApp) {
+        aspecto = nuevo
+        prefs(contexto).edit { putString(CLAVE_ASPECTO, nuevo.name) }
+        // Las pantallas abiertas se vuelven a crear con los colores nuevos.
+        aplicarAspecto()
+    }
+
+    private fun aplicarAspecto() {
+        AppCompatDelegate.setDefaultNightMode(
+            when (aspecto) {
+                AspectoApp.CLARO -> AppCompatDelegate.MODE_NIGHT_NO
+                AspectoApp.OSCURO -> AppCompatDelegate.MODE_NIGHT_YES
+                AspectoApp.SISTEMA -> AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+            },
+        )
+    }
+
+    /** Si la pantalla [contexto] se está viendo con los colores oscuros. */
+    fun esOscuro(contexto: Context): Boolean =
+        (contexto.resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK) ==
+            android.content.res.Configuration.UI_MODE_NIGHT_YES
 
     fun cambiarTipografia(contexto: Context, nueva: TipografiaLector) {
         tipografia = nueva
@@ -88,5 +122,9 @@ object AjustesApp {
     private fun prefs(contexto: Context) = contexto.getSharedPreferences("ajustes", Context.MODE_PRIVATE)
 
     private const val CLAVE_TIPOGRAFIA = "tipografia_app"
+    private const val CLAVE_ASPECTO = "aspecto_app"
     private const val CLAVE_MODO_DEFECTO = "modo_defecto"
 }
+
+/** Aspecto de la interfaz: claro (crema), oscuro (marrón oscuro) o el del móvil. */
+enum class AspectoApp { CLARO, OSCURO, SISTEMA }

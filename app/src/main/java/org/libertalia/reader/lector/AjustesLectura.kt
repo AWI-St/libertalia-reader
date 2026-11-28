@@ -14,8 +14,8 @@ enum class TemaLector(
     @ColorRes val borde: Int,
     val oscuro: Boolean,
 ) {
-    CREMA(R.color.lector_crema_fondo, R.color.lector_crema_texto, R.color.fondo_app, R.color.texto_secundario, R.color.borde, false),
-    SEPIA(R.color.lector_sepia_fondo, R.color.lector_sepia_texto, R.color.lector_sepia_barra, R.color.texto_secundario, R.color.lector_sepia_borde, false),
+    CREMA(R.color.lector_crema_fondo, R.color.lector_crema_texto, R.color.lector_crema_barra, R.color.lector_claro_texto_secundario, R.color.lector_crema_borde, false),
+    SEPIA(R.color.lector_sepia_fondo, R.color.lector_sepia_texto, R.color.lector_sepia_barra, R.color.lector_claro_texto_secundario, R.color.lector_sepia_borde, false),
     OSCURO(R.color.lector_oscuro_fondo, R.color.lector_oscuro_texto, R.color.lector_oscuro_barra, R.color.lector_oscuro_texto_secundario, R.color.lector_oscuro_borde, true),
 }
 

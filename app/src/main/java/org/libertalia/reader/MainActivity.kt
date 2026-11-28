@@ -155,10 +155,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val fondo = ContextCompat.getColor(this, R.color.fondo_app)
-        enableEdgeToEdge(
-            statusBarStyle = SystemBarStyle.light(fondo, fondo),
-            navigationBarStyle = SystemBarStyle.light(fondo, fondo),
-        )
+        // Iconos de las barras del sistema claros u oscuros según el aspecto de la app.
+        val estiloBarras = if (org.libertalia.reader.ui.ajustes.AjustesApp.esOscuro(this)) SystemBarStyle.dark(fondo)
+        else SystemBarStyle.light(fondo, fondo)
+        enableEdgeToEdge(statusBarStyle = estiloBarras, navigationBarStyle = estiloBarras)
         super.onCreate(savedInstanceState)
         carpetaElegida = app.carpeta.estaElegida()
         // ¿Se ha abierto la app con «Abrir con» desde otra app?

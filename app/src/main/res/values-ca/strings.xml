@@ -508,6 +508,10 @@
     <string name="ajustes_bloque_ajustes">Configuració</string>
     <string name="ajustes_idioma">Idioma</string>
     <string name="ajustes_idioma_nota">Només canvia l’idioma d’aquesta aplicació, no el del mòbil.</string>
+    <string name="ajustes_aspecto">Aspecte</string>
+    <string name="aspecto_sistema">Com el mòbil</string>
+    <string name="aspecto_claro">Clar</string>
+    <string name="aspecto_oscuro">Fosc</string>
     <string name="ajustes_carpeta">Carpeta de l’aplicació</string>
     <string name="ajustes_carpeta_nota">Aquí es desen els llibres. Es tria en començar a fer servir l’aplicació.</string>
     <string name="ajustes_limite_pesado">Avís de fitxers grans</string>

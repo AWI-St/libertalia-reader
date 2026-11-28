@@ -109,6 +109,13 @@ fun TemaLibertalia(contenido: @Composable () -> Unit) {
         surfaceContainer = colorResource(R.color.fondo_tarjeta),
         surfaceContainerHigh = colorResource(R.color.fondo_tarjeta),
         surfaceContainerHighest = colorResource(R.color.fondo_lectura),
+        // Rellenos de interruptores, deslizadores y chips (si no, salen lilas, sobre todo en oscuro).
+        primaryContainer = colorResource(R.color.borde),
+        onPrimaryContainer = colorResource(R.color.texto),
+        secondaryContainer = colorResource(R.color.borde),
+        onSecondaryContainer = colorResource(R.color.texto),
+        tertiary = colorResource(R.color.madera),
+        onTertiary = colorResource(R.color.fondo_tarjeta),
         error = colorResource(R.color.rojo),
         // Avisos (snackbars) y menús oscuros: marrón muy oscuro, no negro.
         inverseSurface = colorResource(R.color.texto),

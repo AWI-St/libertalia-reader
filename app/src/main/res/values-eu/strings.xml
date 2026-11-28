@@ -508,6 +508,10 @@
     <string name="ajustes_bloque_ajustes">Ezarpenak</string>
     <string name="ajustes_idioma">Hizkuntza</string>
     <string name="ajustes_idioma_nota">Aplikazio honen hizkuntza bakarrik aldatzen du, ez mugikorrarena.</string>
+    <string name="ajustes_aspecto">Itxura</string>
+    <string name="aspecto_sistema">Mugikorraren berdina</string>
+    <string name="aspecto_claro">Argia</string>
+    <string name="aspecto_oscuro">Iluna</string>
     <string name="ajustes_carpeta">Aplikazioaren karpeta</string>
     <string name="ajustes_carpeta_nota">Hemen gordetzen dira liburuak. Aplikazioa erabiltzen hastean aukeratzen da.</string>
     <string name="ajustes_limite_pesado">Fitxategi handien abisua</string>

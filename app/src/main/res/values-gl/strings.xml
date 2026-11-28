@@ -508,6 +508,10 @@
     <string name="ajustes_bloque_ajustes">Axustes</string>
     <string name="ajustes_idioma">Idioma</string>
     <string name="ajustes_idioma_nota">Cambia só o idioma desta app, non o do móbil.</string>
+    <string name="ajustes_aspecto">Aspecto</string>
+    <string name="aspecto_sistema">Coma o móbil</string>
+    <string name="aspecto_claro">Claro</string>
+    <string name="aspecto_oscuro">Escuro</string>
     <string name="ajustes_carpeta">Cartafol da app</string>
     <string name="ajustes_carpeta_nota">Aquí gárdanse os libros. Escóllese ao comezar a usar a app.</string>
     <string name="ajustes_limite_pesado">Aviso de ficheiros grandes</string>

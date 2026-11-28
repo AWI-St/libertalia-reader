@@ -451,6 +451,10 @@ ajustes_esta_semana	llegit aquesta setmana
 ajustes_bloque_ajustes	Configuració
 ajustes_idioma	Idioma
 ajustes_idioma_nota	Només canvia l’idioma d’aquesta aplicació, no el del mòbil.
+ajustes_aspecto	Aspecte
+aspecto_sistema	Com el mòbil
+aspecto_claro	Clar
+aspecto_oscuro	Fosc
 ajustes_carpeta	Carpeta de l’aplicació
 ajustes_carpeta_nota	Aquí es desen els llibres. Es tria en començar a fer servir l’aplicació.
 ajustes_limite_pesado	Avís de fitxers grans

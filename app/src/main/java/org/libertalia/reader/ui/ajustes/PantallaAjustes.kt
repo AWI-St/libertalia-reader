@@ -61,7 +61,7 @@ import java.text.DateFormat
 import java.util.Date
 
 /** Qué ajuste se está eligiendo en un cuadro de opciones. */
-private enum class Eleccion { IDIOMA, TIPOGRAFIA, LIMITE, ORIGINALES, PESADOS, MODO_COMIC }
+private enum class Eleccion { IDIOMA, ASPECTO, TIPOGRAFIA, LIMITE, ORIGINALES, PESADOS, MODO_COMIC }
 
 /**
  * Pantalla Ajustes (boceto 12): aviso de privacidad, estadísticas rápidas (sin la racha, que
@@ -166,6 +166,8 @@ fun PantallaAjustes(
         Bloque(stringResource(R.string.ajustes_bloque_ajustes)) {
             FilaValor(stringResource(R.string.ajustes_idioma), nombreIdioma(estado.idioma)) { eleccion = Eleccion.IDIOMA }
             HorizontalDivider(color = colorResource(R.color.borde))
+            FilaValor(stringResource(R.string.ajustes_aspecto), nombreAspecto(AjustesApp.aspecto)) { eleccion = Eleccion.ASPECTO }
+            HorizontalDivider(color = colorResource(R.color.borde))
             FilaValor(stringResource(R.string.ajustes_tipografia), estado.tipografia.nombre) { eleccion = Eleccion.TIPOGRAFIA }
             HorizontalDivider(color = colorResource(R.color.borde))
             FilaAjuste(
@@ -237,6 +239,16 @@ fun PantallaAjustes(
             alElegir = { eleccion = null; estado.cambiarIdioma(it) },
             alCerrar = { eleccion = null },
         )
+        Eleccion.ASPECTO -> {
+            val contexto = androidx.compose.ui.platform.LocalContext.current
+            DialogoOpciones(
+                titulo = stringResource(R.string.ajustes_aspecto),
+                opciones = listOf(AspectoApp.SISTEMA, AspectoApp.CLARO, AspectoApp.OSCURO).map { it to nombreAspecto(it) },
+                elegida = AjustesApp.aspecto,
+                alElegir = { eleccion = null; AjustesApp.cambiarAspecto(contexto, it) },
+                alCerrar = { eleccion = null },
+            )
+        }
         Eleccion.TIPOGRAFIA -> DialogoOpciones(
             titulo = stringResource(R.string.ajustes_tipografia),
             opciones = TipografiaLector.entries.map { it to it.nombre },
@@ -285,6 +297,16 @@ fun textoTiempo(segundos: Long): String {
     return if (minutos >= 60) stringResource(R.string.tiempo_horas, minutos / 60, minutos % 60)
     else stringResource(R.string.tiempo_minutos, minutos)
 }
+
+/** «Como el móvil», «Claro» u «Oscuro». */
+@Composable
+private fun nombreAspecto(aspecto: AspectoApp): String = stringResource(
+    when (aspecto) {
+        AspectoApp.SISTEMA -> R.string.aspecto_sistema
+        AspectoApp.CLARO -> R.string.aspecto_claro
+        AspectoApp.OSCURO -> R.string.aspecto_oscuro
+    },
+)
 
 /** El nombre de cada idioma en su propio idioma (null = el del sistema). */
 @Composable

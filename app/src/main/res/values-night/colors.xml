@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Aspecto oscuro de la interfaz (Ajustes → Aspecto): marrón oscuro y crema, nunca negro
+  ni blanco puros. Solo cambian los colores de la interfaz; los temas del lector
+  (crema, sepia, oscuro) y los colores de subrayado son siempre los mismos.
+-->
+<resources>
+    <color name="fondo_app">#221C18</color>
+    <color name="fondo_lectura">#2A2420</color>
+    <color name="fondo_tarjeta">#2F2823</color>
+    <color name="texto">#E9DDCB</color>
+    <color name="texto_secundario">#B4A592</color>
+    <color name="borde">#4A3E35</color>
+    <color name="marron">#C8925F</color>
+    <color name="madera">#5C3A23</color>
+    <color name="rojo">#E2665E</color>
+</resources>

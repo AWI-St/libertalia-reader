@@ -451,6 +451,10 @@ ajustes_esta_semana	lu cette semaine
 ajustes_bloque_ajustes	Réglages
 ajustes_idioma	Langue
 ajustes_idioma_nota	Change seulement la langue de cette appli, pas celle du téléphone.
+ajustes_aspecto	Apparence
+aspecto_sistema	Comme le téléphone
+aspecto_claro	Clair
+aspecto_oscuro	Sombre
 ajustes_carpeta	Dossier de l’appli
 ajustes_carpeta_nota	Les livres sont enregistrés ici. Il est choisi au début de l’utilisation de l’appli.
 ajustes_limite_pesado	Alerte de fichiers lourds

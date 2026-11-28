@@ -5,7 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -25,16 +25,16 @@ import org.libertalia.reader.ui.tema.TemaLibertalia
  * «Ir al libro» devuelve la tarjeta elegida a quien abrió esta pantalla, que lleva al
  * lector justo a ese punto.
  */
-class TarjetasActivity : ComponentActivity() {
+class TarjetasActivity : AppCompatActivity() {
 
     private val estado: TarjetasViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val fondo = ContextCompat.getColor(this, R.color.fondo_app)
-        enableEdgeToEdge(
-            statusBarStyle = SystemBarStyle.light(fondo, fondo),
-            navigationBarStyle = SystemBarStyle.light(fondo, fondo),
-        )
+        // Iconos de las barras del sistema claros u oscuros según el aspecto de la app.
+        val estiloBarras = if (org.libertalia.reader.ui.ajustes.AjustesApp.esOscuro(this)) SystemBarStyle.dark(fondo)
+        else SystemBarStyle.light(fondo, fondo)
+        enableEdgeToEdge(statusBarStyle = estiloBarras, navigationBarStyle = estiloBarras)
         super.onCreate(savedInstanceState)
         val idLibro = intent.getStringExtra(EXTRA_LIBRO) ?: run { finish(); return }
         val idTarjeta = intent.getStringExtra(EXTRA_TARJETA)

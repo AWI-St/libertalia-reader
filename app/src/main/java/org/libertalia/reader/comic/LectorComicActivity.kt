@@ -6,7 +6,7 @@ import android.content.res.Configuration
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.WindowManager
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.SystemBarStyle
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.compose.setContent
@@ -22,7 +22,7 @@ import org.libertalia.reader.ui.tema.TemaLibertalia
  * Lector de cómics y manga (CBZ, CBR y PDF de cómic), con fondo oscuro como en el boceto 13.
  * Las páginas se leen directamente del archivo original.
  */
-class LectorComicActivity : ComponentActivity() {
+class LectorComicActivity : AppCompatActivity() {
 
     private val estado: LectorComicViewModel by viewModels()
 
