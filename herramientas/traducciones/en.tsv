@@ -455,6 +455,18 @@ ajustes_aspecto	Appearance
 aspecto_sistema	Same as the phone
 aspecto_claro	Light
 aspecto_oscuro	Dark
+ajustes_bloque_obsidian	Obsidian
+ajustes_obsidian_vincular	Link with Obsidian
+ajustes_obsidian_cambiar	Change vault
+ajustes_obsidian_nota	Choose your vault folder: the app will write one file per book in “Libertalia” with your highlights, notes and tags, and will read the notes and tags you change in Obsidian.
+ajustes_obsidian_vinculada	Vault: %1$s · “Libertalia” folder
+ajustes_obsidian_sincronizar	Sync now
+ajustes_obsidian_sincronizando	Syncing…
+ajustes_obsidian_desvincular	Unlink
+obsidian_mi_nota	My note
+obsidian_problema	Could not write to the vault. Choose the folder again.
+ajustes_obsidian_escritos#one	Up to date: 1 file updated
+ajustes_obsidian_escritos#other	Up to date: %d files updated
 ajustes_carpeta	App folder
 ajustes_carpeta_nota	Books are saved here. It is chosen when you start using the app.
 ajustes_limite_pesado	Large file warning

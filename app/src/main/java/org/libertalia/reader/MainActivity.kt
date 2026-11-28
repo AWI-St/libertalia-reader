@@ -510,6 +510,8 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         // Si el usuario quitó el permiso o borró la carpeta, se vuelve a pedir.
         carpetaElegida = app.carpeta.estaElegida()
+        // Al volver a la biblioteca (por ejemplo, desde el lector), Obsidian se pone al día.
+        app.sincronizarObsidian()
     }
 
     /** Si la app tiene permiso permanente sobre el archivo (o sobre la carpeta que lo contiene). */

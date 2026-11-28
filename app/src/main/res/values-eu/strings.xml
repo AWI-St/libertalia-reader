@@ -512,6 +512,20 @@
     <string name="aspecto_sistema">Mugikorraren berdina</string>
     <string name="aspecto_claro">Argia</string>
     <string name="aspecto_oscuro">Iluna</string>
+    <string name="ajustes_bloque_obsidian">Obsidian</string>
+    <string name="ajustes_obsidian_vincular">Obsidianekin lotu</string>
+    <string name="ajustes_obsidian_cambiar">Gangaz aldatu</string>
+    <string name="ajustes_obsidian_nota">Aukeratu zure gangaren karpeta: aplikazioak «Libertalia» karpetan liburu bakoitzeko fitxategi bat idatziko du zure azpimarra, ohar eta etiketekin, eta Obsidianen aldatzen dituzun ohar eta etiketak irakurriko ditu.</string>
+    <string name="ajustes_obsidian_vinculada">Ganga: %1$s · «Libertalia» karpeta</string>
+    <string name="ajustes_obsidian_sincronizar">Sinkronizatu orain</string>
+    <string name="ajustes_obsidian_sincronizando">Sinkronizatzen…</string>
+    <string name="ajustes_obsidian_desvincular">Lotura kendu</string>
+    <string name="obsidian_mi_nota">Nire oharra</string>
+    <string name="obsidian_problema">Ezin izan da gangan idatzi. Aukeratu karpeta berriro.</string>
+    <plurals name="ajustes_obsidian_escritos">
+        <item quantity="one">Egunean: fitxategi 1 eguneratuta</item>
+        <item quantity="other">Egunean: %d fitxategi eguneratuta</item>
+    </plurals>
     <string name="ajustes_carpeta">Aplikazioaren karpeta</string>
     <string name="ajustes_carpeta_nota">Hemen gordetzen dira liburuak. Aplikazioa erabiltzen hastean aukeratzen da.</string>
     <string name="ajustes_limite_pesado">Fitxategi handien abisua</string>

@@ -512,6 +512,20 @@
     <string name="aspecto_sistema">Com el mòbil</string>
     <string name="aspecto_claro">Clar</string>
     <string name="aspecto_oscuro">Fosc</string>
+    <string name="ajustes_bloque_obsidian">Obsidian</string>
+    <string name="ajustes_obsidian_vincular">Vincular amb Obsidian</string>
+    <string name="ajustes_obsidian_cambiar">Canviar de volta</string>
+    <string name="ajustes_obsidian_nota">Tria la carpeta de la teva volta: l’app hi escriurà, a «Libertalia», un fitxer per llibre amb els teus subratllats, notes i etiquetes, i llegirà les notes i etiquetes que canviïs a Obsidian.</string>
+    <string name="ajustes_obsidian_vinculada">Volta: %1$s · carpeta «Libertalia»</string>
+    <string name="ajustes_obsidian_sincronizar">Sincronitzar ara</string>
+    <string name="ajustes_obsidian_sincronizando">Sincronitzant…</string>
+    <string name="ajustes_obsidian_desvincular">Desvincular</string>
+    <string name="obsidian_mi_nota">La meva nota</string>
+    <string name="obsidian_problema">No s’ha pogut escriure a la volta. Torna a triar la carpeta.</string>
+    <plurals name="ajustes_obsidian_escritos">
+        <item quantity="one">Al dia: 1 fitxer actualitzat</item>
+        <item quantity="other">Al dia: %d fitxers actualitzats</item>
+    </plurals>
     <string name="ajustes_carpeta">Carpeta de l’aplicació</string>
     <string name="ajustes_carpeta_nota">Aquí es desen els llibres. Es tria en començar a fer servir l’aplicació.</string>
     <string name="ajustes_limite_pesado">Avís de fitxers grans</string>

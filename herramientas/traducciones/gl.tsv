@@ -455,6 +455,18 @@ ajustes_aspecto	Aspecto
 aspecto_sistema	Coma o móbil
 aspecto_claro	Claro
 aspecto_oscuro	Escuro
+ajustes_bloque_obsidian	Obsidian
+ajustes_obsidian_vincular	Vincular con Obsidian
+ajustes_obsidian_cambiar	Cambiar de bóveda
+ajustes_obsidian_nota	Escolle o cartafol da túa bóveda: a app escribirá en «Libertalia» un ficheiro por libro cos teus subliñados, notas e etiquetas, e lerá as notas e etiquetas que cambies en Obsidian.
+ajustes_obsidian_vinculada	Bóveda: %1$s · cartafol «Libertalia»
+ajustes_obsidian_sincronizar	Sincronizar agora
+ajustes_obsidian_sincronizando	Sincronizando…
+ajustes_obsidian_desvincular	Desvincular
+obsidian_mi_nota	A miña nota
+obsidian_problema	Non se puido escribir na bóveda. Volve escoller o cartafol.
+ajustes_obsidian_escritos#one	Ao día: 1 ficheiro actualizado
+ajustes_obsidian_escritos#other	Ao día: %d ficheiros actualizados
 ajustes_carpeta	Cartafol da app
 ajustes_carpeta_nota	Aquí gárdanse os libros. Escóllese ao comezar a usar a app.
 ajustes_limite_pesado	Aviso de ficheiros grandes

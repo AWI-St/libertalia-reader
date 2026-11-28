@@ -455,6 +455,18 @@ ajustes_aspecto	Apparence
 aspecto_sistema	Comme le téléphone
 aspecto_claro	Clair
 aspecto_oscuro	Sombre
+ajustes_bloque_obsidian	Obsidian
+ajustes_obsidian_vincular	Lier à Obsidian
+ajustes_obsidian_cambiar	Changer de coffre
+ajustes_obsidian_nota	Choisissez le dossier de votre coffre : l’app y écrira, dans « Libertalia », un fichier par livre avec vos surlignages, notes et étiquettes, et lira les notes et étiquettes modifiées dans Obsidian.
+ajustes_obsidian_vinculada	Coffre : %1$s · dossier « Libertalia »
+ajustes_obsidian_sincronizar	Synchroniser maintenant
+ajustes_obsidian_sincronizando	Synchronisation…
+ajustes_obsidian_desvincular	Délier
+obsidian_mi_nota	Ma note
+obsidian_problema	Impossible d’écrire dans le coffre. Choisissez à nouveau le dossier.
+ajustes_obsidian_escritos#one	À jour : 1 fichier mis à jour
+ajustes_obsidian_escritos#other	À jour : %d fichiers mis à jour
 ajustes_carpeta	Dossier de l’appli
 ajustes_carpeta_nota	Les livres sont enregistrés ici. Il est choisi au début de l’utilisation de l’appli.
 ajustes_limite_pesado	Alerte de fichiers lourds

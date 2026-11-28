@@ -455,6 +455,18 @@ ajustes_aspecto	Aspecte
 aspecto_sistema	Com el mòbil
 aspecto_claro	Clar
 aspecto_oscuro	Fosc
+ajustes_bloque_obsidian	Obsidian
+ajustes_obsidian_vincular	Vincular amb Obsidian
+ajustes_obsidian_cambiar	Canviar de volta
+ajustes_obsidian_nota	Tria la carpeta de la teva volta: l’app hi escriurà, a «Libertalia», un fitxer per llibre amb els teus subratllats, notes i etiquetes, i llegirà les notes i etiquetes que canviïs a Obsidian.
+ajustes_obsidian_vinculada	Volta: %1$s · carpeta «Libertalia»
+ajustes_obsidian_sincronizar	Sincronitzar ara
+ajustes_obsidian_sincronizando	Sincronitzant…
+ajustes_obsidian_desvincular	Desvincular
+obsidian_mi_nota	La meva nota
+obsidian_problema	No s’ha pogut escriure a la volta. Torna a triar la carpeta.
+ajustes_obsidian_escritos#one	Al dia: 1 fitxer actualitzat
+ajustes_obsidian_escritos#other	Al dia: %d fitxers actualitzats
 ajustes_carpeta	Carpeta de l’aplicació
 ajustes_carpeta_nota	Aquí es desen els llibres. Es tria en començar a fer servir l’aplicació.
 ajustes_limite_pesado	Avís de fitxers grans

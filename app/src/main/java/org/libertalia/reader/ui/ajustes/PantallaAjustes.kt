@@ -35,6 +35,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+import kotlinx.coroutines.launch
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -198,6 +199,9 @@ fun PantallaAjustes(
             HorizontalDivider(color = colorResource(R.color.borde))
             FilaInterruptor(stringResource(R.string.ajustes_recortar), estado.recortarComics, estado::cambiarRecortarComics)
         }
+
+        // Obsidian: un archivo .md por libro en la bóveda del usuario (en los dos sentidos).
+        BloqueObsidian()
 
         Bloque(stringResource(R.string.ajustes_bloque_app)) {
             // Buscar actualizaciones en GitHub: lo único para lo que la app usa internet.
@@ -542,5 +546,66 @@ private fun FilaInterruptor(texto: String, activado: Boolean, alCambiar: (Boolea
                 uncheckedBorderColor = MaterialTheme.colorScheme.outline,
             ),
         )
+    }
+}
+
+/**
+ * Bloque «Obsidian»: elegir la carpeta de la bóveda (selector de Android), sincronizar ahora y
+ * desvincular. Lo hace [org.libertalia.reader.obsidian.Obsidian].
+ */
+@Composable
+private fun BloqueObsidian() {
+    val contexto = LocalContext.current
+    val app = contexto.applicationContext as org.libertalia.reader.LibertaliaApp
+    val obsidian = app.obsidian
+    val alcance = androidx.compose.runtime.rememberCoroutineScope()
+    var sincronizando by androidx.compose.runtime.remember { mutableStateOf(false) }
+    var resultado by androidx.compose.runtime.remember { mutableStateOf<Int?>(null) }
+    fun sincronizar() {
+        sincronizando = true
+        alcance.launch {
+            resultado = obsidian.sincronizar()
+            sincronizando = false
+        }
+    }
+    val elegirBoveda = androidx.activity.compose.rememberLauncherForActivityResult(
+        androidx.activity.result.contract.ActivityResultContracts.OpenDocumentTree(),
+    ) { uri ->
+        if (uri != null) {
+            obsidian.vincular(uri)
+            sincronizar()
+        }
+    }
+    Bloque(stringResource(R.string.ajustes_bloque_obsidian)) {
+        val nombre = obsidian.boveda?.let { obsidian.nombreBoveda() ?: "?" }
+        FilaAjuste(
+            null,
+            stringResource(if (nombre == null) R.string.ajustes_obsidian_vincular else R.string.ajustes_obsidian_cambiar),
+            detalle = obsidian.problema?.let { stringResource(it) }
+                ?: if (nombre == null) stringResource(R.string.ajustes_obsidian_nota)
+                else stringResource(R.string.ajustes_obsidian_vinculada, nombre),
+            detalleError = obsidian.problema != null,
+            alPulsar = { elegirBoveda.launch(null) },
+        )
+        if (nombre != null) {
+            HorizontalDivider(color = colorResource(R.color.borde))
+            FilaAjuste(
+                null,
+                stringResource(R.string.ajustes_obsidian_sincronizar),
+                detalle = when {
+                    sincronizando -> stringResource(R.string.ajustes_obsidian_sincronizando)
+                    resultado != null && obsidian.problema == null ->
+                        androidx.compose.ui.res.pluralStringResource(R.plurals.ajustes_obsidian_escritos, resultado!!, resultado!!)
+                    else -> null
+                },
+                flecha = !sincronizando,
+                alPulsar = ::sincronizar,
+            )
+            HorizontalDivider(color = colorResource(R.color.borde))
+            FilaAjuste(null, stringResource(R.string.ajustes_obsidian_desvincular), alPulsar = {
+                obsidian.desvincular()
+                resultado = null
+            })
+        }
     }
 }

@@ -512,6 +512,20 @@
     <string name="aspecto_sistema">Same as the phone</string>
     <string name="aspecto_claro">Light</string>
     <string name="aspecto_oscuro">Dark</string>
+    <string name="ajustes_bloque_obsidian">Obsidian</string>
+    <string name="ajustes_obsidian_vincular">Link with Obsidian</string>
+    <string name="ajustes_obsidian_cambiar">Change vault</string>
+    <string name="ajustes_obsidian_nota">Choose your vault folder: the app will write one file per book in “Libertalia” with your highlights, notes and tags, and will read the notes and tags you change in Obsidian.</string>
+    <string name="ajustes_obsidian_vinculada">Vault: %1$s · “Libertalia” folder</string>
+    <string name="ajustes_obsidian_sincronizar">Sync now</string>
+    <string name="ajustes_obsidian_sincronizando">Syncing…</string>
+    <string name="ajustes_obsidian_desvincular">Unlink</string>
+    <string name="obsidian_mi_nota">My note</string>
+    <string name="obsidian_problema">Could not write to the vault. Choose the folder again.</string>
+    <plurals name="ajustes_obsidian_escritos">
+        <item quantity="one">Up to date: 1 file updated</item>
+        <item quantity="other">Up to date: %d files updated</item>
+    </plurals>
     <string name="ajustes_carpeta">App folder</string>
     <string name="ajustes_carpeta_nota">Books are saved here. It is chosen when you start using the app.</string>
     <string name="ajustes_limite_pesado">Large file warning</string>

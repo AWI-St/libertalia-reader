@@ -64,7 +64,7 @@ object MarkdownTarjetas {
     }
 
     /** La frase completa con la parte subrayada en negrita. */
-    private fun fraseConSubrayado(t: Tarjeta): String {
+    internal fun fraseConSubrayado(t: Tarjeta): String {
         // Se comparan sin saltos de línea ni espacios dobles: la frase y el subrayado pueden diferir en eso.
         val subrayado = unaLinea(t.texto)
         val frase = t.contexto?.let { unaLinea(it) } ?: return "**$subrayado**"
@@ -75,7 +75,7 @@ object MarkdownTarjetas {
     }
 
     /** «Capítulo · Pág. 12» (la página solo en los PDF, como en la app). */
-    private fun lugar(contexto: Context, libro: Libro, t: Tarjeta): String? {
+    internal fun lugar(contexto: Context, libro: Libro, t: Tarjeta): String? {
         val pagina = t.pagina?.takeIf { libro.formato == Formato.PDF }?.let { contexto.getString(R.string.tarjetas_pagina, it) }
         val partes = listOfNotNull(t.capitulo?.takeIf { it.isNotBlank() }?.let(::unaLinea), pagina)
         return partes.takeIf { it.isNotEmpty() }?.joinToString(" · ")
@@ -83,5 +83,5 @@ object MarkdownTarjetas {
 
     private fun cita(texto: String) = texto.trim().lines().joinToString("\n") { "> $it" }
 
-    private fun unaLinea(texto: String) = texto.replace(Regex("\\s+"), " ").trim()
+    internal fun unaLinea(texto: String) = texto.replace(Regex("\\s+"), " ").trim()
 }

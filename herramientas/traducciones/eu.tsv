@@ -455,6 +455,18 @@ ajustes_aspecto	Itxura
 aspecto_sistema	Mugikorraren berdina
 aspecto_claro	Argia
 aspecto_oscuro	Iluna
+ajustes_bloque_obsidian	Obsidian
+ajustes_obsidian_vincular	Obsidianekin lotu
+ajustes_obsidian_cambiar	Gangaz aldatu
+ajustes_obsidian_nota	Aukeratu zure gangaren karpeta: aplikazioak «Libertalia» karpetan liburu bakoitzeko fitxategi bat idatziko du zure azpimarra, ohar eta etiketekin, eta Obsidianen aldatzen dituzun ohar eta etiketak irakurriko ditu.
+ajustes_obsidian_vinculada	Ganga: %1$s · «Libertalia» karpeta
+ajustes_obsidian_sincronizar	Sinkronizatu orain
+ajustes_obsidian_sincronizando	Sinkronizatzen…
+ajustes_obsidian_desvincular	Lotura kendu
+obsidian_mi_nota	Nire oharra
+obsidian_problema	Ezin izan da gangan idatzi. Aukeratu karpeta berriro.
+ajustes_obsidian_escritos#one	Egunean: fitxategi 1 eguneratuta
+ajustes_obsidian_escritos#other	Egunean: %d fitxategi eguneratuta
 ajustes_carpeta	Aplikazioaren karpeta
 ajustes_carpeta_nota	Hemen gordetzen dira liburuak. Aplikazioa erabiltzen hastean aukeratzen da.
 ajustes_limite_pesado	Fitxategi handien abisua

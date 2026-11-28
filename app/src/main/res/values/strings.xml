@@ -580,6 +580,20 @@
     <string name="aspecto_sistema">Como el móvil</string>
     <string name="aspecto_claro">Claro</string>
     <string name="aspecto_oscuro">Oscuro</string>
+    <string name="ajustes_bloque_obsidian">Obsidian</string>
+    <string name="ajustes_obsidian_vincular">Vincular con Obsidian</string>
+    <string name="ajustes_obsidian_cambiar">Cambiar de bóveda</string>
+    <string name="ajustes_obsidian_nota">Elige la carpeta de tu bóveda: la app escribirá en «Libertalia» un archivo por libro con tus subrayados, notas y etiquetas, y leerá las notas y etiquetas que cambies en Obsidian.</string>
+    <string name="ajustes_obsidian_vinculada">Bóveda: %1$s · carpeta «Libertalia»</string>
+    <string name="ajustes_obsidian_sincronizar">Sincronizar ahora</string>
+    <string name="ajustes_obsidian_sincronizando">Sincronizando…</string>
+    <string name="ajustes_obsidian_desvincular">Desvincular</string>
+    <string name="obsidian_mi_nota">Mi nota</string>
+    <string name="obsidian_problema">No se pudo escribir en la bóveda. Vuelve a elegir la carpeta.</string>
+    <plurals name="ajustes_obsidian_escritos">
+        <item quantity="one">Al día: 1 archivo actualizado</item>
+        <item quantity="other">Al día: %d archivos actualizados</item>
+    </plurals>
     <string name="ajustes_carpeta">Carpeta de la app</string>
     <string name="ajustes_carpeta_nota">Aquí se guardan los libros. Se elige al empezar a usar la app.</string>
     <string name="ajustes_limite_pesado">Aviso de archivos pesados</string>

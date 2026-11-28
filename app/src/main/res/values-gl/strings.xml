@@ -512,6 +512,20 @@
     <string name="aspecto_sistema">Coma o móbil</string>
     <string name="aspecto_claro">Claro</string>
     <string name="aspecto_oscuro">Escuro</string>
+    <string name="ajustes_bloque_obsidian">Obsidian</string>
+    <string name="ajustes_obsidian_vincular">Vincular con Obsidian</string>
+    <string name="ajustes_obsidian_cambiar">Cambiar de bóveda</string>
+    <string name="ajustes_obsidian_nota">Escolle o cartafol da túa bóveda: a app escribirá en «Libertalia» un ficheiro por libro cos teus subliñados, notas e etiquetas, e lerá as notas e etiquetas que cambies en Obsidian.</string>
+    <string name="ajustes_obsidian_vinculada">Bóveda: %1$s · cartafol «Libertalia»</string>
+    <string name="ajustes_obsidian_sincronizar">Sincronizar agora</string>
+    <string name="ajustes_obsidian_sincronizando">Sincronizando…</string>
+    <string name="ajustes_obsidian_desvincular">Desvincular</string>
+    <string name="obsidian_mi_nota">A miña nota</string>
+    <string name="obsidian_problema">Non se puido escribir na bóveda. Volve escoller o cartafol.</string>
+    <plurals name="ajustes_obsidian_escritos">
+        <item quantity="one">Ao día: 1 ficheiro actualizado</item>
+        <item quantity="other">Ao día: %d ficheiros actualizados</item>
+    </plurals>
     <string name="ajustes_carpeta">Cartafol da app</string>
     <string name="ajustes_carpeta_nota">Aquí gárdanse os libros. Escóllese ao comezar a usar a app.</string>
     <string name="ajustes_limite_pesado">Aviso de ficheiros grandes</string>

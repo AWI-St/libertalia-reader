@@ -512,6 +512,20 @@
     <string name="aspecto_sistema">Comme le téléphone</string>
     <string name="aspecto_claro">Clair</string>
     <string name="aspecto_oscuro">Sombre</string>
+    <string name="ajustes_bloque_obsidian">Obsidian</string>
+    <string name="ajustes_obsidian_vincular">Lier à Obsidian</string>
+    <string name="ajustes_obsidian_cambiar">Changer de coffre</string>
+    <string name="ajustes_obsidian_nota">Choisissez le dossier de votre coffre : l’app y écrira, dans « Libertalia », un fichier par livre avec vos surlignages, notes et étiquettes, et lira les notes et étiquettes modifiées dans Obsidian.</string>
+    <string name="ajustes_obsidian_vinculada">Coffre : %1$s · dossier « Libertalia »</string>
+    <string name="ajustes_obsidian_sincronizar">Synchroniser maintenant</string>
+    <string name="ajustes_obsidian_sincronizando">Synchronisation…</string>
+    <string name="ajustes_obsidian_desvincular">Délier</string>
+    <string name="obsidian_mi_nota">Ma note</string>
+    <string name="obsidian_problema">Impossible d’écrire dans le coffre. Choisissez à nouveau le dossier.</string>
+    <plurals name="ajustes_obsidian_escritos">
+        <item quantity="one">À jour : 1 fichier mis à jour</item>
+        <item quantity="other">À jour : %d fichiers mis à jour</item>
+    </plurals>
     <string name="ajustes_carpeta">Dossier de l’appli</string>
     <string name="ajustes_carpeta_nota">Les livres sont enregistrés ici. Il est choisi au début de l’utilisation de l’appli.</string>
     <string name="ajustes_limite_pesado">Alerte de fichiers lourds</string>
