@@ -8,6 +8,7 @@ import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.border
@@ -144,6 +145,8 @@ class AccionesLector(
     val cambiarNotas: (Boolean) -> Unit,
     /** Empezar a leer en voz alta desde la página que se ve (en un PDF, pasa antes al modo texto). */
     val escuchar: () -> Unit,
+    /** Una opción de la barra propia de selección (los mismos números que el menú de Android). */
+    val seleccion: (Int) -> Unit,
 )
 
 /**
@@ -231,6 +234,19 @@ fun CapaLector(
                     .align(Alignment.TopCenter)
                     .statusBarsPadding()
                     .padding(start = 16.dp, end = 16.dp, top = (ALTO_BARRA_SUPERIOR_DP + 12).dp),
+            )
+        }
+        // La selección se salía de la pantalla y se ha recortado: Android quita su menú, así que
+        // aquí va el nuestro (los mismos colores, diccionario y copiar).
+        if (estado.barraSeleccion) {
+            BarraSeleccion(
+                sePuedeSubrayar = estado.sePuedeSubrayar,
+                alElegir = acciones.seleccion,
+                // Abajo: la selección recortada suele estar arriba (empieza en la primera línea).
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .navigationBarsPadding()
+                    .padding(start = 12.dp, end = 12.dp, bottom = (ALTO_PESTANA_DP + 16).dp),
             )
         }
         // «Subrayados unidos» / «Unido al subrayado de este párrafo · Separar».
@@ -828,6 +844,47 @@ private fun AvisoUnir(texto: String, boton: String?, alPulsar: () -> Unit, modif
                 androidx.compose.material3.TextButton(onClick = alPulsar) {
                     Text(boton, color = colorResource(R.color.fondo_tarjeta), fontWeight = FontWeight.SemiBold)
                 }
+            }
+        }
+    }
+}
+
+/**
+ * Barra propia de selección: sale cuando la página ha tenido que recortar una selección que se
+ * salía de la pantalla (Android quita entonces su menú). Mismas opciones que el menú de Android.
+ */
+@Composable
+private fun BarraSeleccion(sePuedeSubrayar: Boolean, alElegir: (Int) -> Unit, modifier: Modifier = Modifier) {
+    androidx.compose.material3.Surface(
+        shape = RoundedCornerShape(24.dp),
+        color = MaterialTheme.colorScheme.surface,
+        shadowElevation = 6.dp,
+        modifier = modifier,
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .horizontalScroll(androidx.compose.foundation.rememberScrollState())
+                .padding(horizontal = 6.dp),
+        ) {
+            if (sePuedeSubrayar) {
+                org.libertalia.reader.datos.ColorSubrayado.entries.forEachIndexed { i, color ->
+                    androidx.compose.material3.TextButton(onClick = { alElegir(ID_PRIMER_COLOR + i) }) {
+                        Box(
+                            Modifier
+                                .size(10.dp)
+                                .background(colorResource(color.color), androidx.compose.foundation.shape.CircleShape),
+                        )
+                        Spacer(Modifier.width(6.dp))
+                        Text(stringResource(color.nombre), color = MaterialTheme.colorScheme.onSurface)
+                    }
+                }
+            }
+            androidx.compose.material3.TextButton(onClick = { alElegir(ID_DICCIONARIO) }) {
+                Text(stringResource(R.string.seleccion_diccionario), color = MaterialTheme.colorScheme.onSurface)
+            }
+            androidx.compose.material3.TextButton(onClick = { alElegir(ID_COPIAR) }) {
+                Text(stringResource(R.string.seleccion_copiar), color = MaterialTheme.colorScheme.onSurface)
             }
         }
     }

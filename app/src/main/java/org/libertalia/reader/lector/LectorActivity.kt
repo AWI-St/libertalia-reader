@@ -230,6 +230,7 @@ class LectorActivity : AppCompatActivity() {
                             cambiarModo = { cambiarModo() },
                             cambiarNotas = ::cambiarNotas,
                             escuchar = ::escuchar,
+                            seleccion = { id -> accionSeleccion(id, null) },
                         ),
                     )
                 }
@@ -311,6 +312,9 @@ class LectorActivity : AppCompatActivity() {
         trabajoMedida?.cancel()
         trabajoMedida = lifecycleScope.launch {
             delay(espera)
+            // Que la página no tiemble al seleccionar (ver JS_SIN_TEMBLOR). Cada capítulo es una
+            // página web nueva, así que se mira en cada cambio de sitio (solo se instala una vez).
+            runCatching { epub.evaluateJavascript(JS_SIN_TEMBLOR) }
             val href = estado.posicion?.href?.toString() ?: return@launch
             val respuesta = runCatching { epub.evaluateJavascript(JS_PANTALLAS) }.getOrNull()
             val pantallas = respuesta?.trim('"', ' ')?.toDoubleOrNull()?.toInt() ?: return@launch
@@ -559,43 +563,70 @@ class LectorActivity : AppCompatActivity() {
 
         override fun onPrepareActionMode(modo: ActionMode, menu: Menu): Boolean = false
 
-        override fun onActionItemClicked(modo: ActionMode, opcion: MenuItem): Boolean {
-            val seleccionable = navegador as? SelectableNavigator ?: return false
-            val id = opcion.itemId
-            val color = ColorSubrayado.entries.getOrNull(id - ID_PRIMER_COLOR)
-            if (color == null && id != ID_DICCIONARIO && id != ID_COPIAR && id != ID_MARCAPAGINAS) return false
-            lifecycleScope.launch {
-                // Primero se lee lo seleccionado y después se cierra el menú.
-                val seleccion = seleccionable.currentSelection()
-                // El párrafo donde empieza la selección (para unir solos los subrayados de un
-                // mismo párrafo). Hay que preguntarlo antes de quitar la selección.
-                val parrafo = if (color != null) {
-                    runCatching { (navegador as? EpubNavigatorFragment)?.evaluateJavascript(JS_PARRAFO) }
-                        .getOrNull()?.trim('"', ' ')?.toDoubleOrNull()?.toInt()
-                } else null
-                modo.finish()
-                seleccionable.clearSelection()
-                seleccion ?: return@launch
-                val texto = seleccion.locator.text.highlight.orEmpty().trim()
-                when {
-                    color != null -> {
-                        val alto = (navegador as? Fragment)?.view?.height?.takeIf { it > 0 }
-                        val altura = seleccion.rect?.top?.let { arriba -> alto?.let { arriba.toDouble() / it } } ?: 0.0
-                        estado.subrayar(seleccion.locator, color, altura, parrafo)
-                    }
-                    id == ID_DICCIONARIO -> abrirDiccionario(texto)
-                    id == ID_COPIAR -> getSystemService(ClipboardManager::class.java)
-                        ?.setPrimaryClip(ClipData.newPlainText(getString(R.string.app_name), texto))
-                    else -> {
-                        estado.ponerMarcapaginas(seleccion.locator)
-                        Toast.makeText(this@LectorActivity, R.string.marcapaginas_puesto, Toast.LENGTH_SHORT).show()
-                    }
-                }
-            }
-            return true
-        }
+        override fun onActionItemClicked(modo: ActionMode, opcion: MenuItem): Boolean =
+            accionSeleccion(opcion.itemId, modo)
 
         override fun onDestroyActionMode(modo: ActionMode) {}
+    }
+
+    /**
+     * Lo que hace cada opción con el texto seleccionado (subrayar en un color, diccionario,
+     * copiar, marcapáginas). La usan el menú de Android y la barra propia ([LectorViewModel.barraSeleccion]).
+     */
+    private fun accionSeleccion(id: Int, modo: ActionMode?): Boolean {
+        val seleccionable = navegador as? SelectableNavigator ?: return false
+        val color = ColorSubrayado.entries.getOrNull(id - ID_PRIMER_COLOR)
+        if (color == null && id != ID_DICCIONARIO && id != ID_COPIAR && id != ID_MARCAPAGINAS) return false
+        estado.barraSeleccion = false
+        lifecycleScope.launch {
+            // Solo cuenta lo que se ve en la pantalla y sin espacios en los extremos
+            // (ver JS_RECORTAR_SELECCION).
+            runCatching { (navegador as? EpubNavigatorFragment)?.evaluateJavascript(JS_RECORTAR_SELECCION) }
+            // Primero se lee lo seleccionado y después se cierra el menú.
+            val seleccion = seleccionable.currentSelection()
+            // El párrafo donde empieza la selección (para unir solos los subrayados de un
+            // mismo párrafo). Hay que preguntarlo antes de quitar la selección.
+            val parrafo = if (color != null) {
+                runCatching { (navegador as? EpubNavigatorFragment)?.evaluateJavascript(JS_PARRAFO) }
+                    .getOrNull()?.trim('"', ' ')?.toDoubleOrNull()?.toInt()
+            } else null
+            modo?.finish()
+            seleccionable.clearSelection()
+            seleccion ?: return@launch
+            val texto = seleccion.locator.text.highlight.orEmpty().trim()
+            when {
+                color != null -> {
+                    val alto = (navegador as? Fragment)?.view?.height?.takeIf { it > 0 }
+                    val altura = seleccion.rect?.top?.let { arriba -> alto?.let { arriba.toDouble() / it } } ?: 0.0
+                    estado.subrayar(seleccion.locator, color, altura, parrafo)
+                }
+                id == ID_DICCIONARIO -> abrirDiccionario(texto)
+                id == ID_COPIAR -> getSystemService(ClipboardManager::class.java)
+                    ?.setPrimaryClip(ClipData.newPlainText(getString(R.string.app_name), texto))
+                else -> {
+                    estado.ponerMarcapaginas(seleccion.locator)
+                    Toast.makeText(this@LectorActivity, R.string.marcapaginas_puesto, Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+        return true
+    }
+
+    /**
+     * Avisos que manda la página del libro (JS_SIN_TEMBLOR). Cuando la selección se sale de la
+     * pantalla, la página la recorta a lo que se ve; al hacerlo, Android quita sus tiradores y su
+     * menú, así que la app enseña su propia barra con las mismas opciones.
+     */
+    inner class PuenteSeleccion {
+        @android.webkit.JavascriptInterface
+        fun seleccionRecortada() {
+            runOnUiThread { estado.barraSeleccion = true }
+        }
+
+        @android.webkit.JavascriptInterface
+        fun seleccionQuitada() {
+            runOnUiThread { estado.barraSeleccion = false }
+        }
     }
 
     /** «● Amarillo», con el punto pintado de su color, para el menú de selección. */
@@ -654,7 +685,7 @@ class LectorActivity : AppCompatActivity() {
                     val sitio = estado.locatorDe(tarjeta) ?: return@mapNotNull null
                     Decoration(
                         id = tarjeta.id,
-                        locator = sitio,
+                        locator = sinBordesVacios(sitio),
                         style = Decoration.Style.Highlight(
                             tint = ContextCompat.getColor(this@LectorActivity, tarjeta.color!!.color),
                         ),
@@ -663,6 +694,26 @@ class LectorActivity : AppCompatActivity() {
                 decorable.applyDecorations(subrayados, group = GRUPO_SUBRAYADOS)
             }
         }
+    }
+
+    /**
+     * Los espacios y saltos de línea de los bordes del texto subrayado pasan al texto de antes
+     * o de después. Si no, Readium dibuja un recuadro vacío en la línea siguiente (pasaba con
+     * subrayados guardados antes de recortar la selección al subrayar).
+     */
+    private fun sinBordesVacios(sitio: Locator): Locator {
+        val texto = sitio.text
+        val subrayado = texto.highlight ?: return sitio
+        val recortado = subrayado.trim()
+        if (recortado.isEmpty() || recortado.length == subrayado.length) return sitio
+        val inicio = subrayado.indexOf(recortado)
+        return sitio.copy(
+            text = texto.copy(
+                before = texto.before.orEmpty() + subrayado.substring(0, inicio),
+                highlight = recortado,
+                after = subrayado.substring(inicio + recortado.length) + texto.after.orEmpty(),
+            ),
+        )
     }
 
     /** Dibuja la cintita del marcapáginas (y la mueve cuando se pone en otra frase). */
@@ -758,6 +809,8 @@ class LectorActivity : AppCompatActivity() {
             servedAssets = servedAssets + "fonts/.*"
             // Menú propio al seleccionar texto (de momento: marcapáginas y copiar).
             selectionActionModeCallback = menuSeleccion
+            // Avisos de la página cuando recorta una selección que se salía de la pantalla.
+            registerJavascriptInterface("Libertalia") { PuenteSeleccion() }
             // Cómo se dibuja el marcapáginas.
             decorationTemplates.set(EstiloMarcapaginas::class, EstiloMarcapaginas.plantilla())
             TipografiaLector.entries.forEach { tipografia ->
@@ -823,11 +876,6 @@ class LectorActivity : AppCompatActivity() {
 
     private companion object {
         const val ETIQUETA_NAVEGADOR = "navegador"
-        const val ID_MARCAPAGINAS = 1
-        const val ID_COPIAR = 2
-        const val ID_DICCIONARIO = 3
-        /** Los cuatro colores de subrayado van del 10 al 13. */
-        const val ID_PRIMER_COLOR = 10
         const val GRUPO_SUBRAYADOS = "subrayados"
         const val GRUPO_VOZ = "voz"
 
@@ -845,9 +893,73 @@ class LectorActivity : AppCompatActivity() {
                 "var b=e.closest(q);if(!b)return -1;" +
                 "return Array.prototype.indexOf.call(document.querySelectorAll(q),b);})()"
 
+        /**
+         * Readium coloca las páginas del capítulo en columnas, una al lado de otra. Si un tirador de
+         * la selección se lleva al borde de la pantalla, el navegador lo pone en la página de al
+         * lado (que no se ve) y la selección incluye texto de otras páginas. Esto la recorta a lo
+         * que se ve en la pantalla y quita los espacios y saltos de línea de los extremos (si no,
+         * el subrayado dibuja un recuadro vacío en la línea siguiente). Devuelve 1 si la cambió.
+         */
+        private const val FUNCION_RECORTAR =
+            "function(soloFuera){var s=getSelection();if(!s||!s.rangeCount||s.isCollapsed)return 0;" +
+                "var r=s.getRangeAt(0),W=innerWidth,c=r.commonAncestorContainer;" +
+                "if(c.nodeType==3)c=c.parentNode;" +
+                "var w=document.createTreeWalker(c,NodeFilter.SHOW_TEXT),n,ns=[];" +
+                "while(n=w.nextNode()){if(r.intersectsNode(n))ns.push(n);}" +
+                "function lim(n){return[n===r.startContainer?r.startOffset:0,n===r.endContainer?r.endOffset:n.length];}" +
+                // ¿Es una letra (no un espacio) y, si se pide, se ve en la pantalla?
+                "function vale(n,k,vista){if(/\\s/.test(n.data[k]))return false;if(!vista)return true;" +
+                "var g=document.createRange();g.setStart(n,k);g.setEnd(n,k+1);var b=g.getClientRects();" +
+                "return b.length>0&&b[0].left>=-1&&b[0].right<=W+1;}" +
+                // La primera (o la última) letra que vale, como [texto, posición].
+                "function busca(vista,alPrincipio){var i,k,l;" +
+                "if(alPrincipio){for(i=0;i<ns.length;i++){l=lim(ns[i]);for(k=l[0];k<l[1];k++){if(vale(ns[i],k,vista))return[ns[i],k];}}}" +
+                "else{for(i=ns.length-1;i>=0;i--){l=lim(ns[i]);for(k=l[1]-1;k>=l[0];k--){if(vale(ns[i],k,vista))return[ns[i],k+1];}}}" +
+                "return null;}" +
+                "var a=busca(true,true),z=busca(true,false);if(!a||!z)return 0;" +
+                "function igual(x,y){return x&&y&&x[0]===y[0]&&x[1]==y[1];}" +
+                // Con soloFuera, solo se toca si hay letras fuera de la pantalla (no por los espacios).
+                "if(soloFuera&&igual(a,busca(false,true))&&igual(z,busca(false,false)))return 0;" +
+                "if(igual(a,[r.startContainer,r.startOffset])&&igual(z,[r.endContainer,r.endOffset]))return 0;" +
+                "s.setBaseAndExtent(a[0],a[1],z[0],z[1]);return 1;}"
+
+        /** Recorta la selección justo antes de subrayar (ver [FUNCION_RECORTAR]). */
+        const val JS_RECORTAR_SELECCION = "($FUNCION_RECORTAR)(false)"
+
+        /**
+         * Mientras hay texto seleccionado, la página no se mueve: si el navegador la desplaza
+         * para enseñar la parte de la selección que está en otra página, se devuelve a su sitio.
+         * Sin esto, al llevar un tirador al borde la página «tiembla» (el navegador la mueve y
+         * Readium la vuelve a colocar).
+         * Además, si al soltar el tirador la selección se ha ido a otra página (el navegador a
+         * veces lleva el inicio a la página anterior cuando el tirador sube a la primera línea),
+         * un segundo después se recorta a lo que se ve y se avisa a la app ([PuenteSeleccion]):
+         * al cambiarla así, Android quita sus tiradores y su menú, y la app enseña su propia barra.
+         * Se instala una vez en cada capítulo.
+         */
+        const val JS_SIN_TEMBLOR =
+            "(function(){if(window.__libertaliaSinTemblor)return 0;window.__libertaliaSinTemblor=1;" +
+                "var recortar=$FUNCION_RECORTAR,espera=null,recortada=false;" +
+                "function avisar(f){try{if(window.Libertalia)window.Libertalia[f]();}catch(x){}}" +
+                "var fijo=null;function e(){return document.scrollingElement||document.documentElement;}" +
+                "document.addEventListener('selectionchange',function(){var s=getSelection();clearTimeout(espera);" +
+                "if(s&&!s.isCollapsed){if(fijo===null)fijo=e().scrollLeft;" +
+                "espera=setTimeout(function(){if(recortar(true)){recortada=true;avisar('seleccionRecortada');}},1000);}" +
+                "else{fijo=null;if(recortada){recortada=false;avisar('seleccionQuitada');}}});" +
+                "window.addEventListener('scroll',function(){" +
+                "if(fijo!==null&&Math.abs(e().scrollLeft-fijo)>1)e().scrollLeft=fijo;},true);" +
+                "return 1;})()"
+
         /** Ancho total del capítulo dividido entre el ancho de una pantalla. */
         const val JS_PANTALLAS =
             "(function(){var e=document.scrollingElement||document.documentElement;" +
                 "return Math.max(1, Math.round(e.scrollWidth / window.innerWidth));})()"
     }
 }
+
+/** Opciones del menú de selección (y de la barra propia, en CapaLector). */
+const val ID_MARCAPAGINAS = 1
+const val ID_COPIAR = 2
+const val ID_DICCIONARIO = 3
+/** Los cuatro colores de subrayado van del 10 al 13. */
+const val ID_PRIMER_COLOR = 10

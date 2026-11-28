@@ -518,6 +518,12 @@ class LectorViewModel(aplicacion: Application) : AndroidViewModel(aplicacion) {
     /** El subrayado que se va a unir con el siguiente que se toque (null: no se está uniendo). */
     var uniendo by mutableStateOf<Tarjeta?>(null)
 
+    /**
+     * La página recortó una selección que se salía de la pantalla y Android quitó su menú:
+     * se enseña la barra propia de selección (ver LectorActivity.PuenteSeleccion).
+     */
+    var barraSeleccion by mutableStateOf(false)
+
     /** Aviso pequeño («Subrayados unidos»…) y, si se puede, el subrayado que «Separar» saca. */
     var aviso by mutableStateOf<Pair<Int, Tarjeta?>?>(null)
         private set
