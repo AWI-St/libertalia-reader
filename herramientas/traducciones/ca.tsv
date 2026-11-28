@@ -40,6 +40,10 @@ menu_cambiar_estado	Canvia l’estat
 menu_anadir_estanteria	Afegeix a una prestatgeria
 menu_eliminar	Elimina el llibre
 menu_subtitulo	%1$s · %2$s
+menu_paginas#one	%d pàgina
+menu_paginas#other	%d pàgines
+menu_isbn	ISBN %1$s
+campo_isbn	ISBN (opcional)
 estado_libro_leyendo	Llegint
 estado_libro_pendiente	Pendent
 estado_libro_terminado	Acabat

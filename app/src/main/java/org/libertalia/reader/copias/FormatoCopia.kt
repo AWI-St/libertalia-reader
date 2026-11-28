@@ -62,6 +62,7 @@ object FormatoCopia {
         .put("titulo", libro.titulo)
         .put("autor", libro.autor)
         .putOpt("tomo", libro.tomo)
+        .putOpt("isbn", libro.isbn)
         .put("tituloOriginal", libro.tituloOriginal)
         .put("autorOriginal", libro.autorOriginal)
         .putOpt("nombreArchivo", libro.nombreArchivo)
@@ -95,6 +96,7 @@ object FormatoCopia {
         titulo = json.getString("titulo"),
         autor = json.optString("autor"),
         tomo = json.optIntONull("tomo"),
+        isbn = json.optString("isbn").ifBlank { null },
         tituloOriginal = json.optString("tituloOriginal", json.getString("titulo")),
         autorOriginal = json.optString("autorOriginal"),
         uriArchivo = uriArchivo,

@@ -40,6 +40,10 @@ menu_cambiar_estado	Changer l’état
 menu_anadir_estanteria	Ajouter à une étagère
 menu_eliminar	Retirer le livre
 menu_subtitulo	%1$s · %2$s
+menu_paginas#one	%d page
+menu_paginas#other	%d pages
+menu_isbn	ISBN %1$s
+campo_isbn	ISBN (facultatif)
 estado_libro_leyendo	En cours
 estado_libro_pendiente	À lire
 estado_libro_terminado	Terminé

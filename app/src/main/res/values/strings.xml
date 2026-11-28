@@ -77,6 +77,12 @@
     <string name="menu_eliminar">Eliminar libro</string>
     <!-- Autor y estado bajo el título, por ejemplo «Galdós · Leyendo» -->
     <string name="menu_subtitulo">%1$s · %2$s</string>
+    <plurals name="menu_paginas">
+        <item quantity="one">%d página</item>
+        <item quantity="other">%d páginas</item>
+    </plurals>
+    <string name="menu_isbn">ISBN %1$s</string>
+    <string name="campo_isbn">ISBN (opcional)</string>
     <string name="estado_libro_leyendo">Leyendo</string>
     <string name="estado_libro_pendiente">Pendiente</string>
     <string name="estado_libro_terminado">Terminado</string>

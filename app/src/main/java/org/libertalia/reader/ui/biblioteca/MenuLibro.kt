@@ -53,6 +53,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -79,6 +80,7 @@ data class AccionesLibro(
     val ponerEnEstanteria: (Libro, Estanteria, dentro: Boolean) -> Unit,
     val eliminar: (Libro, borrarArchivo: Boolean) -> Unit,
     val cambiarTomo: (Libro, Int?) -> Unit = { _, _ -> },
+    val cambiarIsbn: (Libro, String) -> Unit = { _, _ -> },
     val cambiarSentido: (Libro, String) -> Unit = { _, _ -> },
     val cambiarTipo: (Libro, TipoLibro) -> Unit = { _, _ -> },
     /** Si su archivo está en la carpeta de la app (los cómics se quedan donde estaban). */
@@ -239,12 +241,25 @@ private fun CabeceraMenu(libro: Libro) {
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
             )
-            val estado = textoEstado(libro.estado)
+            // «Autor · 245 páginas · Leyendo» (las páginas, tal como las cuenta el lector; un
+            // libro que aún no se ha abierto no las sabe) y, debajo, el ISBN si se ha escrito.
+            val partes = listOfNotNull(
+                libro.autor.takeIf { it.isNotBlank() },
+                libro.paginasLector?.takeIf { it > 0 }?.let { pluralStringResource(R.plurals.menu_paginas, it, it) },
+                textoEstado(libro.estado),
+            )
             Text(
-                text = if (libro.autor.isBlank()) estado else stringResource(R.string.menu_subtitulo, libro.autor, estado),
+                text = partes.joinToString(" · "),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
+            libro.isbn?.takeIf { it.isNotBlank() }?.let { isbn ->
+                Text(
+                    text = stringResource(R.string.menu_isbn, isbn),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
         }
     }
 }
@@ -278,6 +293,7 @@ private fun DialogoEditar(libro: Libro, acciones: AccionesLibro, alCerrar: () ->
     var portadaNueva by rememberSaveable { mutableStateOf<Uri?>(null) }
     var renombrar by rememberSaveable { mutableStateOf(false) }
     var tomo by rememberSaveable { mutableStateOf(libro.tomo?.toString().orEmpty()) }
+    var isbn by rememberSaveable { mutableStateOf(libro.isbn.orEmpty()) }
     val elegirImagen = rememberLauncherForActivityResult(ActivityResultContracts.PickVisualMedia()) { uri ->
         if (uri != null) portadaNueva = uri
     }
@@ -317,6 +333,16 @@ private fun DialogoEditar(libro: Libro, acciones: AccionesLibro, alCerrar: () ->
                         modifier = Modifier.fillMaxWidth(),
                     )
                 }
+                Spacer(Modifier.height(8.dp))
+                // ISBN (se escribe a mano: la app no lo busca en internet).
+                OutlinedTextField(
+                    value = isbn,
+                    onValueChange = { nuevo -> isbn = nuevo.filter { it.isDigit() || it == '-' || it == 'X' || it == 'x' }.take(17) },
+                    label = { Text(stringResource(R.string.campo_isbn)) },
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth(),
+                )
                 Spacer(Modifier.height(16.dp))
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     val modificador = Modifier.width(56.dp).height(82.dp).clip(RoundedCornerShape(4.dp))
@@ -349,6 +375,7 @@ private fun DialogoEditar(libro: Libro, acciones: AccionesLibro, alCerrar: () ->
             TextButton(onClick = {
                 acciones.guardarDatos(libro, titulo, autor, portadaNueva, renombrar && tituloCambiado)
                 if (libro.tipo == TipoLibro.COMIC) acciones.cambiarTomo(libro, tomo.toIntOrNull())
+                acciones.cambiarIsbn(libro, isbn.uppercase())
                 alCerrar()
             }) { Text(stringResource(R.string.boton_guardar)) }
         },

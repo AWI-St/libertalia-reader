@@ -61,6 +61,12 @@
     <string name="menu_anadir_estanteria">Afegeix a una prestatgeria</string>
     <string name="menu_eliminar">Elimina el llibre</string>
     <string name="menu_subtitulo">%1$s · %2$s</string>
+    <plurals name="menu_paginas">
+        <item quantity="one">%d pàgina</item>
+        <item quantity="other">%d pàgines</item>
+    </plurals>
+    <string name="menu_isbn">ISBN %1$s</string>
+    <string name="campo_isbn">ISBN (opcional)</string>
     <string name="estado_libro_leyendo">Llegint</string>
     <string name="estado_libro_pendiente">Pendent</string>
     <string name="estado_libro_terminado">Acabat</string>

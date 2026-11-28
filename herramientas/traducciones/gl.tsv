@@ -40,6 +40,10 @@ menu_cambiar_estado	Cambiar estado
 menu_anadir_estanteria	Engadir a un andel
 menu_eliminar	Eliminar libro
 menu_subtitulo	%1$s · %2$s
+menu_paginas#one	%d páxina
+menu_paginas#other	%d páxinas
+menu_isbn	ISBN %1$s
+campo_isbn	ISBN (opcional)
 estado_libro_leyendo	Lendo
 estado_libro_pendiente	Pendente
 estado_libro_terminado	Rematado

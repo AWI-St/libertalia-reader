@@ -40,6 +40,10 @@ menu_cambiar_estado	Aldatu egoera
 menu_anadir_estanteria	Gehitu apal batera
 menu_eliminar	Kendu liburua
 menu_subtitulo	%1$s · %2$s
+menu_paginas#one	%d orrialde
+menu_paginas#other	%d orrialde
+menu_isbn	ISBN %1$s
+campo_isbn	ISBN (aukerakoa)
 estado_libro_leyendo	Irakurtzen
 estado_libro_pendiente	Irakurtzeko
 estado_libro_terminado	Amaitua

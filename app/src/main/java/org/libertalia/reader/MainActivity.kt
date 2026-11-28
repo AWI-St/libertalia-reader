@@ -448,6 +448,7 @@ class MainActivity : AppCompatActivity() {
             ponerEnEstanteria = biblioteca::ponerEnEstanteria,
             eliminar = biblioteca::eliminar,
             cambiarTomo = biblioteca::cambiarTomo,
+            cambiarIsbn = biblioteca::cambiarIsbn,
             cambiarSentido = biblioteca::cambiarSentido,
             cambiarTipo = biblioteca::cambiarTipo,
             estaEnCarpeta = biblioteca::estaEnCarpeta,

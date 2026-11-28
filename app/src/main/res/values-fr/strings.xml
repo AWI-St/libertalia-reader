@@ -61,6 +61,12 @@
     <string name="menu_anadir_estanteria">Ajouter à une étagère</string>
     <string name="menu_eliminar">Retirer le livre</string>
     <string name="menu_subtitulo">%1$s · %2$s</string>
+    <plurals name="menu_paginas">
+        <item quantity="one">%d page</item>
+        <item quantity="other">%d pages</item>
+    </plurals>
+    <string name="menu_isbn">ISBN %1$s</string>
+    <string name="campo_isbn">ISBN (facultatif)</string>
     <string name="estado_libro_leyendo">En cours</string>
     <string name="estado_libro_pendiente">À lire</string>
     <string name="estado_libro_terminado">Terminé</string>

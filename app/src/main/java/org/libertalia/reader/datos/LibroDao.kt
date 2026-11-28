@@ -78,6 +78,10 @@ interface LibroDao {
     @Query("UPDATE libros SET incluirArchivoEnCopia = :incluir, fechaModificacion = :fecha WHERE id = :id")
     suspend fun cambiarIncluirEnCopia(id: String, incluir: Boolean, fecha: Long)
 
+    /** El ISBN que escribe el usuario (null = sin ISBN). Solo toca esa columna. */
+    @Query("UPDATE libros SET isbn = :isbn, fechaModificacion = :fecha WHERE id = :id")
+    suspend fun cambiarIsbn(id: String, isbn: String?, fecha: Long)
+
     /** Sentido de lectura de un cómic («ltr» o «rtl»). */
     @Query("UPDATE libros SET sentidoLectura = :sentido, fechaModificacion = :fecha WHERE id = :id")
     suspend fun cambiarSentido(id: String, sentido: String, fecha: Long)

@@ -489,6 +489,13 @@ class BibliotecaViewModel(aplicacion: Application) : AndroidViewModel(aplicacion
         app.alcanceApp.launch { librosDao.actualizar(libro.copy(tomo = tomo, fechaModificacion = System.currentTimeMillis())) }
     }
 
+    /** El ISBN escrito por el usuario (vacío = sin ISBN). */
+    fun cambiarIsbn(libro: Libro, isbn: String) {
+        val limpio = isbn.trim().ifBlank { null }
+        if (limpio == libro.isbn) return
+        app.alcanceApp.launch { librosDao.cambiarIsbn(libro.id, limpio, System.currentTimeMillis()) }
+    }
+
     /** Sentido de lectura de un cómic («ltr» o «rtl»). */
     fun cambiarSentido(libro: Libro, sentido: String) {
         app.alcanceApp.launch {
