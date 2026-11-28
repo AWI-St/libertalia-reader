@@ -16,6 +16,13 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.runtime.remember
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.isImeVisible
+import androidx.compose.foundation.relocation.BringIntoViewRequester
+import androidx.compose.foundation.relocation.bringIntoViewRequester
+import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
@@ -99,7 +106,9 @@ fun PantallaTarjeta(
             .fillMaxSize()
             .background(colorResource(R.color.fondo_app))
             .statusBarsPadding()
-            .navigationBarsPadding(),
+            .navigationBarsPadding()
+            // Deja sitio al teclado (la app se dibuja de borde a borde y Android no lo hace solo).
+            .imePadding(),
     ) {
         // Barra de arriba: volver, «Tarjeta 4 de 18», compartir y borrar.
         Row(
@@ -332,6 +341,7 @@ fun PantallaTarjeta(
 }
 
 /** La nota de la tarjeta: se escribe aquí mismo y se guarda sola un momento después. */
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun CampoNota(tarjeta: Tarjeta, estado: TarjetasViewModel) {
     var texto by rememberSaveable(tarjeta.id) { mutableStateOf(tarjeta.nota.orEmpty()) }
@@ -344,6 +354,16 @@ private fun CampoNota(tarjeta: Tarjeta, estado: TarjetasViewModel) {
     DisposableEffect(tarjeta.id) {
         onDispose { estado.guardarNota(tarjeta, actual) }
     }
+    // Mientras se escribe, el cuadro se mantiene a la vista encima del teclado.
+    val aLaVista = remember { BringIntoViewRequester() }
+    var escribiendo by remember { mutableStateOf(false) }
+    val tecladoAbierto = WindowInsets.isImeVisible
+    LaunchedEffect(escribiendo, tecladoAbierto, texto) {
+        if (escribiendo) {
+            delay(150) // A que el teclado termine de subir.
+            aLaVista.bringIntoView()
+        }
+    }
     OutlinedTextField(
         value = texto,
         onValueChange = { texto = it.take(2_000) },
@@ -351,7 +371,10 @@ private fun CampoNota(tarjeta: Tarjeta, estado: TarjetasViewModel) {
         keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Sentences),
         minLines = 3,
         shape = RoundedCornerShape(16.dp),
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier
+            .fillMaxWidth()
+            .bringIntoViewRequester(aLaVista)
+            .onFocusChanged { escribiendo = it.isFocused },
     )
     if (texto.isNotBlank()) {
         TextButton(onClick = { texto = "" }) {
