@@ -257,8 +257,10 @@ fun PantallaTarjetas(
                 verticalItemSpacing = 12.dp,
                 modifier = Modifier.fillMaxSize().navigationBarsPadding(),
             ) {
+                // Número de cada tarjeta: su orden en el libro, contando todas (no cambia al filtrar).
+                val numeros = numerosEnSuLibro(todas)
                 items(estado.visibles, key = { it.id }) { tarjeta ->
-                    TarjetaPequena(tarjeta, libro, alPulsar = { alAbrir(tarjeta) }, alEtiqueta = alEtiqueta)
+                    TarjetaPequena(tarjeta, libro, alPulsar = { alAbrir(tarjeta) }, alEtiqueta = alEtiqueta, numero = numeros[tarjeta.id])
                 }
             }
         }
@@ -299,6 +301,19 @@ private fun ChipFiltro(elegido: Boolean, descripcion: String, alPulsar: () -> Un
 }
 
 /**
+ * El número de cada subrayado dentro de su libro (1, 2, 3...), por orden de aparición.
+ * [subrayados] tiene que venir ordenado por libro y, dentro de cada libro, por su sitio.
+ */
+fun numerosEnSuLibro(subrayados: List<Tarjeta>): Map<String, Int> {
+    val cuenta = mutableMapOf<String, Int>()
+    return subrayados.associate { tarjeta ->
+        val n = (cuenta[tarjeta.idLibro] ?: 0) + 1
+        cuenta[tarjeta.idLibro] = n
+        tarjeta.id to n
+    }
+}
+
+/**
  * Una tarjeta en la cuadrícula: color, página (en PDF) y capítulo; la frase; la nota al pie;
  * etiquetas (tocar una lleva a todas las tarjetas con esa etiqueta). Con [conTitulo], arriba
  * va el título del libro (en las listas que mezclan tarjetas de varios libros).
@@ -311,6 +326,7 @@ fun TarjetaPequena(
     alPulsar: () -> Unit,
     alEtiqueta: (String) -> Unit = {},
     conTitulo: Boolean = false,
+    numero: Int? = null,
 ) {
     Column(
         Modifier
@@ -321,9 +337,10 @@ fun TarjetaPequena(
             .clickable(onClick = alPulsar)
             .padding(14.dp),
     ) {
-        if (conTitulo && libro != null) {
+        // «3. Título del libro»: el orden de la tarjeta en su libro y de qué libro es.
+        if ((conTitulo || numero != null) && libro != null) {
             Text(
-                libro.titulo,
+                if (numero != null) stringResource(R.string.tarjeta_numero_titulo, numero, libro.titulo) else libro.titulo,
                 style = MaterialTheme.typography.titleSmall,
                 fontWeight = FontWeight.SemiBold,
                 color = MaterialTheme.colorScheme.primary,

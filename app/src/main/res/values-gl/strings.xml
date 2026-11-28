@@ -66,6 +66,7 @@
         <item quantity="other">%d páxinas</item>
     </plurals>
     <string name="menu_isbn">ISBN %1$s</string>
+    <string name="tarjeta_numero_titulo">%1$d. %2$s</string>
     <string name="campo_isbn">ISBN (opcional)</string>
     <string name="estado_libro_leyendo">Lendo</string>
     <string name="estado_libro_pendiente">Pendente</string>

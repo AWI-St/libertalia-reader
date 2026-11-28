@@ -71,6 +71,7 @@ fun PantallaEtiqueta(
     alEtiqueta: (String) -> Unit,
 ) {
     val librosPorId = remember(libros) { libros.associateBy { it.id } }
+    val numeros = remember(tarjetas) { numerosEnSuLibro(tarjetas.sortedWith(compareBy({ it.idLibro }, { it.progreso }, { it.fechaCreacion }))) }
     val conEtiqueta = remember(etiqueta, tarjetas, librosPorId) {
         tarjetas
             .filter { it.idLibro in librosPorId && etiqueta in Etiquetas.de(it) }
@@ -128,6 +129,7 @@ fun PantallaEtiqueta(
                         alPulsar = { alAbrir(tarjeta) },
                         alEtiqueta = { if (it != etiqueta) alEtiqueta(it) },
                         conTitulo = true,
+                        numero = numeros[tarjeta.id],
                     )
                 }
             }
